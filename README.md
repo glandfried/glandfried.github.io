@@ -1,1 +1,0 @@
-# glandfried.github.io

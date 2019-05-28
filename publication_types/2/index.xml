@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 on Landfried</title>
+    <link>https://glandfried.github.io/publication_types/2/</link>
+    <description>Recent content in 2 on Landfried</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://glandfried.github.io/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Faithfulness-boost effect</title>
+      <link>https://glandfried.github.io/publication/landfried2019-faithfulness/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/publication/landfried2019-faithfulness/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.</description>
+    </item>
+    
+    <item>
+      <title>TrueSkill, Technical Report</title>
+      <link>https://glandfried.github.io/publication/landfried2019-trueskill/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/publication/landfried2019-trueskill/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.</description>
+    </item>
+    
+  </channel>
+</rss>
