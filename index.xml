@@ -93,22 +93,6 @@
     </item>
     
     <item>
-      <title>An example preprint / working paper</title>
-      <link>https://glandfried.github.io/publication/preprint/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/publication/preprint/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Faithfulness-boost effect</title>
       <link>https://glandfried.github.io/publication/landfried2019-faithfulness/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
@@ -124,7 +108,8 @@
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/publication/landfried2019-trueskill/</guid>
-      <description></description>
+      <description>&lt;p&gt;The first skill estimator was developed by Arpad Elo, adopted by the World Chess Federations around 1970. TrueSkill is just the bayesian multiplayer version of Elo model, published by Microsoft in 2007. In this technical report I derive, step by step, the analytical solution of the model.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -373,29 +358,60 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>Social learning factors</title>
-      <link>https://glandfried.github.io/project/external-project/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <title>Cultural evolution theory applied to colonial-modernity problems</title>
+      <link>https://glandfried.github.io/project/colonialmodernidad/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/project/external-project/</guid>
-      <description></description>
+      <guid>https://glandfried.github.io/project/colonialmodernidad/</guid>
+      <description>&lt;p&gt;The only agents capable of developing successful solutions to complex problems are the peoples in the evolution of their history (Rita Segato, Elinor Ostrom, Robert Boyd). The advance of the colonial-modern front, today under the figure of the Republican States and private enterprises, destroys much of the cultural diversity accumulated over thousands of years by human populations. It is therefore necessary to restore the jurisdictional and deliberative autonomy of peoples in order to guarantee the process of cultural evolution, the only means capable of solving the serious ecological and economic problems that humanity faces today.&lt;/p&gt;
+
+&lt;p&gt;Los únicos agentes capaces de desarrollar soluciones exitosas a los problemas complejos son los pueblos en el devenir de su historia (Rita Segato, Elinor Ostrom, Robert Boyd). El avance del frente colonial-moderno, hoy bajo la figura de los Estados Republicanos y emprendimientos privados, destruye gran parte de la diversidad cultural acumulada durante miles de años por poblaciones humanas. Es necesario entonces restituir la autonomía jurisdiccional y deliberativa de los pueblos de modo tal de garantizar el proceso de evolución cultural, único medio capaz de solucionar los graves problemas ecológicos y económicos que enfrenta hoy la humanidad.&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Internal Project</title>
-      <link>https://glandfried.github.io/project/internal-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Bayesian Inference</title>
+      <link>https://glandfried.github.io/project/bayesianinference/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/project/internal-project/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+      <guid>https://glandfried.github.io/project/bayesianinference/</guid>
+      <description>
 
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Beyond any debate, what is certain is that Bayesian Inference allows us to &lt;strong&gt;optimally update our &lt;em&gt;beliefs&lt;/em&gt; given a &lt;em&gt;model&lt;/em&gt; and a &lt;em&gt;data set&lt;/em&gt;&lt;/strong&gt;. What more could you ask for?&lt;/p&gt;
 
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;h3 id=&#34;manuscripts&#34;&gt;Manuscripts&lt;/h3&gt;
 
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Gustavo Landfried. &lt;a href=&#34;../../publication/landfried2019-trueskill/&#34;&gt;TrueSkill: Technical Report&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+&lt;h3 id=&#34;handbooks&#34;&gt;Handbooks&lt;/h3&gt;
+
+&lt;p&gt;Some initial bibliography&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Lee M.D. and Wagenmakers E.J. &lt;a href=&#34;http://library1.org/_ads/1263135742DA260290C3CE04C1F88546&#34; target=&#34;_blank&#34;&gt;Bayesian Cognitive Modeling: A Practical Course&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Richard McElreath. &lt;a href=&#34;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&#34; target=&#34;_blank&#34;&gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Andrew Gelman et al. &lt;a href=&#34;http://library1.org/_ads/F3FE830B1D068B5F1A7F3C66227F935E&#34; target=&#34;_blank&#34;&gt;Bayesian Data Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;evidence-in-favor-of-a-scientific-theory&#34;&gt;Evidence in favor of a scientific theory&lt;/h5&gt;
+
+&lt;p&gt;In a 1935 paper and in his book &lt;em&gt;Theory of Probability&lt;/em&gt;, Jeffreys developed a methodology for quantify the evidence in favor of a scientific theory. Bayesian model selection automatically encodes a preference for simpler, more constrained models. Many of the &amp;ldquo;machine learning&amp;rdquo; regularization techniques can be seen as an approximation to Bayesian inference.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tom Minka. &lt;a href=&#34;http://alumni.media.mit.edu/~tpminka/statlearn/demo/&#34; target=&#34;_blank&#34;&gt;Evidence&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Larry Wasserman. &lt;a href=&#34;https://doi.org/10.1006/jmps.1999.1278&#34; target=&#34;_blank&#34;&gt;Bayesian Model Selection and Model Averaging&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Robert Kass and Adrian Raftery &lt;a href=&#34;https://www.stat.washington.edu/sites/default/files/files/reports/1993/tr254.pdf&#34; target=&#34;_blank&#34;&gt;Bayes factors and model uncertainty&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Social learning factors in online games</title>
+      <link>https://glandfried.github.io/project/onlinesociallearning/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/project/onlinesociallearning/</guid>
+      <description>&lt;p&gt;We exploit the virtually infinite repository of human behavior available in Internet to study a relevant topic in anthropological science: how social learning strategies may affect human skill acquisition.&lt;/p&gt;
 </description>
     </item>
     
@@ -725,28 +741,6 @@ $$&lt;/p&gt;
 &lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>An example conference paper</title>
-      <link>https://glandfried.github.io/publication/conference-paper/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/publication/conference-paper/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

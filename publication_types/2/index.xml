@@ -20,14 +20,5 @@
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.</description>
     </item>
     
-    <item>
-      <title>TrueSkill, Technical Report</title>
-      <link>https://glandfried.github.io/publication/landfried2019-trueskill/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/publication/landfried2019-trueskill/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.</description>
-    </item>
-    
   </channel>
 </rss>
