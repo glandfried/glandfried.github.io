@@ -358,21 +358,37 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>Cultural evolution theory applied to colonial-modernity problems</title>
-      <link>https://glandfried.github.io/project/colonialmodernidad/</link>
+      <title>The cultural evolution algorithm</title>
+      <link>https://glandfried.github.io/project/socialreinforcementlearning/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/project/colonialmodernidad/</guid>
-      <description>&lt;p&gt;The only agents capable of developing successful solutions to complex problems are the peoples in the evolution of their history (Rita Segato, Elinor Ostrom, Robert Boyd). The advance of the colonial-modern front, today under the figure of the Republican States and private enterprises, destroys much of the cultural diversity accumulated over thousands of years by human populations. It is therefore necessary to restore the jurisdictional and deliberative autonomy of peoples in order to guarantee the process of cultural evolution, the only means capable of solving the serious ecological and economic problems that humanity faces today.&lt;/p&gt;
+      <guid>https://glandfried.github.io/project/socialreinforcementlearning/</guid>
+      <description>&lt;p&gt;Humans had an adaptive leap when they developed the ability to imitate, to acquire information based on the experience of others. This allowed the decentralization of learning and memory in a population of agents, leading to a process of cultural evolution in which valuable knowledge emerges, even if it is too costly for it to be discovered by individual agents. We are working on a social reinforcement learning model, based on individual experience and social learning transmition, in order to study non-analytical properties of the cultural evolution process.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Social learning factors in online games</title>
+      <link>https://glandfried.github.io/project/onlinesociallearning/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/project/onlinesociallearning/</guid>
+      <description>
 
-&lt;p&gt;Los únicos agentes capaces de desarrollar soluciones exitosas a los problemas complejos son los pueblos en el devenir de su historia (Rita Segato, Elinor Ostrom, Robert Boyd). El avance del frente colonial-moderno, hoy bajo la figura de los Estados Republicanos y emprendimientos privados, destruye gran parte de la diversidad cultural acumulada durante miles de años por poblaciones humanas. Es necesario entonces restituir la autonomía jurisdiccional y deliberativa de los pueblos de modo tal de garantizar el proceso de evolución cultural, único medio capaz de solucionar los graves problemas ecológicos y económicos que enfrenta hoy la humanidad.&lt;/p&gt;
+&lt;p&gt;We exploit the virtually infinite repository of human behavior available in Internet to study a relevant topic in anthropological science: how social learning strategies may affect human skill acquisition.&lt;/p&gt;
+
+&lt;h4 id=&#34;publications&#34;&gt;Publications&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Gustavo Landfried, Diego Fernandez Slezak, Esteban Mocskos (2019) &lt;a href=&#34;https://www-2.dc.uba.ar/staff/glandfried/publication/landfried2019-faithfulness/&#34; target=&#34;_blank&#34;&gt;Faithfulness-boost effect: Loyal teammate selection correlates with skill acquisition improvement in online games&lt;/a&gt;. PLOS One.&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
     <item>
       <title>Bayesian Inference</title>
       <link>https://glandfried.github.io/project/bayesianinference/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/project/bayesianinference/</guid>
       <description>
@@ -402,16 +418,6 @@ $$&lt;/p&gt;
 &lt;li&gt;Larry Wasserman. &lt;a href=&#34;https://doi.org/10.1006/jmps.1999.1278&#34; target=&#34;_blank&#34;&gt;Bayesian Model Selection and Model Averaging&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Robert Kass and Adrian Raftery &lt;a href=&#34;https://www.stat.washington.edu/sites/default/files/files/reports/1993/tr254.pdf&#34; target=&#34;_blank&#34;&gt;Bayes factors and model uncertainty&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Social learning factors in online games</title>
-      <link>https://glandfried.github.io/project/onlinesociallearning/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/project/onlinesociallearning/</guid>
-      <description>&lt;p&gt;We exploit the virtually infinite repository of human behavior available in Internet to study a relevant topic in anthropological science: how social learning strategies may affect human skill acquisition.&lt;/p&gt;
 </description>
     </item>
     
@@ -741,6 +747,16 @@ $$&lt;/p&gt;
 &lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cultural diverisity at the colonial-modernity period</title>
+      <link>https://glandfried.github.io/project/colonialmodernidad/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/project/colonialmodernidad/</guid>
+      <description>&lt;p&gt;The only agents capable of developing successful solutions to complex problems are the peoples through their evolutionary history (Rita Segato, Elinor Ostrom, Robert Boyd). The advance of the colonial-modern proyect, under the figure of the Republican States and private enterprises, destroys much of the cultural diversity accumulated over thousands of years by human populations. It is therefore necessary to restore the jurisdictional and deliberative autonomy of peoples in order to guarantee the process of cultural evolution, the only means capable of solving the serious ecological and economic problems that humanity faces today.&lt;/p&gt;
 </description>
     </item>
     

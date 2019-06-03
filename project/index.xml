@@ -12,30 +12,39 @@
     
     
     <item>
-      <title>Cultural evolution theory applied to colonial-modernity problems</title>
-      <link>https://glandfried.github.io/project/colonialmodernidad/</link>
+      <title>The cultural evolution algorithm</title>
+      <link>https://glandfried.github.io/project/socialreinforcementlearning/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/project/colonialmodernidad/</guid>
-      <description>The only agents capable of developing successful solutions to complex problems are the peoples in the evolution of their history (Rita Segato, Elinor Ostrom, Robert Boyd). The advance of the colonial-modern front, today under the figure of the Republican States and private enterprises, destroys much of the cultural diversity accumulated over thousands of years by human populations. It is therefore necessary to restore the jurisdictional and deliberative autonomy of peoples in order to guarantee the process of cultural evolution, the only means capable of solving the serious ecological and economic problems that humanity faces today.</description>
+      <guid>https://glandfried.github.io/project/socialreinforcementlearning/</guid>
+      <description>A multi-agente social-reinforcement learning model</description>
+    </item>
+    
+    <item>
+      <title>Social learning factors in online games</title>
+      <link>https://glandfried.github.io/project/onlinesociallearning/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/project/onlinesociallearning/</guid>
+      <description>Online games are ideal for studying how we acquire skills.</description>
     </item>
     
     <item>
       <title>Bayesian Inference</title>
       <link>https://glandfried.github.io/project/bayesianinference/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/project/bayesianinference/</guid>
       <description>Bayesian Inference allows us to optimally update our beliefs given a model and a data set</description>
     </item>
     
     <item>
-      <title>Social learning factors in online games</title>
-      <link>https://glandfried.github.io/project/onlinesociallearning/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <title>Cultural diverisity at the colonial-modernity period</title>
+      <link>https://glandfried.github.io/project/colonialmodernidad/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/project/onlinesociallearning/</guid>
-      <description>We exploit the virtually infinite repository of human behavior available in Internet to study a relevant topic in anthropological science: how social learning strategies may affect human skill acquisition.</description>
+      <guid>https://glandfried.github.io/project/colonialmodernidad/</guid>
+      <description>How cultural evolution process could solve actual ecological and economic problems.</description>
     </item>
     
   </channel>
