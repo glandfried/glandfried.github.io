@@ -323,7 +323,7 @@ $$&lt;/p&gt;
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/project/socialreinforcementlearning/</guid>
-      <description>&lt;p&gt;Humans had an adaptive leap when they developed the ability to imitate, to acquire information based on the experience of others. This allowed the decentralization of learning and memory in a population of agents, leading to a process of cultural evolution in which valuable knowledge emerges, even if it is too costly for it to be discovered by individual agents. We are working on a social reinforcement learning model, based on individual experience and social learning transmition, in order to study non-analytical properties of the cultural evolution process.&lt;/p&gt;
+      <description>&lt;p&gt;Humans had an adaptive leap when they developed the ability to imitate, to acquire information based on the experience of others. This allowed learning and memory decentralization in a population of agents, leading to a process of cultural evolution in which valuable knowledge emerges even if it is too costly for it to be discovered by individual agents. We are working on a social reinforcement learning model, based on individual experience and social learning transmition, in order to study non-analytical properties of the cultural evolution process.&lt;/p&gt;
 </description>
     </item>
     
@@ -364,15 +364,7 @@ $$&lt;/p&gt;
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/project/onlinesociallearning/</guid>
-      <description>
-
-&lt;p&gt;We exploit the virtually infinite repository of human behavior available in Internet to study a relevant topic in anthropological science: how social learning strategies may affect human skill acquisition.&lt;/p&gt;
-
-&lt;h4 id=&#34;publications&#34;&gt;Publications&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Gustavo Landfried, Diego Fernandez Slezak, Esteban Mocskos (2019) &lt;a href=&#34;https://www-2.dc.uba.ar/staff/glandfried/publication/landfried2019-faithfulness/&#34; target=&#34;_blank&#34;&gt;Faithfulness-boost effect: Loyal teammate selection correlates with skill acquisition improvement in online games&lt;/a&gt;. PLOS One.&lt;/li&gt;
-&lt;/ul&gt;
+      <description>&lt;p&gt;We exploit the virtually infinite repository of human behavior available in Internet to study a relevant topic in anthropological science: how social learning strategies may affect human skill acquisition.&lt;/p&gt;
 </description>
     </item>
     
@@ -385,10 +377,6 @@ $$&lt;/p&gt;
       <description>
 
 &lt;p&gt;Beyond any debate, what is certain is that Bayesian Inference allows us to &lt;strong&gt;optimally update our &lt;em&gt;beliefs&lt;/em&gt; given a &lt;em&gt;model&lt;/em&gt; and a &lt;em&gt;data set&lt;/em&gt;&lt;/strong&gt;. What more could you ask for?&lt;/p&gt;
-
-&lt;h3 id=&#34;manuscripts&#34;&gt;Manuscripts&lt;/h3&gt;
-
-&lt;p&gt;Gustavo Landfried. &lt;a href=&#34;../../publication/landfried2019-trueskill/&#34;&gt;TrueSkill: Technical Report&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;handbooks&#34;&gt;Handbooks&lt;/h3&gt;
 
