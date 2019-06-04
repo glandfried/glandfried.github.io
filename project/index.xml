@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>The cultural evolution algorithm</title>
+      <title>Artificial cultural evolution algorithm</title>
       <link>https://glandfried.github.io/project/socialreinforcementlearning/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/project/socialreinforcementlearning/</guid>
-      <description>A multi-agente social-reinforcement learning model</description>
+      <description>A multi-agente social-reinforcement learning model.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/project/onlinesociallearning/</guid>
-      <description>Online games are ideal for studying how we acquire skills.</description>
+      <description>Online games are ideal for studying human skill acquisition.</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/project/bayesianinference/</guid>
-      <description>Bayesian Inference allows us to optimally update our beliefs given a model and a data set</description>
+      <description>The method that optimally update our beliefs, given a model and a data set.</description>
     </item>
     
     <item>

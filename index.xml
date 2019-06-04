@@ -6,17 +6,49 @@
     <description>Recent content on Landfried</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 May 2019 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://glandfried.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Faculty of science computer programming workshop (with Python)</title>
+      <link>https://glandfried.github.io/courses/exactasprograma/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/courses/exactasprograma/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cultural evolution and social learning</title>
+      <link>https://glandfried.github.io/talk/2019_05_10_ic/</link>
+      <pubDate>Fri, 10 May 2019 12:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/talk/2019_05_10_ic/</guid>
+      <description>
+
+&lt;h2 id=&#34;workshop&#34;&gt;Workshop&lt;/h2&gt;
+
+&lt;p&gt;Tools to study social systems: modeling and data analysis.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Evidence in favor of a scientific theory</title>
-      <link>https://glandfried.github.io/talk/example/</link>
+      <link>https://glandfried.github.io/talk/2019_05_03_liaa/</link>
       <pubDate>Fri, 03 May 2019 12:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/talk/example/</guid>
+      <guid>https://glandfried.github.io/talk/2019_05_03_liaa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algorithms and data structure 1 (with C&#43;&#43;)</title>
+      <link>https://glandfried.github.io/courses/algo1/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/courses/algo1/</guid>
       <description></description>
     </item>
     
@@ -286,7 +318,7 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>The cultural evolution algorithm</title>
+      <title>Artificial cultural evolution algorithm</title>
       <link>https://glandfried.github.io/project/socialreinforcementlearning/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
@@ -298,7 +330,7 @@ $$&lt;/p&gt;
     <item>
       <title>Computational Social Science (with R)</title>
       <link>https://glandfried.github.io/courses/csc/</link>
-      <pubDate>Thu, 09 Aug 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/courses/csc/</guid>
       <description>
@@ -315,6 +347,15 @@ $$&lt;/p&gt;
 &lt;li&gt;An Introduction to Statistical Learning with Applications in R (&lt;a href=&#34;http://www-bcf.usc.edu/~gareth/ISL/&#34; target=&#34;_blank&#34;&gt;Oficial web page&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Computer Science introduction for empricial sciences (with Python)</title>
+      <link>https://glandfried.github.io/courses/intro/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/courses/intro/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -724,6 +765,15 @@ $$&lt;/p&gt;
       <guid>https://glandfried.github.io/project/colonialmodernidad/</guid>
       <description>&lt;p&gt;The only agents capable of developing successful solutions to complex problems are the peoples through their evolutionary history (Rita Segato, Elinor Ostrom, Robert Boyd). The advance of the colonial-modern proyect, under the figure of the Republican States and private enterprises, destroys much of the cultural diversity accumulated over thousands of years by human populations. It is therefore necessary to restore the jurisdictional and deliberative autonomy of peoples in order to guarantee the process of cultural evolution, the only means capable of solving the serious ecological and economic problems that humanity faces today.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Artificial societies and ethnography (with Netlogo)</title>
+      <link>https://glandfried.github.io/courses/artificialsocieties/</link>
+      <pubDate>Mon, 01 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/courses/artificialsocieties/</guid>
+      <description></description>
     </item>
     
   </channel>

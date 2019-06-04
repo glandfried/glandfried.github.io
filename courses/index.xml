@@ -1,23 +1,50 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications on Landfried</title>
+    <title>Courses on Landfried</title>
     <link>https://glandfried.github.io/courses/</link>
-    <description>Recent content in Publications on Landfried</description>
+    <description>Recent content in Courses on Landfried</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://glandfried.github.io/courses/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Faculty of science computer programming workshop (with Python)</title>
+      <link>https://glandfried.github.io/courses/exactasprograma/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/courses/exactasprograma/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algorithms and data structure 1 (with C&#43;&#43;)</title>
+      <link>https://glandfried.github.io/courses/algo1/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/courses/algo1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Computational Social Science (with R)</title>
       <link>https://glandfried.github.io/courses/csc/</link>
-      <pubDate>Thu, 09 Aug 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/courses/csc/</guid>
       <description> Link to course  All the material for the course (here)  Bibliography  An Introduction to Statistical Learning with Applications in R (Oficial web page)  </description>
+    </item>
+    
+    <item>
+      <title>Computer Science introduction for empricial sciences (with Python)</title>
+      <link>https://glandfried.github.io/courses/intro/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/courses/intro/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -27,6 +54,15 @@
       
       <guid>https://glandfried.github.io/courses/algebra/</guid>
       <description> Hands-on  Problemas de combinatoria y recursión en la predicción de alianza  </description>
+    </item>
+    
+    <item>
+      <title>Artificial societies and ethnography (with Netlogo)</title>
+      <link>https://glandfried.github.io/courses/artificialsocieties/</link>
+      <pubDate>Mon, 01 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/courses/artificialsocieties/</guid>
+      <description></description>
     </item>
     
   </channel>
