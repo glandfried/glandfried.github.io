@@ -19,8 +19,14 @@
   </url>
   
   <url>
-    <loc>https://glandfried.github.io/talk/2019_05_10_ic/</loc>
+    <loc>https://glandfried.github.io/authors/admin/</loc>
     <lastmod>2019-05-10T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://glandfried.github.io/authors/</loc>
+    <lastmod>2019-05-10T12:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -29,13 +35,13 @@
   </url>
   
   <url>
-    <loc>https://glandfried.github.io/talk/2019_05_03_liaa/</loc>
-    <lastmod>2019-05-03T12:00:00+00:00</lastmod>
+    <loc>https://glandfried.github.io/talk/2019_05_10_ic/</loc>
+    <lastmod>2019-05-10T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://glandfried.github.io/authors/admin/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+    <loc>https://glandfried.github.io/talk/2019_05_03_liaa/</loc>
+    <lastmod>2019-05-03T12:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -47,12 +53,6 @@
   <url>
     <loc>https://glandfried.github.io/courses/algo1/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://glandfried.github.io/authors/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
