@@ -27,7 +27,18 @@
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/project/education/</guid>
-      <description></description>
+      <description>
+
+&lt;h2 id=&#34;bayesian-item-response-theory&#34;&gt;Bayesian Item-Response Theory&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;fox2010-bayesianIRT.pdf&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;fox2010-bayesianIRT.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;we-are-creating-a-database-from-web-https-www-matemarote-com-ar-matemarote&#34;&gt;We are creating a database from (&lt;a href=&#34;https://www.matemarote.com.ar/MateMarote/&#34; target=&#34;_blank&#34;&gt;web&lt;/a&gt;)&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.matemarote.com.ar/MateMarote/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;matemarote.png&#34; alt=&#34;png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;to-test-our-analytical-solution-for-the-bayesian-item-response-theory&#34;&gt;to test our analytical solution for the Bayesian Item-Response Theory.&lt;/h3&gt;
+</description>
     </item>
     
     <item>
@@ -47,7 +58,15 @@
       <guid>https://glandfried.github.io/project/synergy/</guid>
       <description>
 
-&lt;h2 id=&#34;an-analytical-bayesian-synergy-estimator&#34;&gt;An analytical bayesian synergy estimator&lt;/h2&gt;
+&lt;h2 id=&#34;an-analytical-bayesian-synergy-estimator&#34;&gt;An analytical bayesian synergy estimator:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;posterior_win.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;the-state-of-art-team-based-skill-estimator-models-the-team-performance-as-a-sum-of-individual-performance&#34;&gt;The state-of-art team based skill estimator models the team performance as a sum of individual performance&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;bayes_network.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;we-are-testing-an-alternative-model-in-real-databases&#34;&gt;We are testing an alternative model in real databases.&lt;/h3&gt;
 </description>
     </item>
     
