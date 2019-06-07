@@ -22,12 +22,33 @@
     </item>
     
     <item>
+      <title>Education</title>
+      <link>https://glandfried.github.io/project/education/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/project/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Faculty of science computer programming workshop (with Python)</title>
       <link>https://glandfried.github.io/courses/exactasprograma/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/courses/exactasprograma/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Synergy meter</title>
+      <link>https://glandfried.github.io/project/synergy/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/project/synergy/</guid>
+      <description>
+
+&lt;h2 id=&#34;an-analytical-bayesian-synergy-estimator&#34;&gt;An analytical bayesian synergy estimator&lt;/h2&gt;
+</description>
     </item>
     
     <item>
@@ -265,16 +286,6 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>Artificial cultural evolution algorithm</title>
-      <link>https://glandfried.github.io/project/socialreinforcementlearning/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/project/socialreinforcementlearning/</guid>
-      <description>&lt;p&gt;Humans had an adaptive leap when they developed the ability to imitate, to acquire information based on the experience of others. This allowed learning and memory decentralization in a population of agents, leading to a process of cultural evolution in which valuable knowledge emerges even if it is too costly for it to be discovered by individual agents. We are working on a social reinforcement learning model, based on individual experience and social learning transmition, in order to study non-analytical properties of the cultural evolution process.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Computational Social Science (with R)</title>
       <link>https://glandfried.github.io/courses/csc/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
@@ -306,7 +317,7 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>Social learning factors in online games</title>
+      <title>Social learning in virtual communities</title>
       <link>https://glandfried.github.io/project/onlinesociallearning/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
@@ -360,16 +371,6 @@ $$&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Problemas de combinatoria y recursión en la predicción de alianza&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Cultural diverisity at the colonial-modernity period</title>
-      <link>https://glandfried.github.io/project/colonialmodernidad/</link>
-      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/project/colonialmodernidad/</guid>
-      <description>&lt;p&gt;The only agents capable of developing successful solutions to complex problems are the peoples through their evolutionary history (Rita Segato, Elinor Ostrom, Robert Boyd). The advance of the colonial-modern proyect, under the figure of the Republican States and private enterprises, destroys much of the cultural diversity accumulated over thousands of years by human populations. It is therefore necessary to restore the jurisdictional and deliberative autonomy of peoples in order to guarantee the process of cultural evolution, the only means capable of solving the serious ecological and economic problems that humanity faces today.&lt;/p&gt;
 </description>
     </item>
     

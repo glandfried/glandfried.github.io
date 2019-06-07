@@ -6,22 +6,31 @@
     <description>Recent content in Projects on Landfried</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://glandfried.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Artificial cultural evolution algorithm</title>
-      <link>https://glandfried.github.io/project/socialreinforcementlearning/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <title>Education</title>
+      <link>https://glandfried.github.io/project/education/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/project/socialreinforcementlearning/</guid>
-      <description>A multi-agente social-reinforcement learning model.</description>
+      <guid>https://glandfried.github.io/project/education/</guid>
+      <description>An analytical solution for the Bayesian Item-Response Theory</description>
     </item>
     
     <item>
-      <title>Social learning factors in online games</title>
+      <title>Synergy meter</title>
+      <link>https://glandfried.github.io/project/synergy/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/project/synergy/</guid>
+      <description>An alternative model for team based skill estimation</description>
+    </item>
+    
+    <item>
+      <title>Social learning in virtual communities</title>
       <link>https://glandfried.github.io/project/onlinesociallearning/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
@@ -36,15 +45,6 @@
       
       <guid>https://glandfried.github.io/project/bayesianinference/</guid>
       <description>The method that optimally update our beliefs, given a model and a data set.</description>
-    </item>
-    
-    <item>
-      <title>Cultural diverisity at the colonial-modernity period</title>
-      <link>https://glandfried.github.io/project/colonialmodernidad/</link>
-      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/project/colonialmodernidad/</guid>
-      <description>How cultural evolution process could solve actual ecological and economic problems.</description>
     </item>
     
   </channel>
