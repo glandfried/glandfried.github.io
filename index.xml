@@ -6,10 +6,67 @@
     <description>Recent content on Landfried</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://glandfried.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Raftery - Gelman debate 25 years later</title>
+      <link>https://glandfried.github.io/post/bayesfactor/</link>
+      <pubDate>Sun, 09 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/post/bayesfactor/</guid>
+      <description>
+
+&lt;h2 id=&#34;bayesian-model-selection&#34;&gt;Bayesian Model Selection&lt;/h2&gt;
+
+&lt;p&gt;In a 1935 paper and in his book &lt;em&gt;Theory of Probability&lt;/em&gt;, Jeffreys developed a &lt;strong&gt;methodology for quantifing the evidence in favor of a scientific theory&lt;/strong&gt;. The most referenced article about Bayesian statistics [1] focuses on this result as a practical tool of applied statistics. There are good texts, sach as [2], with several examples that allow us to appreciate how it works.&lt;/p&gt;
+
+&lt;p&gt;To my surprise I found in the most cited Handbook on Bayesian inference [3], only a single reference on this method, discouraging its use! And of the only page that he spent on that really big book, the only thing I could get out is a reference to a discussion [4-5] that this author had in 1994.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1. Robert Kass and Adrian Raftery. &lt;a href=&#34;https://glandfried.github.io/files/posts/KassRaftery1995.pdf&#34;&gt;&lt;em&gt;Bayes Factors&lt;/em&gt;&lt;/a&gt;. 1995. Journal of the American Statistical Association.&lt;/li&gt;
+&lt;li&gt;2. Tom Minka. &lt;a href=&#34;https://glandfried.github.io/files/posts/minka-linear.pdf&#34;&gt;&lt;em&gt;Bayesian linear regression&lt;/em&gt;&lt;/a&gt;. 1998. (&lt;a href=&#34;http://alumni.media.mit.edu/~tpminka/statlearn/demo/&#34; target=&#34;_blank&#34;&gt;from personal web&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;3. Gelman et al. &lt;em&gt;Bayesian Data Analysis&lt;/em&gt;. 2013. Chapman and Hall/CRC&lt;/li&gt;
+&lt;li&gt;4. Adrian Raftery. &lt;a href=&#34;https://glandfried.github.io/files/posts/bic.pdf&#34;&gt;&lt;em&gt;Bayesian Model Selection in Social Research (with Discussion&lt;/em&gt;)&lt;/a&gt;. 1995. Sociological Methodology.&lt;/li&gt;
+&lt;li&gt;5. Andrew Gelman and Donald Rubin. &lt;a href=&#34;https://glandfried.github.io/files/posts/gelman_avoiding.pdf&#34;&gt;&lt;em&gt;Avoiding Model Selection in Bayesian Social Research&lt;/em&gt;&lt;/a&gt;. 1995. Sociological Methodology.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After having read this discussion, I personally have no doubt that Raftery was right. The arguments can be found in the texts, cited above, that I would like you to also read firsthand. However, we can also mention some &amp;ldquo;context reasons&amp;rdquo;. Twenty-five years later we can count the references that each position received, and in this respect there is also a clear winner. In addition, the attitude of Gelman to avoid the subject in his Handbook, offering only the reference to the discussion, does not seem anything other than a sign of defeat.&lt;/p&gt;
+
+&lt;h3 id=&#34;evidence-in-favor-of-a-scientific-theory&#34;&gt;Evidence in favor of a scientific theory&lt;/h3&gt;
+
+&lt;p&gt;To compute the evidence that a specific data set D provides in favor of a specific model $M_k$, we need to solve&lt;/p&gt;
+
+&lt;p&gt;$$ P(M_k|D)$$&lt;/p&gt;
+
+&lt;p&gt;which by definition of conditional probability is&lt;/p&gt;
+
+&lt;p&gt;$$ P(M_k|D) = \frac{P(D|M_k)P(M_k)}{\sum_i P(D|M_i)P(M_i)} $$&lt;/p&gt;
+
+&lt;p&gt;But, if we only want to compare models, it is enough to compute their evidence ratio, which simplify the formula to&lt;/p&gt;
+
+&lt;p&gt;$$\frac{P(M_1|D)}{P(M_2|D)} = \frac{P(D|M_1)}{P(D|M_2)}\frac{P(M_1)}{P(M_2)}$$&lt;/p&gt;
+
+&lt;p&gt;Overlooking the omnipresent prior definition, the model selection depends only on the &amp;ldquo;marginal likelihood&amp;rdquo; of each model, an element that we compute every time in bayesian inference!!&lt;/p&gt;
+
+&lt;p&gt;$$\text{Bayes factor}=\frac{P(D|M_1)}{P(D|M_2)}$$&lt;/p&gt;
+
+&lt;p&gt;Bayesian model selection uses the rules of probability theory to select among different hypotheses. It automatically encodes a preference for simpler, more constrained models, as illustrated below.
+Simple models, e.g. linear regression, only fit a small fraction of data sets. But they assign correspondingly higher probability to those data sets. Flexible models spread themselves out more thinly.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;evidence.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A central issue in polynomial fitting is selecting the degree of the polynomial. To do this, we compute the probability of the data for each possible degree. For a given degree, this requires integrating over all possible polynomial fits, which can be done analytically. The results are shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;minka.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The likelihood only considers the single most probable curve, as shown for each degree. The likelihood is the negative squared-error of the fit. It always increases with increasing degree. But the evidence reaches a maximum at degree 3, which happens to be the true degree in this case. The data is much more likely to have arisen from a third-degree polynomial than a high-degree polynomial which just happened to look third-degree.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;minka_evidence.png&#34; alt=&#34;png&#34; /&gt; &lt;img src=&#34;minka_likelihood.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Cover note at the faculty of science magazine</title>
