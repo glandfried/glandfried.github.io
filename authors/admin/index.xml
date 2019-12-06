@@ -6,10 +6,19 @@
     <description>Recent content on Landfried</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Dec 2019 12:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://glandfried.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Técnicas para calcular distribuciones de creencias</title>
+      <link>https://glandfried.github.io/talk/2019_12_tacc/</link>
+      <pubDate>Fri, 06 Dec 2019 12:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/talk/2019_12_tacc/</guid>
+      <description>que se usan hoy en dı́a en la industria de los vı́deo juegos.</description>
+    </item>
     
     <item>
       <title>Raftery - Gelman debate 25 years later</title>
@@ -59,10 +68,10 @@
     <item>
       <title></title>
       <link>https://glandfried.github.io/authors/admin/</link>
-      <pubDate>Sun, 09 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 06 Dec 2019 12:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/authors/admin/</guid>
-      <description>I am currently finishing a PhD in Computer Science. With several colleagues, we are working hard to lay the foundations of an interdisciplinary social sciences research center in Latin America. I just hope that our work will serve the historical project that reveres life over profitability.</description>
+      <description>As a Social Anthropologist, I am currently finishing a PhD in Computer Science, developing the Computational Social Science area in one of the main scientific centers of the southern hemisphere. With several colleagues, we are working hard to lay the foundations of an interdisciplinary social sciences research center in Latin America. I just hope that our work will serve the historical project that reveres life over profitability.</description>
     </item>
     
   </channel>
