@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="que se usan hoy en dı́a en la industria de los vı́deo juegos.">
+  <meta name="description" content="Estimación de habilidad en la industria del video juego">
 
   
   <link rel="alternate" hreflang="en-us" href="https://glandfried.github.io/talk/2019_12_tacc/">
@@ -97,6 +97,20 @@
 
   
   
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-144190696-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
   
 
   
@@ -119,12 +133,12 @@
   <meta property="og:site_name" content="Landfried">
   <meta property="og:url" content="https://glandfried.github.io/talk/2019_12_tacc/">
   <meta property="og:title" content="Técnicas para calcular distribuciones de creencias | Landfried">
-  <meta property="og:description" content="que se usan hoy en dı́a en la industria de los vı́deo juegos."><meta property="og:image" content="https://glandfried.github.io/img/icon-192.png">
+  <meta property="og:description" content="Estimación de habilidad en la industria del video juego"><meta property="og:image" content="https://glandfried.github.io/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-12-06T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2020-01-15T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2019-12-06T12:00:00&#43;00:00">
+  <meta property="article:modified_time" content="2019-12-05T12:00:00&#43;00:00">
   
 
   
@@ -132,6 +146,21 @@
   
 
   <title>Técnicas para calcular distribuciones de creencias | Landfried</title>
+
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-144190696-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -476,23 +505,11 @@
 
 
 
-<meta content="2019-12-06 12:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-12-06 12:00:00 &#43;0000 UTC" itemprop="dateModified">
+<meta content="2019-12-05 12:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2019-12-05 12:00:00 &#43;0000 UTC" itemprop="dateModified">
 
 <div class="article-metadata">
 
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Gustavo Landfried</a></span>
-
-  </div>
   
   
 
@@ -580,8 +597,14 @@
 
 
   
+    
+  
 
 
+
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/glandfried/tacc2019/blob/master/consigna.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
 
 
 
@@ -590,7 +613,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="/files/courses/bayes/2019_12_TACC-consigna.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/glandfried/tacc2019/blob/master/graphicalModel.net" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -605,7 +628,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="/files/talks/2019_12_06-tacc.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/glandfried/tacc2019/blob/master/charla.pdf" target="_blank" rel="noopener">
   Slides
 </a>
 
@@ -613,22 +636,6 @@
 
 
 
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://tallerargentinocc.github.io/" target="_blank" rel="noopener">
-    
-    Workshop web page
-  </a>
 
 
 </div>
@@ -642,8 +649,7 @@
   <div class="article-container">
 
     
-      <h3>Abstract</h3>
-      <p class="pub-abstract" itemprop="text">Técnicas de inferencia Bayesiana para estimar habilidades, predecir quién va a ganar y cuantificar la evidencia que los datos ofrecen a favor de modelos alternativos</p>
+      <br>
     
 
     <div class="row">
@@ -653,7 +659,7 @@
           <div class="col-12 col-md-3 pub-row-heading">Date</div>
           <div class="col-12 col-md-9" itemprop="datePublished">
             
-            Dec 6, 2019
+            Dec 5, 2019
             <div class="talk-time">
               
             </div>
@@ -671,7 +677,7 @@
           <div class="col-12 col-md-3 pub-row-heading">Event</div>
           <div class="col-12 col-md-9">
             <a href="https://tallerargentinocc.github.io/" target="_blank" rel="noopener">
-            Taller Argentino de Computación Científica
+            Taller Argentino de Compuutación Científica
             </a>
           </div>
         </div>
@@ -698,9 +704,6 @@
 
     <div class="article-style">
       
-
-<h2 id="workshop">Workshop</h2>
-
     </div>
 
     
@@ -715,10 +718,6 @@
 
 
 
-  
-  
-    
-  
   
 
 
@@ -735,7 +734,7 @@
     <div class="media-body">
       <h5 class="card-title" itemprop="name"><a href="/authors/admin/">Gustavo Landfried</a></h5>
       <h6 class="card-subtitle">Computer Science, Anthropological Science.</h6>
-      <p class="card-text" itemprop="description">Using computers to understand how people behave</p>
+      <p class="card-text" itemprop="description">Bayesian statistics to infer how social systems behave</p>
       <ul class="network-icon" aria-hidden="true">
         
           

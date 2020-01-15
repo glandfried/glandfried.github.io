@@ -6,7 +6,7 @@
     <description>Recent content on Landfried</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Dec 2019 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Dec 2019 12:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://glandfried.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,13 +14,10 @@
     <item>
       <title>Técnicas para calcular distribuciones de creencias</title>
       <link>https://glandfried.github.io/talk/2019_12_tacc/</link>
-      <pubDate>Fri, 06 Dec 2019 12:00:00 +0000</pubDate>
+      <pubDate>Thu, 05 Dec 2019 12:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/talk/2019_12_tacc/</guid>
-      <description>
-
-&lt;h2 id=&#34;workshop&#34;&gt;Workshop&lt;/h2&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -91,6 +88,22 @@ Simple models, e.g. linear regression, only fit a small fraction of data sets. B
     </item>
     
     <item>
+      <title>E-sports</title>
+      <link>https://glandfried.github.io/project/synergy/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/project/synergy/</guid>
+      <description>
+
+&lt;h2 id=&#34;bayesian-skill-estimator&#34;&gt;Bayesian skill estimator:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;bayes_network.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;we-are-testing-an-alternative-model-in-real-databases&#34;&gt;We are testing an alternative model in real databases.&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Education</title>
       <link>https://glandfried.github.io/project/education/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
@@ -117,26 +130,6 @@ Simple models, e.g. linear regression, only fit a small fraction of data sets. B
       
       <guid>https://glandfried.github.io/courses/exactasprograma/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Synergy meter</title>
-      <link>https://glandfried.github.io/project/synergy/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/project/synergy/</guid>
-      <description>
-
-&lt;h2 id=&#34;an-analytical-bayesian-synergy-estimator&#34;&gt;An analytical bayesian synergy estimator:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;posterior_win.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;the-state-of-art-team-based-skill-estimator-models-the-team-performance-as-a-sum-of-individual-performance&#34;&gt;The state-of-art team based skill estimator models the team performance as a sum of individual performance&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&#34;bayes_network.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;we-are-testing-an-alternative-model-in-real-databases&#34;&gt;We are testing an alternative model in real databases.&lt;/h3&gt;
-</description>
     </item>
     
     <item>
@@ -402,16 +395,6 @@ $$&lt;/p&gt;
       
       <guid>https://glandfried.github.io/courses/intro/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Social learning in virtual communities</title>
-      <link>https://glandfried.github.io/project/onlinesociallearning/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/project/onlinesociallearning/</guid>
-      <description>&lt;p&gt;We exploit the virtually infinite repository of human behavior available in Internet to study a relevant topic in anthropological science: how social learning strategies may affect human skill acquisition.&lt;/p&gt;
-</description>
     </item>
     
     <item>

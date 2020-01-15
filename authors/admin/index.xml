@@ -6,19 +6,10 @@
     <description>Recent content on Landfried</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Dec 2019 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://glandfried.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Técnicas para calcular distribuciones de creencias</title>
-      <link>https://glandfried.github.io/talk/2019_12_tacc/</link>
-      <pubDate>Fri, 06 Dec 2019 12:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/talk/2019_12_tacc/</guid>
-      <description>que se usan hoy en dı́a en la industria de los vı́deo juegos.</description>
-    </item>
     
     <item>
       <title>Raftery - Gelman debate 25 years later</title>
@@ -68,10 +59,10 @@
     <item>
       <title></title>
       <link>https://glandfried.github.io/authors/admin/</link>
-      <pubDate>Fri, 06 Dec 2019 12:00:00 +0000</pubDate>
+      <pubDate>Sun, 09 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/authors/admin/</guid>
-      <description>As a Social Anthropologist, I am currently finishing a PhD in Computer Science, developing the Computational Social Science. With several colleagues, we are working to lay the foundations of an interdisciplinary social sciences research center in Latin America. I just hope that our work will serve the historical project that reveres life over profitability.</description>
+      <description>As a Social Anthropologist, I am currently finishing a PhD in Computer Science. I study how people learn in cultural evolution contexts applying Bayesian inference rooted on causal models. With several colleagues, we are working to lay the foundations of an interdisciplinary social sciences research center in Latin America. I just hope that our work will serve the historical project that reveres life over profitability.</description>
     </item>
     
   </channel>

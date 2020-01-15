@@ -12,30 +12,21 @@
     
     
     <item>
+      <title>E-sports</title>
+      <link>https://glandfried.github.io/project/synergy/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/project/synergy/</guid>
+      <description>Bayesian skill estimation and outcome prediction</description>
+    </item>
+    
+    <item>
       <title>Education</title>
       <link>https://glandfried.github.io/project/education/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/project/education/</guid>
-      <description>An analytical solution for the Bayesian Item-Response Theory</description>
-    </item>
-    
-    <item>
-      <title>Synergy meter</title>
-      <link>https://glandfried.github.io/project/synergy/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/project/synergy/</guid>
-      <description>An alternative model for team based skill estimation</description>
-    </item>
-    
-    <item>
-      <title>Social learning in virtual communities</title>
-      <link>https://glandfried.github.io/project/onlinesociallearning/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/project/onlinesociallearning/</guid>
-      <description>Online games are ideal for studying human skill acquisition.</description>
+      <description>Bayesian Item-Response Theory</description>
     </item>
     
     <item>
@@ -44,7 +35,7 @@
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/project/bayesianinference/</guid>
-      <description>The method that optimally update our beliefs, given a model and a data set.</description>
+      <description>The method that optimally update our beliefs given a model and evidence.</description>
     </item>
     
   </channel>
