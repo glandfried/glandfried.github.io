@@ -6,10 +6,26 @@
     <description>Recent content on Landfried</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Dec 2019 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://glandfried.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Network science</title>
+      <link>https://glandfried.github.io/project/cultural-centrality/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/project/cultural-centrality/</guid>
+      <description>
+
+&lt;h1 id=&#34;projects&#34;&gt;Projects&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Cultural centrality graph indicator (&lt;a href=&#34;https://github.com/glandfried/cultural-centrality&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>Técnicas para calcular distribuciones de creencias</title>
@@ -18,6 +34,23 @@
       
       <guid>https://glandfried.github.io/talk/2019_12_tacc/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Education</title>
+      <link>https://glandfried.github.io/project/education/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/project/education/</guid>
+      <description>
+
+&lt;h1 id=&#34;projects&#34;&gt;Projects&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Analytical Bayesian Item-Response Theory (&lt;a href=&#34;https://github.com/glandfried/bayesianIRT&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Database from matemarote (&lt;a href=&#34;https://www.matemarote.com.ar/MateMarote/&#34; target=&#34;_blank&#34;&gt;web&lt;/a&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+</description>
     </item>
     
     <item>
@@ -95,31 +128,12 @@ Simple models, e.g. linear regression, only fit a small fraction of data sets. B
       <guid>https://glandfried.github.io/project/synergy/</guid>
       <description>
 
-&lt;h2 id=&#34;bayesian-skill-estimator&#34;&gt;Bayesian skill estimator:&lt;/h2&gt;
+&lt;h1 id=&#34;projects&#34;&gt;Projects&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&#34;bayes_network.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;we-are-testing-an-alternative-model-in-real-databases&#34;&gt;We are testing an alternative model in real databases.&lt;/h3&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Education</title>
-      <link>https://glandfried.github.io/project/education/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/project/education/</guid>
-      <description>
-
-&lt;h2 id=&#34;bayesian-item-response-theory&#34;&gt;Bayesian Item-Response Theory&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;fox2010-bayesianIRT.pdf&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;fox2010-bayesianIRT.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;we-are-creating-a-database-from-web-https-www-matemarote-com-ar-matemarote&#34;&gt;We are creating a database from (&lt;a href=&#34;https://www.matemarote.com.ar/MateMarote/&#34; target=&#34;_blank&#34;&gt;web&lt;/a&gt;)&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.matemarote.com.ar/MateMarote/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;matemarote.png&#34; alt=&#34;png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;to-test-our-analytical-solution-for-the-bayesian-item-response-theory&#34;&gt;to test our analytical solution for the Bayesian Item-Response Theory.&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Measurement of environmental obstacles in online games (&lt;a href=&#34;https://github.com/glandfried/stones&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Inference of symbiotic players (&lt;a href=&#34;https://github.com/glandfried/synergy&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;)&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     
@@ -407,25 +421,17 @@ $$&lt;/p&gt;
 
 &lt;p&gt;Beyond any debate, what is certain is that Bayesian Inference allows us to &lt;strong&gt;optimally update our &lt;em&gt;beliefs&lt;/em&gt; given a &lt;em&gt;model&lt;/em&gt; and a &lt;em&gt;data set&lt;/em&gt;&lt;/strong&gt;. What more could you ask for?&lt;/p&gt;
 
-&lt;h3 id=&#34;handbooks&#34;&gt;Handbooks&lt;/h3&gt;
+&lt;h1 id=&#34;projects&#34;&gt;Projects&lt;/h1&gt;
 
-&lt;p&gt;Some initial bibliography&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Bayesian Skill Estimator (&lt;a href=&#34;publication/landfried2019-trueskill/&#34; target=&#34;_blank&#34;&gt;Technical report&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;A general implementation of the TrueSkill rating system for Python (&lt;a href=&#34;https://github.com/glandfried/trueskill.py&#34; target=&#34;_blank&#34;&gt;Software&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bayesian inference course (&lt;a href=&#34;https://github.com/glandfried/bayesian-inference&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;)&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Lee M.D. and Wagenmakers E.J. &lt;a href=&#34;http://library1.org/_ads/1263135742DA260290C3CE04C1F88546&#34; target=&#34;_blank&#34;&gt;Bayesian Cognitive Modeling: A Practical Course&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Richard McElreath. &lt;a href=&#34;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&#34; target=&#34;_blank&#34;&gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Andrew Gelman et al. &lt;a href=&#34;http://library1.org/_ads/F3FE830B1D068B5F1A7F3C66227F935E&#34; target=&#34;_blank&#34;&gt;Bayesian Data Analysis&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;bayes_network.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
 
-&lt;h5 id=&#34;evidence-in-favor-of-a-scientific-theory&#34;&gt;Evidence in favor of a scientific theory&lt;/h5&gt;
-
-&lt;p&gt;In a 1935 paper and in his book &lt;em&gt;Theory of Probability&lt;/em&gt;, Jeffreys developed a methodology for quantify the evidence in favor of a scientific theory. Bayesian model selection automatically encodes a preference for simpler, more constrained models. Many of the &amp;ldquo;machine learning&amp;rdquo; regularization techniques can be seen as an approximation to Bayesian inference.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Tom Minka. &lt;a href=&#34;http://alumni.media.mit.edu/~tpminka/statlearn/demo/&#34; target=&#34;_blank&#34;&gt;Evidence&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Larry Wasserman. &lt;a href=&#34;https://doi.org/10.1006/jmps.1999.1278&#34; target=&#34;_blank&#34;&gt;Bayesian Model Selection and Model Averaging&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Robert Kass and Adrian Raftery &lt;a href=&#34;https://www.stat.washington.edu/sites/default/files/files/reports/1993/tr254.pdf&#34; target=&#34;_blank&#34;&gt;Bayes factors and model uncertainty&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;We work with variations of this Bayesian skill estimator&lt;/p&gt;
 </description>
     </item>
     
