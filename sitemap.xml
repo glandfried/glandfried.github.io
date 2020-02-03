@@ -3,14 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://glandfried.github.io/</loc>
+    <loc>https://glandfried.github.io/project/culturalevolution/</loc>
     <lastmod>2020-01-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://glandfried.github.io/project/cultural-centrality/</loc>
+    <loc>https://glandfried.github.io/</loc>
     <lastmod>2020-01-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -27,11 +27,6 @@
   <url>
     <loc>https://glandfried.github.io/talk/2019_12_tacc/</loc>
     <lastmod>2019-12-05T12:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://glandfried.github.io/project/education/</loc>
-    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -62,11 +57,6 @@
   
   <url>
     <loc>https://glandfried.github.io/courses/</loc>
-    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://glandfried.github.io/project/synergy/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
   </url>
   

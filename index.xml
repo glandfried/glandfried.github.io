@@ -12,19 +12,12 @@
     
     
     <item>
-      <title>Network science</title>
-      <link>https://glandfried.github.io/project/cultural-centrality/</link>
+      <title>Cultural evolution</title>
+      <link>https://glandfried.github.io/project/culturalevolution/</link>
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/project/cultural-centrality/</guid>
-      <description>
-
-&lt;h1 id=&#34;projects&#34;&gt;Projects&lt;/h1&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Cultural centrality graph indicator (&lt;a href=&#34;https://github.com/glandfried/cultural-centrality&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;)&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+      <guid>https://glandfried.github.io/project/culturalevolution/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -34,23 +27,6 @@
       
       <guid>https://glandfried.github.io/talk/2019_12_tacc/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Education</title>
-      <link>https://glandfried.github.io/project/education/</link>
-      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/project/education/</guid>
-      <description>
-
-&lt;h1 id=&#34;projects&#34;&gt;Projects&lt;/h1&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Analytical Bayesian Item-Response Theory (&lt;a href=&#34;https://github.com/glandfried/bayesianIRT&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Database from matemarote (&lt;a href=&#34;https://www.matemarote.com.ar/MateMarote/&#34; target=&#34;_blank&#34;&gt;web&lt;/a&gt;)&lt;/li&gt;
-&lt;/ol&gt;
-</description>
     </item>
     
     <item>
@@ -117,23 +93,6 @@ Simple models, e.g. linear regression, only fit a small fraction of data sets. B
       
       <guid>https://glandfried.github.io/post/nexciencia/</guid>
       <description>&lt;p&gt;Playing as a team with same partners enable us to early acquire individual skills that would hardly be achieved by playing alone. &lt;a href=&#34;https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0211014&#34; target=&#34;_blank&#34;&gt;These results&lt;/a&gt; allow us to rethink new teaching-learning strategies, highlights &lt;a href=&#34;https://nexciencia.exactas.uba.ar/aprendizaje-equipo-mejor-que-individual-risk-teg-esteban-mocskos-diero-fernande-slezak&#34; target=&#34;_blank&#34;&gt;the cover of the faculty of sciences magazine&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>E-sports</title>
-      <link>https://glandfried.github.io/project/synergy/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/project/synergy/</guid>
-      <description>
-
-&lt;h1 id=&#34;projects&#34;&gt;Projects&lt;/h1&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Measurement of environmental obstacles in online games (&lt;a href=&#34;https://github.com/glandfried/stones&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Inference of symbiotic players (&lt;a href=&#34;https://github.com/glandfried/synergy&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;)&lt;/li&gt;
-&lt;/ol&gt;
 </description>
     </item>
     
