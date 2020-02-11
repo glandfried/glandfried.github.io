@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Landfried</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://glandfried.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Homo ergodicus</title>
+      <link>https://glandfried.github.io/post/homoergodicus/</link>
+      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/post/homoergodicus/</guid>
+      <description>The ergodicity problem in evolutionary theory</description>
+    </item>
     
     <item>
       <title>Raftery - Gelman debate 25 years later</title>
