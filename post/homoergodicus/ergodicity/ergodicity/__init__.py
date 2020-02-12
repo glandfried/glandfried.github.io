@@ -1,16 +1,49 @@
 """
    :copyright: (c) 2020 by Gustavo Landfried
-   :license: BSD, see LICENSE for more details.
+   :license: BSD, see LICENSE for more details.   
 """
-import os
-import math
+#import os
+#import math
 import numpy as np
 from numpy.random import normal as rnorm
 from matplotlib import pyplot as plt 
 
+#__all__ = ["dW","wiener"]
 
-__all__ = ["dW","wiener"]
+"""
+The ergodicity problem is common to:
+    - Evolutionary Biology
+    - Cultural evolution tehory
+    - Decision Theory
+    - Political Economics
 
+In all thgis fields, we make use of mathematics to analyze what happens to 
+individual agents over time. For this purpose we represent the real environment
+through a stochastic function.
+
+The question now is how to analyse the stochastic function in order to find the
+expected outcome, what will happen to agents typically.
+
+The original treatment (Pascal-Fermat-Huygens) states that the expected outcome
+can be found by multiplying each possible change in size by its probability of 
+occurrence, and add everything, i.e. the aritmetc mean.
+
+This model doesn’t fir human behavior, and that was noticed early. People did
+not follow the aritmetc mean. A categorical example is the St.Petersburg
+paradox.
+
+The modern Utility Theory born to fix the problems of the original treatment.
+In 1738 Daniel Bernoulli introduce the utility function over wealth, $u(x)$, to
+encodes the different preferences individuals. In general, the utility (i.e. 
+particular preference) of extra wealth is roughly inversely proportional to how
+many wealth one already has. This leads to a diferential change in utility 
+
+$$du = 1/w dw$$
+
+with solution
+
+$$u(w) = ln w$$.
+"""
 
 def change_in_utility(w):
     """
@@ -34,39 +67,28 @@ def show_utility(w):
     plt.ylabel("Utility", fontsize=16 )
     plt.xlabel("Wealth", fontsize=16 )
 
+"""
+The Utility Theory considers that it is preferable to participate in this game
+when the expected value is positive. Then, the Utility Theory systematically
+observed how people acted contrary to what was considered optimal. Paired with 
+a firm belief in its models, this has led to a narrative of human irrationality
+in large parts of economics.
 
-def dW(pos=0,step=1):
-    return rnorm(pos,step,1)[0]
+But if we analyze what really 
 
-def wiener(iterations,step_length):
-    """
-    Norbert Wiener process:
-        A real valued continuous time stochastic process 
-        of the one-dimensional Brownian motion.
-    """
-    res = [0]
-    for i in range(iterations):
-        pos = res[-1]
-        res.append(dW(pos,step_length))
-    return res
+This is because we are facing a multiplicative process.
+When the asymmetry between real physical effects of gains and losses is large, people quite reasonably 'pay to avoid losses' (e.g. buy insurance).
+When it is not large, people don't unreasonably mind losses, and won't pay to avoid them.
 
-def show_walks(n,iteratons=100,step_length=1):
-    """
-    Examples
-    ---------
-    show_walks(10)
-    show_walks(10,1000,0.01) # See changes on scale
-    """
-    
-    for i in range(n):
-        plt.plot(wiener(iteratons,step_length))
-        
-def simple_gamble(x):
+
+"""
+
+def simple_gamble(size):
     r = np.random.random()
     if r <= 0.5:
-        res = 1.5*x
+        res = 1.5*size
     else:
-        res = 0.6*x
+        res = 0.6*size
     return res
 
 def walk_simple_gamble(iteratons):
@@ -75,11 +97,11 @@ def walk_simple_gamble(iteratons):
         res.append(simple_gamble(res[-1]))
     return res
     
-def incest_rule(communities_size,incest=0.05):
+def incest_rule(communities_size,exogamy=0.05):
     res = []
-    migration_per_community = (incest*sum(communities_size))/len(communities_size)
+    migration_per_community = exogamy*sum(communities_size)/len(communities_size)
     for c in range(len(communities_size)):
-        res.append(communities_size[c]*(1-incest) + migration_per_community)
+        res.append(communities_size[c]*(1-exogamy) + migration_per_community)
     return res 
 
 def init_communities(n_communities):
@@ -107,8 +129,71 @@ def walk_sharing(iteratons=1000,n_communities=150):
         history.append(list(map(lambda x: shared*x, proportion)))
     return history
     
+""" 
+---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---
+            
+                      Geometrical Browninan Motion.
+
+Below you will find the functions to create the geometrical Browninan Motion
+
+---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---
+"""
+
+"""
+First of all we need to define the Norbert Wiener process: A real valued
+continuous time stochastic process of the one-dimensional Brownian motion.
+    - $W_0=0$
+    - $W_t$ has Gaussian independent increments centered at $W_{t-1}$
+    - $W$ has continuous paths: $W_{t}$ is continuous in $t$.
+"""
+
+
+def dW(pos=0,step=1):
+    """
+    The Gaussian independent increments of Norbert Wiener process.
+    """
+    return rnorm(pos,step,1)[0]
+
+def wiener(iterations,step_length):
+    """
+    Norbert Wiener process:
+        A real valued continuous time stochastic process 
+        of the one-dimensional Brownian motion.
+    """
+    res = [0]
+    for i in range(iterations):
+        pos = res[-1]
+        res.append(dW(pos,step_length))
+    return res
+
+def show_walks(n,iteratons=100,step_length=1):
+    """
+    Examples
+    ---------
+    show_walks(10)
+    show_walks(10,1000,0.01) # See changes on scale
+    """
+    for i in range(n):
+        plt.plot(wiener(iteratons,step_length))
+        
+"""
+Now, we need to define a multiplicative process. We first will define the 
+constant multiplicative process, and then we will perturbed.
+"""
 
 def multiplicative_process(n,rate,dt):
+    """
+    A constant growth rate process
+    
+    Parameters
+    ----------
+    n : int
+        Number of time steps
+    rate : float
+        Constant growth rate
+    dt : TYPE
+        Delta time between time steps
+    """
     wealth = [1]
     time = [0]
     for i in range(n):
