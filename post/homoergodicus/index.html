@@ -667,20 +667,20 @@ if (!doNotTrack) {
       
 
 <p><strong>It was considered an established truth that cooperation required some kind of altruistic behavior to evolve</strong>.
-Indeed, one of the most important theorists of the evolution of cooperation, Martin Nowak, analyse in one of the most prestigious scientific journals, Nature, a set of relevant rules for the evolution of cooperation (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3279745/pdf/nihms49939.pdf" target="_blank">here</a>).
+Indeed, one of the most important theorists of the evolution of cooperation, Martin Nowak, analyzed in one of the most prestigious scientific journals, Nature, a set of relevant rules for the evolution of cooperation.
 All the rules summarized a benefit-to-cost ratio of an <em>altruistic</em> act with respect to some critical value.
 At the end of the paper, he claimed that the most remarkable aspect of evolution is its ability to generate cooperation in a competitive world.
 We will see that his surprise can only arise if <strong>we are implicitly assuming that evolutionary systems are <em>ergodic</em>.</strong>
-If you don&rsquo;t know what does ergodic mean, go ahead.</p>
+If you don&rsquo;t know what does ergodic mean, read on.</p>
 
 <p>Evolutionary processes are essentially temporary processes.
 In evolutionary theory everyone is taught the fact that lineage growth is a multiplicative and noisy process: a sequence of survival and reproductive probabilities.
-In the filed, we make use of mathematics to analyze what happens to a genetic or cultural lineage over time.
+In the field, we make use of mathematics to analyze what happens to a genetic or cultural lineage over time.
 For this purpose <strong>we represent the real environment through a stochastic function</strong>.
 For example, consider the following toy environment.
-Nature toss a coin.
-For heads your community grows 50% of their current size.
-For tails your community lose 40% of their members.</p>
+Nature tosses a coin.
+For heads your community grows 50% of its current size.
+For tails your community lose 40% of its members.</p>
 
 <pre><code class="language-python">def environment(size):
     if np.random.random() &lt;= 0.5:
@@ -690,15 +690,15 @@ For tails your community lose 40% of their members.</p>
     return res
 </code></pre>
 
-<p>The question, now, is how to analyse the stochastic function in order to <strong>find the expected outcome</strong>, i.e. what will happen to agents typically.
+<p>The question, now, is how to analyze the stochastic function in order to <strong>find the expected outcome</strong>, i.e. what will happen to agents typically.
 The development of probability theory was motivated by this purpose.</p>
 
 <p>The original treatment (Pascal-Fermat-Huygens) states that the expected outcome can be found by multiplying each possible change in size by its probability of occurrence, and add everything.
-Let $\Delta(s)$ be the change in size at state $s$ and $p(s)$ the probability of state $s$, then the expected outcome will be.</p>
+Let $\Delta(s)$ be the change in size at state $s$ and $p(s)$ the probability of state $s$, then the expected outcome will be:</p>
 
 <p>$$\text{expected outcome} = \sum_s p(s)\Delta(s)$$</p>
 
-<p>If we analyze the toy environment, we will find that the expected outcome will have a positive change, $0.05\Delta = 0.5 0.5\Delta + 0.5 (-0.4)\Delta$.
+<p>If we analyze the toy environment, we will find that the expected outcome will have a positive change, $0.05\Delta = 0.5 \times 0.5\Delta + 0.5 \times (-0.4)\Delta$.
 However, even if we consider members as a continuous variable, what really happens over time is very different from what is expected.</p>
 
 <p><img src="./static/simple_gamble.png" alt="simple_gamble" /></p>
@@ -715,7 +715,7 @@ A system is ergodic if its time average equals its expectation value.</p>
 The anthropologist Claude Lévi-Strauss developed a general argument for the universality of the incest taboo in human societies.
 His argument begins with the claim that the incest taboo is in effect a prohibition against endogamy, and the effect is to encourage exogamy. Through exogamy, otherwise unrelated households or lineages will form relationships through marriage, thus strengthening social solidarity.</p>
 
-<p>To experiment the effect of a this kind of rules, we define a toy incest taboo rule, in which a percentage of the community must migrate to other unrelated housholds.</p>
+<p>To experiment the effect of this kind of rules, we define a toy incest taboo rule, in which a percentage of the community must migrate to other unrelated housholds.</p>
 
 <pre><code class="language-python">def incest_rule(communities_size,exogamy=0.05):
     res = []
@@ -734,8 +734,8 @@ His argument begins with the claim that the incest taboo is in effect a prohibit
 <strong>Perhaps the most significant change lies in the nature of the model human that arises from our conceptual reframing (Peters 2019).</strong>
 Observed behaviour deviates starkly from the predictions made by the Homo economicus model.
 Paired with a firm belief in its models, this has led to a narrative of human irrationality in large parts of economics.
-If humans evolved in non-ergodic environments they should be able to intuitively evaluate and adapt to the temporal consequences of the different scenarios, as the copenhagen experiment seems to have shown (Meder 2019).
-A the new &ldquo;Homo ergodicus&rdquo; now fit human behavior, which usually cares about others, understands that cooperation leads to better results, and is patient and kind.</p>
+If humans evolved in non-ergodic environments they should be able to intuitively evaluate and adapt to the temporal consequences of the different scenarios, as the Copenhagen experiment seems to have shown (Meder 2019).
+The new &ldquo;Homo ergodicus&rdquo; model is a better fit to human behavior, who tends to care about others, understands that cooperation leads to better results, and is patient and kind.</p>
 
 <h2 id="references">References</h2>
 
