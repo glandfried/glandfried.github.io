@@ -7,7 +7,7 @@ import numpy as np
 sys.path.append('..')
 import ergodicity as erg
 #from importlib import reload  # Python 3.4+ only.
-#reload(ergodicity)
+#reload(erg)
 
 def show_change_in_utility(w):
     plt.plot(np.log(w),np.log(erg.change_in_utility(w)))
@@ -15,7 +15,6 @@ def show_change_in_utility(w):
     plt.yticks(fontsize=12) # rotation=90
     plt.ylabel("Change in utility (log scale)", fontsize=16 )
     plt.xlabel("Wealth (log scale)", fontsize=16 )
-
 
 if __name__ == "__main__":
     w = np.array(list(map(lambda x: 10.0**x,np.arange(-10,10))) )

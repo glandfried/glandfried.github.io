@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Landfried</title>
@@ -63,15 +63,6 @@
       
       <guid>https://glandfried.github.io/publication/landfried2019-trueskill/</guid>
       <description>The first skill estimator was developed by Arpad Elo, adopted by the World Chess Federations around 1970. TrueSkill is just the bayesian multiplayer version of Elo model, published by Microsoft in 2007. In this technical report I derive, step by step, the analytical solution of the model.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://glandfried.github.io/authors/admin/</link>
-      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/authors/admin/</guid>
-      <description>As a Social Anthropologist, I am currently finishing a PhD in Computer Science. I study how people learn in cultural evolution contexts applying Bayesian inference rooted on causal models. With several colleagues, we are working to lay the foundations of an interdisciplinary social sciences research center in Latin America. I just hope that our work will serve the historical project that reveres life over profitability.</description>
     </item>
     
   </channel>

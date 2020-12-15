@@ -12,500 +12,56 @@
     
     
     <item>
-      <title>Homo ergodicus</title>
-      <link>https://glandfried.github.io/post/homoergodicus/</link>
+      <title>Posts</title>
+      <link>https://glandfried.github.io/post/</link>
       <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/post/homoergodicus/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;It was considered an established truth that cooperation required some kind of altruistic behavior to evolve&lt;/strong&gt;.
-Indeed, one of the most important theorists of the evolution of cooperation, Martin Nowak, analyzed in one of the most prestigious scientific journals, Nature, a set of relevant rules for the evolution of cooperation.
-All the rules summarized a benefit-to-cost ratio of an &lt;em&gt;altruistic&lt;/em&gt; act with respect to some critical value.
-At the end of the paper, he claimed that the most remarkable aspect of evolution is its ability to generate cooperation in a competitive world.
-We will see that his surprise can only arise if &lt;strong&gt;we are implicitly assuming that evolutionary systems are &lt;em&gt;ergodic&lt;/em&gt;.&lt;/strong&gt;
-If you don&amp;rsquo;t know what does ergodic mean, read on.&lt;/p&gt;
-
-&lt;p&gt;Evolutionary processes are essentially temporary processes.
-In evolutionary theory everyone is taught the fact that lineage growth is a multiplicative and noisy process: a sequence of survival and reproductive probabilities.
-In the field, we make use of mathematics to analyze what happens to a genetic or cultural lineage over time.
-For this purpose &lt;strong&gt;we represent the real environment through a stochastic function&lt;/strong&gt;.
-For example, consider the following toy environment.
-Nature tosses a coin.
-For heads your community grows 50% of its current size.
-For tails your community lose 40% of its members.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def environment(size):
-    if np.random.random() &amp;lt;= 0.5:
-        res = 1.5*size
-    else:
-        res = 0.6*size
-    return res
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The question, now, is how to analyze the stochastic function in order to &lt;strong&gt;find the expected outcome&lt;/strong&gt;, i.e. what will happen to agents typically.
-The development of probability theory was motivated by this purpose.&lt;/p&gt;
-
-&lt;p&gt;The original treatment (Pascal-Fermat-Huygens) states that the expected outcome can be found by multiplying each possible change in size by its probability of occurrence, and add everything.
-Let $\Delta(s)$ be the change in size at state $s$ and $p(s)$ the probability of state $s$, then the expected outcome will be:&lt;/p&gt;
-
-&lt;p&gt;$$\text{expected outcome} = \sum_s p(s)\Delta(s)$$&lt;/p&gt;
-
-&lt;p&gt;If we analyze the toy environment, we will find that the expected outcome will have a positive change, $0.05\Delta = 0.5 \times 0.5\Delta + 0.5 \times (-0.4)\Delta$.
-However, even if we consider members as a continuous variable, what really happens over time is very different from what is expected.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;./static/simple_gamble.png&#34; alt=&#34;simple_gamble&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;The expectation over states does not reflect what really happens with the individual agents over time.&lt;/strong&gt;
-&lt;strong&gt;This is because we are facing a multiplicative process (Yaarin 2010).&lt;/strong&gt;
-In the multiplicative process the real physical impacts of losses are often stronger than those of gains.
-If there is even one zero in the sequence of generations, we are extinct.
-Comparing what happens over time to what happens in expectation is a well-known problem in statistical mechanics, called &amp;ldquo;the ergodicity problem&amp;rdquo;.
-A system is ergodic if its time average equals its expectation value.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;One consequence is that variance in fitness realy matters&lt;/strong&gt;.
-&lt;strong&gt;An effective way to reduce variance is to cooperate, by sharing members between communities.&lt;/strong&gt;
-The anthropologist Claude Lévi-Strauss developed a general argument for the universality of the incest taboo in human societies.
-His argument begins with the claim that the incest taboo is in effect a prohibition against endogamy, and the effect is to encourage exogamy. Through exogamy, otherwise unrelated households or lineages will form relationships through marriage, thus strengthening social solidarity.&lt;/p&gt;
-
-&lt;p&gt;To experiment the effect of this kind of rules, we define a toy incest taboo rule, in which a percentage of the community must migrate to other unrelated housholds.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def incest_rule(communities_size,exogamy=0.05):
-    res = []
-    migration_per_community = exogamy*sum(communities_size)/len(communities_size)
-    for c in range(len(communities_size)):
-        res.append( communities_size[c]*(1-exogamy) + migration_per_community )
-    return res 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If the previous communities, in the same environment, applied a 5% of exogamy we would observe the following behavior.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;./static/simple_gamble_incesto.png&#34; alt=&#34;incesto&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Multiplicative process offers a concrete physical advantage in favor of cooperative behavior.
-&lt;strong&gt;The &amp;ldquo;ergodic&amp;rdquo; point of view had major implications for all evolutionary science.&lt;/strong&gt;
-&lt;strong&gt;Perhaps the most significant change lies in the nature of the model human that arises from our conceptual reframing (Peters 2019).&lt;/strong&gt;
-Observed behaviour deviates starkly from the predictions made by the Homo economicus model.
-Paired with a firm belief in its models, this has led to a narrative of human irrationality in large parts of economics.
-If humans evolved in non-ergodic environments they should be able to intuitively evaluate and adapt to the temporal consequences of the different scenarios, as the Copenhagen experiment seems to have shown (Meder 2019).
-The new &amp;ldquo;Homo ergodicus&amp;rdquo; model is a better fit to human behavior, who tends to care about others, understands that cooperation leads to better results, and is patient and kind.&lt;/p&gt;
-
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Nowak, M. 2006. Five rules for the evolution of cooperation. Nature.&lt;/li&gt;
-&lt;li&gt;Peters, O. 2019. The ergodicity problem in economics. Nature.&lt;/li&gt;
-&lt;li&gt;Yaarin, G. 2010. Cooperation evolution in random multiplicative environments. The European Physical Journal B.&lt;/li&gt;
-&lt;li&gt;Meder, D. et al. 2019. Ergodicity-breaking reveals time optimal economic behavior in humans (v2). ArXiv.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://glandfried.github.io/post/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Cultural evolution</title>
-      <link>https://glandfried.github.io/project/culturalevolution/</link>
+      <title>Projects</title>
+      <link>https://glandfried.github.io/project/</link>
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/project/culturalevolution/</guid>
+      <guid>https://glandfried.github.io/project/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Técnicas para calcular distribuciones de creencias</title>
-      <link>https://glandfried.github.io/talk/2019_12_tacc/</link>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://glandfried.github.io/talk/</link>
       <pubDate>Thu, 05 Dec 2019 12:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/talk/2019_12_tacc/</guid>
+      <guid>https://glandfried.github.io/talk/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Raftery - Gelman debate 25 years later</title>
-      <link>https://glandfried.github.io/post/bayesfactor/</link>
-      <pubDate>Sun, 09 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/post/bayesfactor/</guid>
-      <description>
-
-&lt;h2 id=&#34;bayesian-model-selection&#34;&gt;Bayesian Model Selection&lt;/h2&gt;
-
-&lt;p&gt;In a 1935 paper and in his book &lt;em&gt;Theory of Probability&lt;/em&gt;, Jeffreys developed a &lt;strong&gt;methodology for quantifing the evidence in favor of a scientific theory&lt;/strong&gt;. The most referenced article about Bayesian statistics [1] focuses on this result as a practical tool of applied statistics. There are good texts, sach as [2], with several examples that allow us to appreciate how it works.&lt;/p&gt;
-
-&lt;p&gt;To my surprise I found in the most cited Handbook on Bayesian inference [3], only a single reference on this method, discouraging its use! And of the only page that he spent on that really big book, the only thing I could get out is a reference to a discussion [4-5] that this author had in 1994.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;1. Robert Kass and Adrian Raftery. &lt;a href=&#34;https://glandfried.github.io/files/posts/KassRaftery1995.pdf&#34;&gt;&lt;em&gt;Bayes Factors&lt;/em&gt;&lt;/a&gt;. 1995. Journal of the American Statistical Association.&lt;/li&gt;
-&lt;li&gt;2. Tom Minka. &lt;a href=&#34;https://glandfried.github.io/files/posts/minka-linear.pdf&#34;&gt;&lt;em&gt;Bayesian linear regression&lt;/em&gt;&lt;/a&gt;. 1998. (&lt;a href=&#34;http://alumni.media.mit.edu/~tpminka/statlearn/demo/&#34; target=&#34;_blank&#34;&gt;from personal web&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;3. Gelman et al. &lt;em&gt;Bayesian Data Analysis&lt;/em&gt;. 2013. Chapman and Hall/CRC&lt;/li&gt;
-&lt;li&gt;4. Adrian Raftery. &lt;a href=&#34;https://glandfried.github.io/files/posts/bic.pdf&#34;&gt;&lt;em&gt;Bayesian Model Selection in Social Research (with Discussion&lt;/em&gt;)&lt;/a&gt;. 1995. Sociological Methodology.&lt;/li&gt;
-&lt;li&gt;5. Andrew Gelman and Donald Rubin. &lt;a href=&#34;https://glandfried.github.io/files/posts/gelman_avoiding.pdf&#34;&gt;&lt;em&gt;Avoiding Model Selection in Bayesian Social Research&lt;/em&gt;&lt;/a&gt;. 1995. Sociological Methodology.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;After having read this discussion, I personally have no doubt that Raftery was right. The arguments can be found in the texts, cited above, that I would like you to also read firsthand. However, we can also mention some &amp;ldquo;context reasons&amp;rdquo;. Twenty-five years later we can count the references that each position received, and in this respect there is also a clear winner. In addition, the attitude of Gelman to avoid the subject in his Handbook, offering only the reference to the discussion, does not seem anything other than a sign of defeat.&lt;/p&gt;
-
-&lt;h3 id=&#34;evidence-in-favor-of-a-scientific-theory&#34;&gt;Evidence in favor of a scientific theory&lt;/h3&gt;
-
-&lt;p&gt;To compute the evidence that a specific data set D provides in favor of a specific model $M_k$, we need to solve&lt;/p&gt;
-
-&lt;p&gt;$$ P(M_k|D)$$&lt;/p&gt;
-
-&lt;p&gt;which by definition of conditional probability is&lt;/p&gt;
-
-&lt;p&gt;$$ P(M_k|D) = \frac{P(D|M_k)P(M_k)}{\sum_i P(D|M_i)P(M_i)} $$&lt;/p&gt;
-
-&lt;p&gt;But, if we only want to compare models, it is enough to compute their evidence ratio, which simplify the formula to&lt;/p&gt;
-
-&lt;p&gt;$$\frac{P(M_1|D)}{P(M_2|D)} = \frac{P(D|M_1)}{P(D|M_2)}\frac{P(M_1)}{P(M_2)}$$&lt;/p&gt;
-
-&lt;p&gt;Overlooking the omnipresent prior definition, the model selection depends only on the &amp;ldquo;marginal likelihood&amp;rdquo; of each model, an element that we compute every time in bayesian inference!!&lt;/p&gt;
-
-&lt;p&gt;$$\text{Bayes factor}=\frac{P(D|M_1)}{P(D|M_2)}$$&lt;/p&gt;
-
-&lt;p&gt;Bayesian model selection uses the rules of probability theory to select among different hypotheses. It automatically encodes a preference for simpler, more constrained models, as illustrated below.
-Simple models, e.g. linear regression, only fit a small fraction of data sets. But they assign correspondingly higher probability to those data sets. Flexible models spread themselves out more thinly.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;evidence.svg&#34; alt=&#34;svg&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;A central issue in polynomial fitting is selecting the degree of the polynomial. To do this, we compute the probability of the data for each possible degree. For a given degree, this requires integrating over all possible polynomial fits, which can be done analytically. The results are shown below.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;minka.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The likelihood only considers the single most probable curve, as shown for each degree. The likelihood is the negative squared-error of the fit. It always increases with increasing degree. But the evidence reaches a maximum at degree 3, which happens to be the true degree in this case. The data is much more likely to have arisen from a third-degree polynomial than a high-degree polynomial which just happened to look third-degree.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;minka_evidence.png&#34; alt=&#34;png&#34; /&gt; &lt;img src=&#34;minka_likelihood.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Cover note at the faculty of science magazine</title>
-      <link>https://glandfried.github.io/post/nexciencia/</link>
-      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/post/nexciencia/</guid>
-      <description>&lt;p&gt;Playing as a team with same partners enable us to early acquire individual skills that would hardly be achieved by playing alone. &lt;a href=&#34;https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0211014&#34; target=&#34;_blank&#34;&gt;These results&lt;/a&gt; allow us to rethink new teaching-learning strategies, highlights &lt;a href=&#34;https://nexciencia.exactas.uba.ar/aprendizaje-equipo-mejor-que-individual-risk-teg-esteban-mocskos-diero-fernande-slezak&#34; target=&#34;_blank&#34;&gt;the cover of the faculty of sciences magazine&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Faculty of science computer programming workshop (with Python)</title>
-      <link>https://glandfried.github.io/courses/exactasprograma/</link>
+      <title>Courses</title>
+      <link>https://glandfried.github.io/courses/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/courses/exactasprograma/</guid>
+      <guid>https://glandfried.github.io/courses/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Social learning in cultural evolution contexts</title>
-      <link>https://glandfried.github.io/talk/2019_05_10_ic/</link>
-      <pubDate>Fri, 10 May 2019 12:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/talk/2019_05_10_ic/</guid>
-      <description>
-
-&lt;h2 id=&#34;workshop&#34;&gt;Workshop&lt;/h2&gt;
-
-&lt;p&gt;In the workshop, tools for complex systems applied to social systems were presented. It was organized under a theoretical-practical modality and seminars of invited professors. The objective was to create a space for the encounter between the social sciences and the rest of the scientific disciplines. It was a great opportunity to exchange ideas on how to apply the tools used for complex systems to problems coming from the social area.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Evidence in favor of a scientific theory</title>
-      <link>https://glandfried.github.io/talk/2019_05_03_liaa/</link>
-      <pubDate>Fri, 03 May 2019 12:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/talk/2019_05_03_liaa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Algorithms and data structure 1 (with C&#43;&#43;)</title>
-      <link>https://glandfried.github.io/courses/algo1/</link>
+      <title>Publications</title>
+      <link>https://glandfried.github.io/publication/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/courses/algo1/</guid>
+      <guid>https://glandfried.github.io/publication/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Faithfulness-boost effect</title>
-      <link>https://glandfried.github.io/publication/landfried2019-faithfulness/</link>
-      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/publication/landfried2019-faithfulness/</guid>
-      <description>&lt;p&gt;Supplementary material: &lt;a href=&#34;https://doi.org/10.1371/journal.pone.0211014.s002&#34; target=&#34;_blank&#34;&gt;TrueSkill: Technical Report&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>TrueSkill, Technical Report</title>
-      <link>https://glandfried.github.io/publication/landfried2019-trueskill/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/publication/landfried2019-trueskill/</guid>
-      <description>&lt;p&gt;The first skill estimator was developed by Arpad Elo, adopted by the World Chess Federations around 1970. TrueSkill is just the bayesian multiplayer version of Elo model, published by Microsoft in 2007. In this technical report I derive, step by step, the analytical solution of the model.&lt;/p&gt;
-</description>
     </item>
     
     <item>
       <title>Slides</title>
-      <link>https://glandfried.github.io/slides/example/</link>
+      <link>https://glandfried.github.io/slides/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/slides/example/</guid>
-      <description>
-
-&lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34;&gt;Academic&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
-&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
-&lt;li&gt;Supports speaker notes&lt;/li&gt;
-&lt;li&gt;Mobile friendly slides&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
-
-&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Code block:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
-if porridge == &amp;quot;blueberry&amp;quot;:
-    print(&amp;quot;Eating...&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
-
-&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
-
-&lt;p&gt;Block math:&lt;/p&gt;
-
-&lt;p&gt;$$
-f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
-
-&lt;p&gt;Make content appear incrementally&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
-{{% fragment %}} **Two** {{% /fragment %}}
-{{% fragment %}} Three {{% /fragment %}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
-
-&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
-   One
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-   &lt;strong&gt;Two&lt;/strong&gt;
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-   Three
-&lt;/span&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
-
-&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
-- Only the speaker can read these notes
-- Press `S` key to view
-{{% /speaker_note %}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
-
-&lt;aside class=&#34;notes&#34;&gt;
-  &lt;ul&gt;
-&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
-&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/aside&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
-&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
-&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
-&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
-&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
-&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-
-&lt;section data-noprocess data-shortcode-slide
-  
-      
-      data-background-image=&#34;/img/boards.jpg&#34;
-  &gt;
-
-
-&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
-
-&lt;p&gt;Customize the slide style and background&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/img/boards.jpg&amp;quot; &amp;gt;}}
-{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
-{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
-
-&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
-
-&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
-.reveal section h2,
-.reveal section h3 {
-  color: navy;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Computational Social Science (with R)</title>
-      <link>https://glandfried.github.io/courses/csc/</link>
-      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/courses/csc/</guid>
-      <description>
-
-&lt;h3 id=&#34;link-to-course&#34;&gt;Link to course&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;All the material for the course (&lt;a href=&#34;http://www.antropocaos.com.ar/academica/seminarios/ciencias-sociales-computacionales-2018/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;bibliography&#34;&gt;Bibliography&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;An Introduction to Statistical Learning with Applications in R (&lt;a href=&#34;http://www-bcf.usc.edu/~gareth/ISL/&#34; target=&#34;_blank&#34;&gt;Oficial web page&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Computer Science introduction for empricial sciences (with Python)</title>
-      <link>https://glandfried.github.io/courses/intro/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/courses/intro/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bayesian Inference</title>
-      <link>https://glandfried.github.io/project/bayesianinference/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/project/bayesianinference/</guid>
-      <description>
-
-&lt;p&gt;Beyond any debate, what is certain is that Bayesian Inference allows us to &lt;strong&gt;optimally update our &lt;em&gt;beliefs&lt;/em&gt; given a &lt;em&gt;model&lt;/em&gt; and a &lt;em&gt;data set&lt;/em&gt;&lt;/strong&gt;. What more could you ask for?&lt;/p&gt;
-
-&lt;h1 id=&#34;projects&#34;&gt;Projects&lt;/h1&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Bayesian Skill Estimator (&lt;a href=&#34;publication/landfried2019-trueskill/&#34; target=&#34;_blank&#34;&gt;Technical report&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;A general implementation of the TrueSkill rating system for Python (&lt;a href=&#34;https://github.com/glandfried/trueskill.py&#34; target=&#34;_blank&#34;&gt;Software&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Bayesian inference course (&lt;a href=&#34;https://github.com/glandfried/bayesian-inference&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;bayes_network.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We work with variations of this Bayesian skill estimator&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Algebra (with Haskell)</title>
-      <link>https://glandfried.github.io/courses/algebra/</link>
-      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/courses/algebra/</guid>
-      <description>
-
-&lt;h4 id=&#34;hands-on&#34;&gt;Hands-on&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Problemas de combinatoria y recursión en la predicción de alianza&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Artificial societies and ethnography (with Netlogo)</title>
-      <link>https://glandfried.github.io/courses/artificialsocieties/</link>
-      <pubDate>Mon, 01 Feb 2010 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/courses/artificialsocieties/</guid>
+      <guid>https://glandfried.github.io/slides/</guid>
       <description></description>
     </item>
     

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Landfried</title>
@@ -18,15 +18,6 @@
       
       <guid>https://glandfried.github.io/publication/landfried2019-faithfulness/</guid>
       <description>Playing as a team with same partners enable us to acquire individual skills that would hardly be achieved by playing alone.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://glandfried.github.io/authors/mocskos/</link>
-      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/authors/mocskos/</guid>
-      <description></description>
     </item>
     
   </channel>
