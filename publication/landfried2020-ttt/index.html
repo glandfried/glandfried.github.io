@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Gustavo Landfried">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Packages:
+Julia Package: https://github.com/glandfried/TrueSkillThroughTime.jl Python Package: https://github.com/glandfried/TrueSkillThroughTime.py R package: https://github.com/glandfried/TrueSkillThroughTime.R  Full scientific documentation:
+English. Last version 2021-07-26 Español. Última versión 2021-07-26  TrueSkillThroughTime.jl None of the commonly used skill estimators, such as TrueSkill, Glicko and Item-Response Theory, correctly models the temporal aspect, which prevents having both good initial estimates and comparability between estimates separated in time and space.
+TrueSkill Through Time corrects those biases by modeling the entire history of activities using a single Bayesian network.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://glandfried.github.io/publication/landfried2020-ttt/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.1c0f29ea38918554f71bc71c8b0b938a.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-144190696-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://glandfried.github.io/publication/landfried2020-ttt/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Landfried">
+  <meta property="og:url" content="https://glandfried.github.io/publication/landfried2020-ttt/">
+  <meta property="og:title" content="TrueSkill Through Time. The Julia, Python and R packages | Landfried">
+  <meta property="og:description" content="Packages:
+Julia Package: https://github.com/glandfried/TrueSkillThroughTime.jl Python Package: https://github.com/glandfried/TrueSkillThroughTime.py R package: https://github.com/glandfried/TrueSkillThroughTime.R  Full scientific documentation:
+English. Last version 2021-07-26 Español. Última versión 2021-07-26  TrueSkillThroughTime.jl None of the commonly used skill estimators, such as TrueSkill, Glicko and Item-Response Theory, correctly models the temporal aspect, which prevents having both good initial estimates and comparability between estimates separated in time and space.
+TrueSkill Through Time corrects those biases by modeling the entire history of activities using a single Bayesian network."><meta property="og:image" content="https://glandfried.github.io/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2020-02-28T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2020-02-28T00:00:00&#43;00:00">
+  
+
+  
+
+  
+
+  <title>TrueSkill Through Time. The Julia, Python and R packages | Landfried</title>
+
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-144190696-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"><img src="/img/icon.png" alt="Landfried"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks">
+            
+            <span>Talks</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#courses">
+            
+            <span>Courses</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">TrueSkill Through Time. The Julia, Python and R packages</h1>
+
+  
+
+  
+    
+
+
+
+<meta content="2020-02-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2020-02-28 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Gustavo Landfried</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>2020-02-28</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=&amp;url="
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u="
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=&amp;title="
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=&amp;title="
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=&amp;body=">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
+        data-filename="/publication/landfried2020-ttt/cite.bib">
+  Cite
+</button>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/glandfried/TrueSkillThroughTime" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            
+            
+            <a href="/publication/#3">
+              Preprint
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9"><em>Software Github</em></div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"><p>Packages:</p>
+<ol start="0">
+<li>Julia Package: <a href="https://github.com/glandfried/TrueSkillThroughTime.jl">https://github.com/glandfried/TrueSkillThroughTime.jl</a></li>
+<li>Python Package: <a href="https://github.com/glandfried/TrueSkillThroughTime.py">https://github.com/glandfried/TrueSkillThroughTime.py</a></li>
+<li>R package: <a href="https://github.com/glandfried/TrueSkillThroughTime.R">https://github.com/glandfried/TrueSkillThroughTime.R</a></li>
+</ol>
+<p>Full scientific documentation:</p>
+<ol start="0">
+<li>English. <a href="https://github.com/glandfried/TrueSkillThroughTime/releases/download/doc/landfried-learning.pdf">Last version</a> 2021-07-26</li>
+<li>Español. <a href="https://github.com/glandfried/TrueSkillThroughTime/releases/download/doc/landfried-aprendizaje.pdf">Última versión</a> 2021-07-26</li>
+</ol>
+<h2 id="trueskillthroughtimejl">TrueSkillThroughTime.jl</h2>
+<p>None of the commonly used skill estimators, such as TrueSkill, Glicko and Item-Response Theory, correctly models the temporal aspect, which prevents having both good initial estimates and comparability between estimates separated in time and space.</p>
+<p>TrueSkill Through Time corrects those biases by modeling the entire history of activities using a single Bayesian network.
+The use of an efficient algorithm, that requires only a few linear iterations over the data, allows scaling to millions of observations in few seconds.</p>
+<h3 id="parameters">Parameters</h3>
+<p>In the following code we define the variables that we will use later, assigning the default values of the packages.</p>
+<pre><code>mu = 0.0; sigma = 6.0; beta = 1.0; gamma = 0.03; p_draw = 0.0
+</code></pre><h3 id="players">Players</h3>
+<p>With these default values we create four identical players.</p>
+<pre><code>a1 = Player(Gaussian(mu, sigma), beta, gamma); a2 = Player(); a3 = Player(); a4 = Player()
+</code></pre><p>The <code>Gaussian</code> class is used to model the standard operations of Gaussian distributions including multiplication, summation, division, and substraction.</p>
+<h3 id="games">Games</h3>
+<p>In the next step we create a game with two teams of two players.</p>
+<pre><code>team_a = [ a1, a2 ]
+team_b = [ a3, a4 ]
+teams = [team_a, team_b]
+g = Game(teams)
+</code></pre><p>where the result of the game is implicitly defined by the order of the teams in the list: the teams appearing first in the list (lower index) beat those appearing later (higher index).</p>
+<p>During the initialization, the class <code>Game</code> computes the prior prediction of the observed result and the approximate likelihood of each player.</p>
+<pre><code>lhs = g.likelihoods[1][1]
+ev = g.evidence
+ev = round(ev, digits=3)
+print(ev)
+&gt; 0.5
+</code></pre><p>In this case, the evidence is 0.5 indicating that both teams had the same probability of winning given the prior estimates.</p>
+<p>Posteriors can be found by manually multiplying the likelihoods and priors, or we can call the method <code>posteriors()</code> of class <code>Game</code> to compute them.</p>
+<pre><code>pos = posteriors(g)
+print(pos[1][1])
+&gt; Gaussian(mu=2.361, sigma=5.516)
+print(lhs[1][1] * a1.prior)
+&gt; Gaussian(mu=2.361, sigma=5.516)
+</code></pre><p>Due to the winning result, the estimate of the first player of the first now has a larger mean and a smaller uncertainty.</p>
+<p>We now analyze a more complex.
+The players are organized in three teams of different size: two teams with only one player, and the other with two players.
+The result has a single winning team and a tie between the other two losing teams.</p>
+<pre><code>ta = [a1]
+tb = [a2, a3]
+tc = [a4]
+teams = [ta, tb, tc]
+result = [1., 0., 0.]
+g = Game(teams, result, p_draw=0.25)
+</code></pre><p>the team with the highest score is the winner and the teams with the same score are tied.
+The evidence and the posteriors can be queried in the same way as before.</p>
+<h3 id="sequence-of-events">Sequence of Events</h3>
+<p>The class <code>History</code> is used to compute the posteriors and evidence of a sequence of events.
+In the first example, we instantiate the class with three players <code>&quot;a&quot;, &quot;b&quot;, &quot;c&quot;</code> and three games in which all agents win one game and lose the other.</p>
+<pre><code>c1 = [[&quot;a&quot;],[&quot;b&quot;]]
+c2 = [[&quot;b&quot;],[&quot;c&quot;]]
+c3 = [[&quot;c&quot;],[&quot;a&quot;]]
+composition = [c1, c2, c3]
+h = History(composition, gamma=0.0)
+</code></pre><p>where the variables <code>c1</code>, <code>c2</code>, and <code>c3</code> model the composition of each game using the names of the agents (i.e. their identifiers), the variable <code>composition</code> is a list containing the three events,  and the zero value of the parameter <code>gamma</code> specifies that skills does not change over time.</p>
+<p>After initialization, the class <code>History</code> immediately instantiates a new player for each name and activates the computation of the TrueSkill estimates, using the posteriors of each event as a prior for the next one.</p>
+<pre><code>lc = learning_curves(h)
+print(lc[&quot;a&quot;])
+&gt; [(1, Gaussian(mu=3.339, sigma=4.985)), (3, Gaussian(mu=-2.688, sigma=3.779))]
+print(lc[&quot;b&quot;])
+&gt; [(1, Gaussian(mu=-3.339, sigma=4.985)), (2, Gaussian(mu=0.059, sigma=4.218))]
+</code></pre><p>The learning curves of players <code>&quot;a&quot;</code> and <code>&quot;b&quot;</code> contain one tuple per game played (not including the initial prior): each tuple has the time of the estimate as the first component, and the estimate itself as the second one.</p>
+<p>Although in this example no player is stronger than the others, the TrueSkill estimates present strong variations between players.
+TrueSkill Through Time solves this problem by allowing the information to propagate throughout the system by calling the method <code>convergence()</code>.</p>
+<pre><code>convergence(h)
+lc = learning_curves(h)
+print(lc[&quot;a&quot;])
+&gt; [(1, Gaussian(mu=0.0, sigma=2.395)), (3, Gaussian(mu=-0.0, sigma=2.395))]
+print(lc[&quot;b&quot;])
+&gt; [(1, Gaussian(mu=-0.0, sigma=2.395)), (3, Gaussian(mu=0.0, sigma=2.395))]
+</code></pre><p>TrueSkill Through Time not only returns correct estimates (same for all players), they also have less uncertainty.</p>
+<h3 id="skill-evolution">Skill evolution</h3>
+<p>This example will exhibit that TrueSkill Through Time can correctly follows the skill evolution of a new player taht joins a large community of already known players.
+In the following code, we generate the target player&rsquo;s learning curve and 1000 random opponents.</p>
+<pre><code>using Random; Random.seed!(999); N = 1000
+function skill(experience, middle, maximum, slope)
+    return maximum/(1+exp(slope*(-experience+middle))) 
+end
+target = skill.(1:N, 500, 2, 0.0075)
+opponents = Random.randn.(1000)*0.5 .+ target
+</code></pre><p>The list <code>target</code> has the agent&rsquo;s skills at each moment: the values start at zero and grow smoothly until the target player&rsquo;s skill reaches two.
+The list <code>opponents</code> includes the randomly generated opponents&rsquo; skills following a Gaussian distribution centered on each of the target&rsquo;s skills and a standard deviation of 0.5.</p>
+<pre><code>composition = [[[&quot;a&quot;], [string(i)]] for i in 1:N]
+results = [r? [1.,0.]:[0.,1.] for r in (Random.randn(N).+target.&gt;Random.randn(N).+opponents)]
+times = [i for i in 1:N]
+priors = Dict{String,Player}()
+for i in 1:N  priors[string(i)] = Player(Gaussian(opponents[i], 0.2))  end
+
+h = History(composition, results, times, priors, gamma=0.015)
+convergence(h)
+mu = [tp[2].mu for tp in learning_curves(h)[&quot;a&quot;]] 
+</code></pre><p>In this code we define four variables to instantiate the class <code>History</code>: the <code>composition</code> contains 1000 games between the target player and different opponents; the <code>results</code> are obtained randomly, sampling the performance of the players; the <code>time</code> is a list of integer ranging from 0 to 999 representing the time of each game; and <code>priors</code> is a dictionary used to customize player attributes (we assign low uncertainty to the opponents&rsquo; priors pretending that we know their skills beforehand).
+The Figure shows the evolution of the true (solid line) and estimated (dotted line) learning curves of the target player.</p>
+<p><img src="static/logistic0.png" alt="synthetic"></p>
+<p>The estimated learning curves remain close to the actual skill during the whole evolution.</p>
+<h3 id="atp-history">ATP History</h3>
+<p>In this last example, we analyze the complete history of the Association of Tennis Professionals (ATP) registered matches.</p>
+<p>The database has 447000 games starting at year 1915 until 2020 with more than 19000 participating players and is publicly available.
+The file includes both single and double matches: if the column <code>double</code> has the letter <code>t</code>, the game is a double match.
+The file also contains players&rsquo; identifiers and names: for example column <code>w2_id</code> is the identifier of the second player of the winning team and <code>l1_name</code> is the name of the first player of the losing team.</p>
+<pre><code>using CSV; using Dates
+data = CSV.read(&quot;atp.csv&quot;)
+
+dates = Dates.value.(data[:,&quot;time_start&quot;] .- Date(&quot;1900-1-1&quot;)) 
+matches = [ r.double == &quot;t&quot; ? [[r.w1_id,r.w2_id],[r.l1_id,r.l2_id]] : [[r.w1_id],[r.l1_id]] for r in eachrow(data) ]   
+
+h = History(composition = matches, times = dates, sigma = 1.6, gamma = 0.036)
+convergence(h, epsilon = 0.01, iterations = 10)
+</code></pre><p>In this code we open the file <code>atp.csv</code>, create the variables <code>dates</code> and <code>matches</code>, and instantiate the class <code>History</code>.
+The following figure presents the learning curves of some famous players in ATP history.</p>
+<p><img src="static/atp.png" alt="atp"></p>
+<p>Those who know the history of tennis will be able to recognize the periods of crisis, stability and success of the players.</p>
+<p>There is a relative coincidence between skill and who is at any given moment at the top of the ATP rankings, it is possible to observe the effects of injuries, and even the effect of emotional slumps such as those that Aggasi and Djockovic had.</p>
+<p>It is interesting to see that the skill of tennis players did not increase so much over the years: on the contrary the players of the 1980s were more skilled than those of the 1990s, and reached a skill similar to what Federer, Nadal and Djokovic had in 2020.</p>
+<p>There are also some differences between players&rsquo; skills and the ATP ranking, especially with respect to the historical ranking (based on the total number of weeks at the top of the ranking): the 10th-ranked player, Hewitt, actually has relatively low skill; and the fourth most skilled player, Murray, is ranked 14th, just one place above Nastase.</p>
+<p>TrueSkill Through Time, unlike ATP ranking and estimators based on the filtering approach (such as TrueSkill, Glicko and IRT) allows comparing the relative ability of players over time.</p>
+<h3 id="multi-dimensional-skills">Multi-dimensional skills</h3>
+<p>In the ATP example we summarize the players&rsquo; skills in a single dimension.
+We know, however, that the ability of tennis players can vary significantly depending on the type of ground.</p>
+<p>TrueSkill Through Time allows estimating this type of multi-dimensional skills.
+One option is to keep one skill variable per player, that we include in all games, and one skill variable per ground, that we add as their teammate depending on the type of game.</p>
+<pre><code>players = Set(vcat((composition...)...))
+priors = Dict([(p, Player(Gaussian(0., 1.6), 1.0, 0.036) ) for p in players])
+
+composition_ground = [ r.double == &quot;t&quot; ? [[r.w1_id, r.w1_id*r.ground, r.w2_id, r.w2_id*r.ground],[r.l1_id, r.l1_id*r.ground, r.l2_id, r.l2_id*r.ground]] : [[r.w1_id, r.w1_id*r.ground],[r.l1_id, r.l1_id*r.ground]] for r in eachrow(data) ]   
+
+h_ground = History(composition = composition_ground, times = dates, sigma = 1.0, gamma = 0.01, beta = 0.0, priors = priors)
+convergence(h_ground, epsilon = 0.01, iterations=10)
+</code></pre><p>In this example we keep the same prior as before for the players, this time defined in the variable <code>priors</code>.
+In this way, the values chosen to initialize the class <code>History</code> will only be used for the ground skill factors.
+For those factors we chose a null <code>beta</code> so as not to add more noise to the players&rsquo; performance, keeping the scale of the estimates stable.</p>
+<p>In the following figures we show the skill difference that Nadal and Djokovic have in each of the three types of ground.</p>
+<p><img src="static/atp_ground0.png" alt="n">
+<img src="static/atp_ground2.png" alt="d"></p>
+<p>We can see that Nadal has a big skill difference between grounds, unlike Djokovic who has very similar skills on all three types of ground.
+The Nadal&rsquo;s skill difference between clay and grass gorunds is greater than one ponit, which means at least 76% difference in probability of winning compared to itself.</p>
+<p>To assess whether the complexity added by modeling multidimensionality is appropriate in general terms, we can compare the joint priori prediction of the models, calling the method \texttt{log_evidence()} of the class \texttt{History}.</p>
+<h2 id="estructure">Estructure</h2>
+<ol>
+<li><strong>src/TrueSkill.jl</strong>: Main file</li>
+<li><strong>test/runrests.jl</strong>: Unit test</li>
+</ol>
+<p>Inside <strong>test/</strong> and <strong>example/</strong> you will find a makefile. In each folder you can execute the entire procedure by typing <code>make</code> in the terminal.</p>
+</div>
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu0ed81fc1a82e258a98f9f3cd63b6531f_62937_250x250_fill_q90_lanczos_center.jpeg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/authors/admin/">Gustavo Landfried</a></h5>
+      <h6 class="card-subtitle">Computer Science, Anthropological Science.</h6>
+      <p class="card-text" itemprop="description">Computing honest beliefs to understand how culture behave</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/#contact" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/GALandfried/" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.com/citations?user=gzhQQ9sAAAAJ&amp;hl=es&amp;oi=ao" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/glandfried" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+
+  </div>
+</div>
+
+
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.a8ff40d18bce6e6b0934f2e922b05b21.js"></script>
+
+  </body>
+</html>
+

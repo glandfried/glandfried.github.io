@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications on Landfried</title>
-    <link>https://glandfried.github.io/publication/</link>
-    <description>Recent content in Publications on Landfried</description>
+    <title>3 on Landfried</title>
+    <link>https://glandfried.github.io/publication_types/3/</link>
+    <description>Recent content in 3 on Landfried</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Feb 2021 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://glandfried.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://glandfried.github.io/publication_types/3/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -31,24 +31,6 @@ To support the use of reliable learning estimators, we provide the first impleme
 Julia Package: https://github.com/glandfried/TrueSkillThroughTime.jl Python Package: https://github.com/glandfried/TrueSkillThroughTime.py R package: https://github.com/glandfried/TrueSkillThroughTime.R  Full scientific documentation:
 English. Last version 2021-07-26 Español. Última versión 2021-07-26  TrueSkillThroughTime.jl None of the commonly used skill estimators, such as TrueSkill, Glicko and Item-Response Theory, correctly models the temporal aspect, which prevents having both good initial estimates and comparability between estimates separated in time and space.
 TrueSkill Through Time corrects those biases by modeling the entire history of activities using a single Bayesian network.</description>
-    </item>
-    
-    <item>
-      <title>Faithfulness-boost effect</title>
-      <link>https://glandfried.github.io/publication/landfried2019-faithfulness/</link>
-      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/publication/landfried2019-faithfulness/</guid>
-      <description>Playing as a team with same partners enable us to acquire individual skills that would hardly be achieved by playing alone.</description>
-    </item>
-    
-    <item>
-      <title>TrueSkill, Technical Report</title>
-      <link>https://glandfried.github.io/publication/landfried2019-trueskill/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/publication/landfried2019-trueskill/</guid>
-      <description>The first skill estimator was developed by Arpad Elo, adopted by the World Chess Federations around 1970. TrueSkill is just the bayesian multiplayer version of Elo model, published by Microsoft in 2007. In this technical report I derive, step by step, the analytical solution of the model.</description>
     </item>
     
   </channel>
