@@ -22,6 +22,15 @@ To support the use of reliable learning estimators, we provide the first impleme
     </item>
     
     <item>
+      <title>Honest Beliefs</title>
+      <link>https://glandfried.github.io/post/honestbeliefs/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/post/honestbeliefs/</guid>
+      <description>The source of validity for empirical knowledge</description>
+    </item>
+    
+    <item>
       <title>TrueSkill Through Time. The Julia, Python and R packages</title>
       <link>https://glandfried.github.io/publication/landfried2020-ttt/</link>
       <pubDate>Fri, 28 Feb 2020 00:00:00 +0000</pubDate>
