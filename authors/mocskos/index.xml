@@ -6,10 +6,20 @@
     <description>Recent content on Landfried</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://glandfried.github.io/authors/mocskos/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TrueSkill Through Time. The full scientific documentation</title>
+      <link>https://glandfried.github.io/publication/landfried2021-learning/</link>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/publication/landfried2021-learning/</guid>
+      <description>Most estimators implemented for the video game industry cannot obtain reliable initial estimates nor guarantee comparability between distant estimates. TrueSkill Through Time solves all these problems by modeling the entire history of activities using a single Bayesian network. This algorithm requires a few iterations to converge, allowing millions of observations to be analyzed using any low-end computer.
+To support the use of reliable learning estimators, we provide the first implementations of TrueSkill Through Time for Julia, Python and R.</description>
+    </item>
     
     <item>
       <title>Faithfulness-boost effect</title>
