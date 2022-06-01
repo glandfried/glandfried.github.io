@@ -6,10 +6,28 @@
     <description>Recent content on Landfried</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Mar 2022 12:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://glandfried.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bayesian inference, learning and evolution</title>
+      <link>https://glandfried.github.io/talk/2022_03_icc/</link>
+      <pubDate>Fri, 04 Mar 2022 12:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/talk/2022_03_icc/</guid>
+      <description>TrueSkill Through Time (TTT) Reliable initial skill estimates and historical comparability The TTT model is the current state-of-the-art skill estimator in the video game industry: it provides reliable initial skill estimates and guarantees historical comparability. Published more than a decade ago, it was not available in the programming languages with the largest scientific communities. In this paper we offer the first pack- age for Julia , Python and R , an efficient algorithm that allows millions of observations to be analyzed using any low-end CPU.</description>
+    </item>
+    
+    <item>
+      <title>Multiplicative processes as the general driver for the emergence of cooperation and specialization</title>
+      <link>https://glandfried.github.io/publication/landfried-transitions/</link>
+      <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/publication/landfried-transitions/</guid>
+      <description>To explain why major evolutionary transitions are so common in the history of life we need to find the causes that systematically generate the irreversible emergence of cooperation and specialization. For this purpose it is necessary to consider selection at both the individual and group level. The co-author of the concept of major evolutionary transitions (Szathmáry) recently proposed to analyze the evolution of populations subject to multilevel selection by means of Bayesian hierarchical models, making use of the isomorphism between evolutionary theory and Bayesian inference.</description>
+    </item>
     
     <item>
       <title>TrueSkill Through Time. The full scientific documentation</title>
@@ -61,15 +79,6 @@ TrueSkill Through Time corrects those biases by modeling the entire history of a
     </item>
     
     <item>
-      <title>Social learning in cultural evolution contexts</title>
-      <link>https://glandfried.github.io/talk/2019_05_10_ic/</link>
-      <pubDate>Fri, 10 May 2019 12:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/talk/2019_05_10_ic/</guid>
-      <description>Bayesian inference tools applied to study how we learn.</description>
-    </item>
-    
-    <item>
       <title>Faithfulness-boost effect</title>
       <link>https://glandfried.github.io/publication/landfried2019-faithfulness/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
@@ -90,7 +99,7 @@ TrueSkill Through Time corrects those biases by modeling the entire history of a
     <item>
       <title></title>
       <link>https://glandfried.github.io/authors/admin/</link>
-      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 04 Mar 2022 12:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/authors/admin/</guid>
       <description>Empirical knowledge emerges as life does I am a social anthropologist finishing a PhD in computer science working on Bayesian inference, social learning and cultural evolution. The best thing I discovered through this interdisciplinary approach was the existence of a method that guarantees intersubjective agreements in contexts of uncertainty, its isomorphism with evolutionary theory, and the real advantage that cooperation and coexistence have in both systems.

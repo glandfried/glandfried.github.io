@@ -6,10 +6,19 @@
     <description>Recent content in Courses on Landfried</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://glandfried.github.io/courses/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bayesian Inference Seminar (with any language)</title>
+      <link>https://glandfried.github.io/courses/seminariobayes/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/courses/seminariobayes/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Faculty of science computer programming workshop (with Python)</title>

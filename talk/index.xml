@@ -6,36 +6,54 @@
     <description>Recent content in Recent &amp; Upcoming Talks on Landfried</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Dec 2019 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jun 2022 12:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://glandfried.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Técnicas para calcular distribuciones de creencias</title>
-      <link>https://glandfried.github.io/talk/2019_12_tacc/</link>
-      <pubDate>Thu, 05 Dec 2019 12:00:00 +0000</pubDate>
+      <title>La función de costo epistémico-evolutiva</title>
+      <link>https://glandfried.github.io/talk/2022_05_liaa/</link>
+      <pubDate>Sun, 05 Jun 2022 12:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/talk/2019_12_tacc/</guid>
+      <guid>https://glandfried.github.io/talk/2022_05_liaa/</guid>
       <description>Estimación de habilidad en la industria del video juego</description>
     </item>
     
     <item>
-      <title>Social learning in cultural evolution contexts</title>
-      <link>https://glandfried.github.io/talk/2019_05_10_ic/</link>
-      <pubDate>Fri, 10 May 2019 12:00:00 +0000</pubDate>
+      <title>Bayesian inference, learning and evolution</title>
+      <link>https://glandfried.github.io/talk/2022_03_icc/</link>
+      <pubDate>Fri, 04 Mar 2022 12:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/talk/2019_05_10_ic/</guid>
-      <description>Bayesian inference tools applied to study how we learn.</description>
+      <guid>https://glandfried.github.io/talk/2022_03_icc/</guid>
+      <description>TrueSkill Through Time (TTT) Reliable initial skill estimates and historical comparability The TTT model is the current state-of-the-art skill estimator in the video game industry: it provides reliable initial skill estimates and guarantees historical comparability. Published more than a decade ago, it was not available in the programming languages with the largest scientific communities. In this paper we offer the first pack- age for Julia , Python and R , an efficient algorithm that allows millions of observations to be analyzed using any low-end CPU.</description>
     </item>
     
     <item>
-      <title>Evidence in favor of a scientific theory</title>
-      <link>https://glandfried.github.io/talk/2019_05_03_liaa/</link>
-      <pubDate>Fri, 03 May 2019 12:00:00 +0000</pubDate>
+      <title>Taller Argentino de Computación Científica</title>
+      <link>https://glandfried.github.io/talk/2019_12_tacc/</link>
+      <pubDate>Thu, 05 Dec 2019 12:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/talk/2019_05_03_liaa/</guid>
-      <description>The hacked belief approach, and the Bayesian inference to the rescue.</description>
+      <guid>https://glandfried.github.io/talk/2019_12_tacc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3rd Early-career Social Learning Research</title>
+      <link>https://glandfried.github.io/talk/2019_06_eslr/</link>
+      <pubDate>Sat, 01 Jun 2019 12:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/talk/2019_06_eslr/</guid>
+      <description> Using computers to understand how people behave </description>
+    </item>
+    
+    <item>
+      <title>Machine Learning Summer School</title>
+      <link>https://glandfried.github.io/talk/2018_06_mlss/</link>
+      <pubDate>Fri, 01 Jun 2018 12:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/talk/2018_06_mlss/</guid>
+      <description>Skill acquisition improved by grouping strategies In its brief evolutionary history Homo Sapiens has come to occupy a wider range than any other terrestrial vertebrate species. Our ability to successfully adapt to such a diverse range of habitats is often explained in terms of our cognitive ability. In contrast, the cultural niche hypothesis suggests that is the cultural evolution process that creates the adaptive packages (tools and beliefs) even beyond the causal understanding of the individuals who use them.</description>
     </item>
     
   </channel>

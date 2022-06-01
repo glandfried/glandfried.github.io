@@ -6,10 +6,97 @@
     <description>Recent content on Landfried</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jun 2022 12:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://glandfried.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>La función de costo epistémico-evolutiva</title>
+      <link>https://glandfried.github.io/talk/2022_05_liaa/</link>
+      <pubDate>Sun, 05 Jun 2022 12:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/talk/2022_05_liaa/</guid>
+      <description>
+
+&lt;h1 id=&#34;liaa2022&#34;&gt;liaa2022&lt;/h1&gt;
+
+&lt;p&gt;Charla: &lt;a href=&#34;https://github.com/glandfried/liaa2022/releases/download/charla/laFuncionDeCostoEpistemica.pdf&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;La función de costo epistémico-evolutiva&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tanto los procesos de selección evolutiva como probabilística son de naturaleza multiplicativa.&lt;/p&gt;
+
+&lt;p&gt;La propiedades que hacen de los procesos multiplicativos la función de costo fundamental de la teoría de la probabilidad (la &amp;ldquo;regla del producto&amp;rdquo; que se deriva del principio de coherencia) se debe a que los resultados relativos con los que se actualizan los recursos de las diferentes hipótesis no depende de los pagos arbitrarios que elija la casa de apuestas (o investigador): siempre se maximiza apostando en la misma proporción que la frecuencia típica p, lo que garantiza la adquisición de conocimiento empírico.&lt;/p&gt;
+
+&lt;p&gt;Por otra parte, debido a que los impactos de las pérdidas suelen ser más fuertes que los de las ganancias (un cero en la secuencia alcanza para producir una extinción), la vida adquirió una extraordinaria complejidad a nivel de cooperación como de especialización: primero la reducción de fluctuaciones a través de la cooperación genera un aumento en la tasa de crecimiento; y luego la especialización coopertativa de las apuestas produce un aumento adicional.
+En la historia de la vida también se observa una ventaja a favor de la coexistencia. Para una especie heterótrofa como la nuestra, la coexistencia con otras especies es la única estrategia posible. Las tecnologías de reciprocidad ecológica produjeron la aparición independiente de la domesticación de especies animales y vegetales. Todos los pueblos del mundo desarrollaron obligaciones de reciprocidad, de dar y de recibir. En particular, la teoría de la probabilidad nace en 1654 como una tecnología de reciprocidad: existe un precio justo que garantiza la coexistencia en contextos de incertidumbre.&lt;/p&gt;
+
+&lt;p&gt;La ruptura de la coexistencia intercultural generó procesos de involución cultural, como en Tasmania durante el Holoceno y en Europa occidental durante la Edad Media. Si bien la interacción intercultural de la modernidad aceleró las innovaciones, el proceso colonial asociado produjo una ruptura radical especialmente a partir de la Era de genocidios que se inicia a mediados del siglo 19. A pesar de todos los avances, hoy la ciencia metropolitana no es capaz de revertir la masiva pérdida biodiversidad producto de la masiva pérdida de diversidad cultural previa.
+El objetivo del laboratorio Pacha Pampas son las tecnologías de reciprocidad y coexistencia.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bayesian inference, learning and evolution</title>
+      <link>https://glandfried.github.io/talk/2022_03_icc/</link>
+      <pubDate>Fri, 04 Mar 2022 12:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/talk/2022_03_icc/</guid>
+      <description>
+
+&lt;h3 id=&#34;trueskill-through-time-ttt&#34;&gt;TrueSkill Through Time (TTT)&lt;/h3&gt;
+
+&lt;h4 id=&#34;reliable-initial-skill-estimates-and-historical-comparability&#34;&gt;Reliable initial skill estimates and historical comparability&lt;/h4&gt;
+
+&lt;p&gt;The TTT model is the current state-of-the-art skill estimator in the
+video game industry: it provides reliable initial skill estimates and
+guarantees historical comparability. Published more than a decade
+ago, it was not available in the programming languages with the
+largest scientific communities. In this paper we offer the first pack-
+age for Julia , Python and R , an efficient algorithm that allows
+millions of observations to be analyzed using any low-end CPU.&lt;/p&gt;
+
+&lt;h3 id=&#34;evolutionary-probabilistic-isomorphism&#34;&gt;Evolutionary - Probabilistic isomorphism&lt;/h3&gt;
+
+&lt;h4 id=&#34;the-irreversible-emergence-of-cooperation-and-specialization&#34;&gt;The irreversible emergence of cooperation and specialization&lt;/h4&gt;
+
+&lt;p&gt;The current complexity of life is the consequence of a series of evolu-
+tionary transitions in which entities capable of self-replication after
+the transition become part of higher level cooperative units (eukary-
+otic cells, multicellular organisms, social systems). In this paper we
+show that the advantage in favor of cooperation and specialization is
+so common in the history of life because of the multiplicative nature
+of evolutionary and probabilistic selection processes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Multiplicative processes as the general driver for the emergence of cooperation and specialization</title>
+      <link>https://glandfried.github.io/publication/landfried-transitions/</link>
+      <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/publication/landfried-transitions/</guid>
+      <description>&lt;p&gt;To explain why major evolutionary transitions are so common in the history of life we need to find the causes that systematically generate the irreversible emergence of cooperation and specialization.
+For this purpose it is necessary to consider selection at both the individual and group level.
+The co-author of the concept of major evolutionary transitions (Szathmáry) recently proposed to analyze the evolution of populations subject to multilevel selection by means of Bayesian hierarchical models, making use of the isomorphism between evolutionary theory and Bayesian inference.
+However, the proposal remains open.&lt;/p&gt;
+
+&lt;p&gt;In this paper we specify a probabilistic causal model, in which individuals are affected by the environment and by the social behaviors of cooperation and defection of their context.
+Even under this minimal set of hypotheses, where we consider unconditionally cooperative individuals who generate a common good that can be exploited by defecting individuals without receiving some kind of punishment in return (e.g. end of cooperation), probabilistic inference shows that cooperative individuals are favored by multilevel selection.
+In addition, we show that as soon as cooperation emerges, an advantage in favor of specialist strategies appears.
+Since the specialist strategies are individually poorly adapted to the environment, an irreversibility of the evolutionary transition is created.&lt;/p&gt;
+
+&lt;p&gt;The reason why an advantage in favor of cooperation and specialization arises in our simple causal model is due to the multiplicative (non-ergodic) nature of probability theory and its isomorphism with evolutionary theory.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bayesian Inference Seminar (with any language)</title>
+      <link>https://glandfried.github.io/courses/seminariobayes/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/courses/seminariobayes/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>TrueSkill Through Time. The full scientific documentation</title>
@@ -599,7 +686,7 @@ The new &amp;ldquo;Homo ergodicus&amp;rdquo; model is a better fit to human beha
     </item>
     
     <item>
-      <title>Técnicas para calcular distribuciones de creencias</title>
+      <title>Taller Argentino de Computación Científica</title>
       <link>https://glandfried.github.io/talk/2019_12_tacc/</link>
       <pubDate>Thu, 05 Dec 2019 12:00:00 +0000</pubDate>
       
@@ -608,34 +695,23 @@ The new &amp;ldquo;Homo ergodicus&amp;rdquo; model is a better fit to human beha
     </item>
     
     <item>
+      <title>3rd Early-career Social Learning Research</title>
+      <link>https://glandfried.github.io/talk/2019_06_eslr/</link>
+      <pubDate>Sat, 01 Jun 2019 12:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/talk/2019_06_eslr/</guid>
+      <description>
+
+&lt;h4 id=&#34;using-computers-to-understand-how-people-behave&#34;&gt;Using computers to understand how people behave&lt;/h4&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Faculty of science computer programming workshop (with Python)</title>
       <link>https://glandfried.github.io/courses/exactasprograma/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/courses/exactasprograma/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Social learning in cultural evolution contexts</title>
-      <link>https://glandfried.github.io/talk/2019_05_10_ic/</link>
-      <pubDate>Fri, 10 May 2019 12:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/talk/2019_05_10_ic/</guid>
-      <description>
-
-&lt;h2 id=&#34;workshop&#34;&gt;Workshop&lt;/h2&gt;
-
-&lt;p&gt;In the workshop, tools for complex systems applied to social systems were presented. It was organized under a theoretical-practical modality and seminars of invited professors. The objective was to create a space for the encounter between the social sciences and the rest of the scientific disciplines. It was a great opportunity to exchange ideas on how to apply the tools used for complex systems to problems coming from the social area.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Evidence in favor of a scientific theory</title>
-      <link>https://glandfried.github.io/talk/2019_05_03_liaa/</link>
-      <pubDate>Fri, 03 May 2019 12:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/talk/2019_05_03_liaa/</guid>
       <description></description>
     </item>
     
@@ -879,6 +955,25 @@ $$&lt;/p&gt;
       
       <guid>https://glandfried.github.io/courses/intro/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning Summer School</title>
+      <link>https://glandfried.github.io/talk/2018_06_mlss/</link>
+      <pubDate>Fri, 01 Jun 2018 12:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/talk/2018_06_mlss/</guid>
+      <description>
+
+&lt;h4 id=&#34;skill-acquisition-improved-by-grouping-strategies&#34;&gt;Skill acquisition improved by grouping strategies&lt;/h4&gt;
+
+&lt;p&gt;In its brief evolutionary history Homo Sapiens has come to occupy a wider range than any
+other terrestrial vertebrate species. Our ability to successfully adapt to such a diverse range of habitats is often explained in terms of our cognitive ability. In contrast, the cultural niche hypothesis suggests that is the cultural evolution process that creates the adaptive packages (tools and beliefs) even beyond the causal understanding of the individuals
+who use them.&lt;/p&gt;
+
+&lt;p&gt;In order to study humans adaptive success, we set to investigate the effects of social learning strategies over skill acquisition.
+We quantify the impact of team play strategies on a online multiplayer game where a variable amount of players can participate in each game, playing individually or in teams. &amp;ldquo;Faithfulness-boost effect&amp;rdquo; provides a skill boost during the first games of experience that would be acquired only after thousands of game played.&lt;/p&gt;
+</description>
     </item>
     
     <item>
