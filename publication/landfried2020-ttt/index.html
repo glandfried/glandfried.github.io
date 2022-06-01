@@ -28,8 +28,8 @@
     
   
   <meta name="description" content="Packages:
-Julia Package: https://github.com/glandfried/TrueSkillThroughTime.jl Python Package: https://github.com/glandfried/TrueSkillThroughTime.py R package: https://github.com/glandfried/TrueSkillThroughTime.R  Full scientific documentation:
-English. Last version 2021-07-26 Español. Última versión 2021-07-26  TrueSkillThroughTime.jl None of the commonly used skill estimators, such as TrueSkill, Glicko and Item-Response Theory, correctly models the temporal aspect, which prevents having both good initial estimates and comparability between estimates separated in time and space.
+ Julia Package: https://github.com/glandfried/TrueSkillThroughTime.jl Python Package: https://github.com/glandfried/TrueSkillThroughTime.py R package: https://github.com/glandfried/TrueSkillThroughTime.R  Full scientific documentation:
+ English. Last version 2021-07-26 Español. Última versión 2021-07-26  TrueSkillThroughTime.jl None of the commonly used skill estimators, such as TrueSkill, Glicko and Item-Response Theory, correctly models the temporal aspect, which prevents having both good initial estimates and comparability between estimates separated in time and space.
 TrueSkill Through Time corrects those biases by modeling the entire history of activities using a single Bayesian network.">
 
   
@@ -94,7 +94,7 @@ TrueSkill Through Time corrects those biases by modeling the entire history of a
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.1c0f29ea38918554f71bc71c8b0b938a.css">
+  <link rel="stylesheet" href="/css/academic.min.9e398b7a64ee2c82769da9724cdbf0cc.css">
 
   
 
@@ -137,8 +137,8 @@ TrueSkill Through Time corrects those biases by modeling the entire history of a
   <meta property="og:url" content="https://glandfried.github.io/publication/landfried2020-ttt/">
   <meta property="og:title" content="TrueSkill Through Time. The Julia, Python and R packages | Landfried">
   <meta property="og:description" content="Packages:
-Julia Package: https://github.com/glandfried/TrueSkillThroughTime.jl Python Package: https://github.com/glandfried/TrueSkillThroughTime.py R package: https://github.com/glandfried/TrueSkillThroughTime.R  Full scientific documentation:
-English. Last version 2021-07-26 Español. Última versión 2021-07-26  TrueSkillThroughTime.jl None of the commonly used skill estimators, such as TrueSkill, Glicko and Item-Response Theory, correctly models the temporal aspect, which prevents having both good initial estimates and comparability between estimates separated in time and space.
+ Julia Package: https://github.com/glandfried/TrueSkillThroughTime.jl Python Package: https://github.com/glandfried/TrueSkillThroughTime.py R package: https://github.com/glandfried/TrueSkillThroughTime.R  Full scientific documentation:
+ English. Last version 2021-07-26 Español. Última versión 2021-07-26  TrueSkillThroughTime.jl None of the commonly used skill estimators, such as TrueSkill, Glicko and Item-Response Theory, correctly models the temporal aspect, which prevents having both good initial estimates and comparability between estimates separated in time and space.
 TrueSkill Through Time corrects those biases by modeling the entire history of activities using a single Bayesian network."><meta property="og:image" content="https://glandfried.github.io/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
@@ -757,96 +757,149 @@ if (!doNotTrack) {
 
     <div class="space-below"></div>
 
-    <div class="article-style"><p>Packages:</p>
-<ol start="0">
-<li>Julia Package: <a href="https://github.com/glandfried/TrueSkillThroughTime.jl">https://github.com/glandfried/TrueSkillThroughTime.jl</a></li>
-<li>Python Package: <a href="https://github.com/glandfried/TrueSkillThroughTime.py">https://github.com/glandfried/TrueSkillThroughTime.py</a></li>
-<li>R package: <a href="https://github.com/glandfried/TrueSkillThroughTime.R">https://github.com/glandfried/TrueSkillThroughTime.R</a></li>
+    <div class="article-style">
+
+<p>Packages:</p>
+
+<ol>
+<li>Julia Package: <a href="https://github.com/glandfried/TrueSkillThroughTime.jl" target="_blank">https://github.com/glandfried/TrueSkillThroughTime.jl</a></li>
+<li>Python Package: <a href="https://github.com/glandfried/TrueSkillThroughTime.py" target="_blank">https://github.com/glandfried/TrueSkillThroughTime.py</a></li>
+<li>R package: <a href="https://github.com/glandfried/TrueSkillThroughTime.R" target="_blank">https://github.com/glandfried/TrueSkillThroughTime.R</a></li>
 </ol>
+
 <p>Full scientific documentation:</p>
-<ol start="0">
-<li>English. <a href="https://github.com/glandfried/TrueSkillThroughTime/releases/download/doc/landfried-learning.pdf">Last version</a> 2021-07-26</li>
-<li>Español. <a href="https://github.com/glandfried/TrueSkillThroughTime/releases/download/doc/landfried-aprendizaje.pdf">Última versión</a> 2021-07-26</li>
+
+<ol>
+<li>English. <a href="https://github.com/glandfried/TrueSkillThroughTime/releases/download/doc/landfried-learning.pdf" target="_blank">Last version</a> 2021-07-26</li>
+<li>Español. <a href="https://github.com/glandfried/TrueSkillThroughTime/releases/download/doc/landfried-aprendizaje.pdf" target="_blank">Última versión</a> 2021-07-26</li>
 </ol>
-<h2 id="trueskillthroughtimejl">TrueSkillThroughTime.jl</h2>
+
+<h2 id="trueskillthroughtime-jl">TrueSkillThroughTime.jl</h2>
+
 <p>None of the commonly used skill estimators, such as TrueSkill, Glicko and Item-Response Theory, correctly models the temporal aspect, which prevents having both good initial estimates and comparability between estimates separated in time and space.</p>
+
 <p>TrueSkill Through Time corrects those biases by modeling the entire history of activities using a single Bayesian network.
 The use of an efficient algorithm, that requires only a few linear iterations over the data, allows scaling to millions of observations in few seconds.</p>
+
 <h3 id="parameters">Parameters</h3>
+
 <p>In the following code we define the variables that we will use later, assigning the default values of the packages.</p>
+
 <pre><code>mu = 0.0; sigma = 6.0; beta = 1.0; gamma = 0.03; p_draw = 0.0
-</code></pre><h3 id="players">Players</h3>
+</code></pre>
+
+<h3 id="players">Players</h3>
+
 <p>With these default values we create four identical players.</p>
+
 <pre><code>a1 = Player(Gaussian(mu, sigma), beta, gamma); a2 = Player(); a3 = Player(); a4 = Player()
-</code></pre><p>The <code>Gaussian</code> class is used to model the standard operations of Gaussian distributions including multiplication, summation, division, and substraction.</p>
+</code></pre>
+
+<p>The <code>Gaussian</code> class is used to model the standard operations of Gaussian distributions including multiplication, summation, division, and substraction.</p>
+
 <h3 id="games">Games</h3>
+
 <p>In the next step we create a game with two teams of two players.</p>
+
 <pre><code>team_a = [ a1, a2 ]
 team_b = [ a3, a4 ]
 teams = [team_a, team_b]
 g = Game(teams)
-</code></pre><p>where the result of the game is implicitly defined by the order of the teams in the list: the teams appearing first in the list (lower index) beat those appearing later (higher index).</p>
+</code></pre>
+
+<p>where the result of the game is implicitly defined by the order of the teams in the list: the teams appearing first in the list (lower index) beat those appearing later (higher index).</p>
+
 <p>During the initialization, the class <code>Game</code> computes the prior prediction of the observed result and the approximate likelihood of each player.</p>
+
 <pre><code>lhs = g.likelihoods[1][1]
 ev = g.evidence
 ev = round(ev, digits=3)
 print(ev)
 &gt; 0.5
-</code></pre><p>In this case, the evidence is 0.5 indicating that both teams had the same probability of winning given the prior estimates.</p>
+</code></pre>
+
+<p>In this case, the evidence is 0.5 indicating that both teams had the same probability of winning given the prior estimates.</p>
+
 <p>Posteriors can be found by manually multiplying the likelihoods and priors, or we can call the method <code>posteriors()</code> of class <code>Game</code> to compute them.</p>
+
 <pre><code>pos = posteriors(g)
 print(pos[1][1])
 &gt; Gaussian(mu=2.361, sigma=5.516)
 print(lhs[1][1] * a1.prior)
 &gt; Gaussian(mu=2.361, sigma=5.516)
-</code></pre><p>Due to the winning result, the estimate of the first player of the first now has a larger mean and a smaller uncertainty.</p>
+</code></pre>
+
+<p>Due to the winning result, the estimate of the first player of the first now has a larger mean and a smaller uncertainty.</p>
+
 <p>We now analyze a more complex.
 The players are organized in three teams of different size: two teams with only one player, and the other with two players.
 The result has a single winning team and a tie between the other two losing teams.</p>
+
 <pre><code>ta = [a1]
 tb = [a2, a3]
 tc = [a4]
 teams = [ta, tb, tc]
 result = [1., 0., 0.]
 g = Game(teams, result, p_draw=0.25)
-</code></pre><p>the team with the highest score is the winner and the teams with the same score are tied.
+</code></pre>
+
+<p>the team with the highest score is the winner and the teams with the same score are tied.
 The evidence and the posteriors can be queried in the same way as before.</p>
+
 <h3 id="sequence-of-events">Sequence of Events</h3>
+
 <p>The class <code>History</code> is used to compute the posteriors and evidence of a sequence of events.
 In the first example, we instantiate the class with three players <code>&quot;a&quot;, &quot;b&quot;, &quot;c&quot;</code> and three games in which all agents win one game and lose the other.</p>
+
 <pre><code>c1 = [[&quot;a&quot;],[&quot;b&quot;]]
 c2 = [[&quot;b&quot;],[&quot;c&quot;]]
 c3 = [[&quot;c&quot;],[&quot;a&quot;]]
 composition = [c1, c2, c3]
 h = History(composition, gamma=0.0)
-</code></pre><p>where the variables <code>c1</code>, <code>c2</code>, and <code>c3</code> model the composition of each game using the names of the agents (i.e. their identifiers), the variable <code>composition</code> is a list containing the three events,  and the zero value of the parameter <code>gamma</code> specifies that skills does not change over time.</p>
+</code></pre>
+
+<p>where the variables <code>c1</code>, <code>c2</code>, and <code>c3</code> model the composition of each game using the names of the agents (i.e. their identifiers), the variable <code>composition</code> is a list containing the three events,  and the zero value of the parameter <code>gamma</code> specifies that skills does not change over time.</p>
+
 <p>After initialization, the class <code>History</code> immediately instantiates a new player for each name and activates the computation of the TrueSkill estimates, using the posteriors of each event as a prior for the next one.</p>
+
 <pre><code>lc = learning_curves(h)
 print(lc[&quot;a&quot;])
 &gt; [(1, Gaussian(mu=3.339, sigma=4.985)), (3, Gaussian(mu=-2.688, sigma=3.779))]
 print(lc[&quot;b&quot;])
 &gt; [(1, Gaussian(mu=-3.339, sigma=4.985)), (2, Gaussian(mu=0.059, sigma=4.218))]
-</code></pre><p>The learning curves of players <code>&quot;a&quot;</code> and <code>&quot;b&quot;</code> contain one tuple per game played (not including the initial prior): each tuple has the time of the estimate as the first component, and the estimate itself as the second one.</p>
+</code></pre>
+
+<p>The learning curves of players <code>&quot;a&quot;</code> and <code>&quot;b&quot;</code> contain one tuple per game played (not including the initial prior): each tuple has the time of the estimate as the first component, and the estimate itself as the second one.</p>
+
 <p>Although in this example no player is stronger than the others, the TrueSkill estimates present strong variations between players.
 TrueSkill Through Time solves this problem by allowing the information to propagate throughout the system by calling the method <code>convergence()</code>.</p>
+
 <pre><code>convergence(h)
 lc = learning_curves(h)
 print(lc[&quot;a&quot;])
 &gt; [(1, Gaussian(mu=0.0, sigma=2.395)), (3, Gaussian(mu=-0.0, sigma=2.395))]
 print(lc[&quot;b&quot;])
 &gt; [(1, Gaussian(mu=-0.0, sigma=2.395)), (3, Gaussian(mu=0.0, sigma=2.395))]
-</code></pre><p>TrueSkill Through Time not only returns correct estimates (same for all players), they also have less uncertainty.</p>
+</code></pre>
+
+<p>TrueSkill Through Time not only returns correct estimates (same for all players), they also have less uncertainty.</p>
+
 <h3 id="skill-evolution">Skill evolution</h3>
+
 <p>This example will exhibit that TrueSkill Through Time can correctly follows the skill evolution of a new player taht joins a large community of already known players.
 In the following code, we generate the target player&rsquo;s learning curve and 1000 random opponents.</p>
+
 <pre><code>using Random; Random.seed!(999); N = 1000
 function skill(experience, middle, maximum, slope)
     return maximum/(1+exp(slope*(-experience+middle))) 
 end
 target = skill.(1:N, 500, 2, 0.0075)
 opponents = Random.randn.(1000)*0.5 .+ target
-</code></pre><p>The list <code>target</code> has the agent&rsquo;s skills at each moment: the values start at zero and grow smoothly until the target player&rsquo;s skill reaches two.
+</code></pre>
+
+<p>The list <code>target</code> has the agent&rsquo;s skills at each moment: the values start at zero and grow smoothly until the target player&rsquo;s skill reaches two.
 The list <code>opponents</code> includes the randomly generated opponents&rsquo; skills following a Gaussian distribution centered on each of the target&rsquo;s skills and a standard deviation of 0.5.</p>
+
 <pre><code>composition = [[[&quot;a&quot;], [string(i)]] for i in 1:N]
 results = [r? [1.,0.]:[0.,1.] for r in (Random.randn(N).+target.&gt;Random.randn(N).+opponents)]
 times = [i for i in 1:N]
@@ -856,15 +909,23 @@ for i in 1:N  priors[string(i)] = Player(Gaussian(opponents[i], 0.2))  end
 h = History(composition, results, times, priors, gamma=0.015)
 convergence(h)
 mu = [tp[2].mu for tp in learning_curves(h)[&quot;a&quot;]] 
-</code></pre><p>In this code we define four variables to instantiate the class <code>History</code>: the <code>composition</code> contains 1000 games between the target player and different opponents; the <code>results</code> are obtained randomly, sampling the performance of the players; the <code>time</code> is a list of integer ranging from 0 to 999 representing the time of each game; and <code>priors</code> is a dictionary used to customize player attributes (we assign low uncertainty to the opponents&rsquo; priors pretending that we know their skills beforehand).
+</code></pre>
+
+<p>In this code we define four variables to instantiate the class <code>History</code>: the <code>composition</code> contains 1000 games between the target player and different opponents; the <code>results</code> are obtained randomly, sampling the performance of the players; the <code>time</code> is a list of integer ranging from 0 to 999 representing the time of each game; and <code>priors</code> is a dictionary used to customize player attributes (we assign low uncertainty to the opponents&rsquo; priors pretending that we know their skills beforehand).
 The Figure shows the evolution of the true (solid line) and estimated (dotted line) learning curves of the target player.</p>
-<p><img src="static/logistic0.png" alt="synthetic"></p>
+
+<p><img src="static/logistic0.png" alt="synthetic" /></p>
+
 <p>The estimated learning curves remain close to the actual skill during the whole evolution.</p>
+
 <h3 id="atp-history">ATP History</h3>
+
 <p>In this last example, we analyze the complete history of the Association of Tennis Professionals (ATP) registered matches.</p>
+
 <p>The database has 447000 games starting at year 1915 until 2020 with more than 19000 participating players and is publicly available.
 The file includes both single and double matches: if the column <code>double</code> has the letter <code>t</code>, the game is a double match.
 The file also contains players&rsquo; identifiers and names: for example column <code>w2_id</code> is the identifier of the second player of the winning team and <code>l1_name</code> is the name of the first player of the losing team.</p>
+
 <pre><code>using CSV; using Dates
 data = CSV.read(&quot;atp.csv&quot;)
 
@@ -873,19 +934,31 @@ matches = [ r.double == &quot;t&quot; ? [[r.w1_id,r.w2_id],[r.l1_id,r.l2_id]] : 
 
 h = History(composition = matches, times = dates, sigma = 1.6, gamma = 0.036)
 convergence(h, epsilon = 0.01, iterations = 10)
-</code></pre><p>In this code we open the file <code>atp.csv</code>, create the variables <code>dates</code> and <code>matches</code>, and instantiate the class <code>History</code>.
+</code></pre>
+
+<p>In this code we open the file <code>atp.csv</code>, create the variables <code>dates</code> and <code>matches</code>, and instantiate the class <code>History</code>.
 The following figure presents the learning curves of some famous players in ATP history.</p>
-<p><img src="static/atp.png" alt="atp"></p>
+
+<p><img src="static/atp.png" alt="atp" /></p>
+
 <p>Those who know the history of tennis will be able to recognize the periods of crisis, stability and success of the players.</p>
+
 <p>There is a relative coincidence between skill and who is at any given moment at the top of the ATP rankings, it is possible to observe the effects of injuries, and even the effect of emotional slumps such as those that Aggasi and Djockovic had.</p>
+
 <p>It is interesting to see that the skill of tennis players did not increase so much over the years: on the contrary the players of the 1980s were more skilled than those of the 1990s, and reached a skill similar to what Federer, Nadal and Djokovic had in 2020.</p>
+
 <p>There are also some differences between players&rsquo; skills and the ATP ranking, especially with respect to the historical ranking (based on the total number of weeks at the top of the ranking): the 10th-ranked player, Hewitt, actually has relatively low skill; and the fourth most skilled player, Murray, is ranked 14th, just one place above Nastase.</p>
+
 <p>TrueSkill Through Time, unlike ATP ranking and estimators based on the filtering approach (such as TrueSkill, Glicko and IRT) allows comparing the relative ability of players over time.</p>
+
 <h3 id="multi-dimensional-skills">Multi-dimensional skills</h3>
+
 <p>In the ATP example we summarize the players&rsquo; skills in a single dimension.
 We know, however, that the ability of tennis players can vary significantly depending on the type of ground.</p>
+
 <p>TrueSkill Through Time allows estimating this type of multi-dimensional skills.
 One option is to keep one skill variable per player, that we include in all games, and one skill variable per ground, that we add as their teammate depending on the type of game.</p>
+
 <pre><code>players = Set(vcat((composition...)...))
 priors = Dict([(p, Player(Gaussian(0., 1.6), 1.0, 0.036) ) for p in players])
 
@@ -893,20 +966,29 @@ composition_ground = [ r.double == &quot;t&quot; ? [[r.w1_id, r.w1_id*r.ground, 
 
 h_ground = History(composition = composition_ground, times = dates, sigma = 1.0, gamma = 0.01, beta = 0.0, priors = priors)
 convergence(h_ground, epsilon = 0.01, iterations=10)
-</code></pre><p>In this example we keep the same prior as before for the players, this time defined in the variable <code>priors</code>.
+</code></pre>
+
+<p>In this example we keep the same prior as before for the players, this time defined in the variable <code>priors</code>.
 In this way, the values chosen to initialize the class <code>History</code> will only be used for the ground skill factors.
 For those factors we chose a null <code>beta</code> so as not to add more noise to the players&rsquo; performance, keeping the scale of the estimates stable.</p>
+
 <p>In the following figures we show the skill difference that Nadal and Djokovic have in each of the three types of ground.</p>
-<p><img src="static/atp_ground0.png" alt="n">
-<img src="static/atp_ground2.png" alt="d"></p>
+
+<p><img src="static/atp_ground0.png" alt="n" />
+<img src="static/atp_ground2.png" alt="d" /></p>
+
 <p>We can see that Nadal has a big skill difference between grounds, unlike Djokovic who has very similar skills on all three types of ground.
 The Nadal&rsquo;s skill difference between clay and grass gorunds is greater than one ponit, which means at least 76% difference in probability of winning compared to itself.</p>
+
 <p>To assess whether the complexity added by modeling multidimensionality is appropriate in general terms, we can compare the joint priori prediction of the models, calling the method \texttt{log_evidence()} of the class \texttt{History}.</p>
+
 <h2 id="estructure">Estructure</h2>
+
 <ol>
 <li><strong>src/TrueSkill.jl</strong>: Main file</li>
 <li><strong>test/runrests.jl</strong>: Unit test</li>
 </ol>
+
 <p>Inside <strong>test/</strong> and <strong>example/</strong> you will find a makefile. In each folder you can execute the entire procedure by typing <code>make</code> in the terminal.</p>
 </div>
 
@@ -1139,7 +1221,7 @@ The Nadal&rsquo;s skill difference between clay and grass gorunds is greater tha
     
     
     
-    <script src="/js/academic.min.a8ff40d18bce6e6b0934f2e922b05b21.js"></script>
+    <script src="/js/academic.min.c6fd6ac3a8e8115c6ec4cd7b873b4f1e.js"></script>
 
   </body>
 </html>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Landfried</title>
@@ -17,7 +17,8 @@
       <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/authors/admin/</guid>
-      <description>Empirical knowledge is life I am a social anthropologist finishing a PhD in computer science. The best I have found in computer science is the method for computing honest beliefs that guarantee intersubjective agreements (known as Bayesian inference), its isomorphism with evolutionary theory, and the real advantage that cooperation has in both systems. This argument is not only theoretical, it is pragmatic: its breakdown has consequences even for those who seek individual advantage.</description>
+      <description>Empirical knowledge emerges as life does I am a social anthropologist finishing a PhD in computer science working on Bayesian inference, social learning and cultural evolution. The best thing I discovered through this interdisciplinary approach was the existence of a method that guarantees intersubjective agreements in contexts of uncertainty, its isomorphism with evolutionary theory, and the real advantage that cooperation and coexistence have in both systems.
+After finishing my licenciate degree (BSc + MSc) in anthropology, I decided to acquire a solid background in mathematics and computer science with the aim of using them as tools for the social sciences.</description>
     </item>
     
     <item>

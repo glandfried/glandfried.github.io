@@ -12,56 +12,921 @@
     
     
     <item>
-      <title>Publications</title>
-      <link>https://glandfried.github.io/publication/</link>
+      <title>TrueSkill Through Time. The full scientific documentation</title>
+      <link>https://glandfried.github.io/publication/landfried2021-learning/</link>
       <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/publication/</guid>
-      <description></description>
+      <guid>https://glandfried.github.io/publication/landfried2021-learning/</guid>
+      <description>
+
+&lt;p&gt;Most estimators implemented for the video game industry cannot obtain reliable initial estimates nor guarantee comparability between distant estimates.
+TrueSkill Through Time solves all these problems by modeling the entire history of activities using a single Bayesian network.
+This algorithm requires a few iterations to converge, allowing millions of observations to be analyzed using any low-end computer.&lt;/p&gt;
+
+&lt;p&gt;To support the use of reliable learning estimators, we provide the first implementations of TrueSkill Through Time for  &lt;code&gt;Julia&lt;/code&gt;, &lt;code&gt;Python&lt;/code&gt; and &lt;code&gt;R&lt;/code&gt;.
+A complete scientific documentation allows scientists to make sense of all epistemological and technical aspects of the estimation process.&lt;/p&gt;
+
+&lt;h3 id=&#34;scientific-article&#34;&gt;Scientific article&lt;/h3&gt;
+
+&lt;p&gt;You can find the full scientific documentation of TrueSkill Through Time packages at:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;English. &lt;a href=&#34;https://github.com/glandfried/TrueSkillThroughTime/releases/download/doc/landfried-learning.pdf&#34; target=&#34;_blank&#34;&gt;Last version&lt;/a&gt; 2021-07-26&lt;/li&gt;
+&lt;li&gt;Español. &lt;a href=&#34;https://github.com/glandfried/TrueSkillThroughTime/releases/download/doc/landfried-aprendizaje.pdf&#34; target=&#34;_blank&#34;&gt;Última versión&lt;/a&gt; 2021-07-26&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;packages&#34;&gt;Packages&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Julia Package: &lt;a href=&#34;https://github.com/glandfried/TrueSkillThroughTime.jl&#34; target=&#34;_blank&#34;&gt;https://github.com/glandfried/TrueSkillThroughTime.jl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Python Package: &lt;a href=&#34;https://github.com/glandfried/TrueSkillThroughTime.py&#34; target=&#34;_blank&#34;&gt;https://github.com/glandfried/TrueSkillThroughTime.py&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;R package: &lt;a href=&#34;https://github.com/glandfried/TrueSkillThroughTime.R&#34; target=&#34;_blank&#34;&gt;https://github.com/glandfried/TrueSkillThroughTime.R&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;computational-details&#34;&gt;Computational details&lt;/h3&gt;
+
+&lt;p&gt;Our Python package solves individual events ten times faster than the original trueskill 0.4.5 (Lee 2012) package.
+In turn, our Julia package converge a history of events ten times faster than our Python package.
+In contrast, our R package is slower than the other packages, including the original trueskill 0.4.5
+package.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-history-of-the-atp&#34;&gt;The History of the ATP&lt;/h3&gt;
+
+&lt;p&gt;The following figure presents &lt;strong&gt;the learning curves of some famous players in ATP history&lt;/strong&gt;.
+A one-point difference between skills is equivalent to 76% probability of winning.
+The top bar indicates which player was at the top of the ATP’s ranking.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;static/atp.png&#34; alt=&#34;atp&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It is possible recognize the periods of crisis, stability and success of the players, even the effect of emotional slumps such as those that Aggasi and Djockovic had.
+The skill of tennis players did not increase so much over the years: on the contrary the players of the 1980s were more skilled than those of the 1990s, and reached a skill similar to what Federer, Nadal and Djokovic had in 2020.&lt;/p&gt;
+
+&lt;p&gt;There is a relative coincidence between skill and who is at any given moment at the top of the ATP rankings.
+However, TrueSkill Through Time allows comparing the relative ability of players over time: the 10th player in the historical ATP&amp;rsquo;s ranking, Hewitt, is a product of the window of opportunity that was opened in the year 2000; and the 4th most skilled player, Murray, is ranked 14th just above Nastase.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;models commonly used in industry and academia&lt;/strong&gt; (TrueSkill, Glicko, Item-Response Theory) are based on an ad-hoc solution that prevents them both from having good initial estimates and from guaranteeing comparability between estimates separated in time.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;static/atp_trueskill.png&#34; alt=&#34;atp&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The advantage of TrueSkill Through Time lies in its temporal causal model, that links all historical activities in the same Bayesian network, which guarantees both good initial estimates and the temporal and spatial comparability of the estimates.&lt;/p&gt;
+
+&lt;h3 id=&#34;acknowledgments&#34;&gt;Acknowledgments&lt;/h3&gt;
+
+&lt;p&gt;Special thanks to Heungsub Lee for having published the &lt;a href=&#34;https://github.com/sublee/trueskill&#34; target=&#34;_blank&#34;&gt;basic TrueSkill model in Python&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Posts</title>
-      <link>https://glandfried.github.io/post/</link>
+      <title>Empirical knowledge is life</title>
+      <link>https://glandfried.github.io/post/empiricalknowledge/</link>
       <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/post/</guid>
-      <description></description>
+      <guid>https://glandfried.github.io/post/empiricalknowledge/</guid>
+      <description>
+
+&lt;h2 id=&#34;the-reciprocal-coexistence-of-diversities&#34;&gt;The reciprocal coexistence of diversities&lt;/h2&gt;
+
+&lt;p&gt;The current massive loss of biodiversity was preceded by a massive loss of cultural diversity.
+Despite all the advances, metropolitan science was not able to compensate for the loss of millenarian knowledge caused by colonial-modernity.
+Evolution, like Bayesian inference, needs diversity to function properly.
+Long-term coexistence with ecological systems implies recovering the reciprocal coexistence between autonomous indigenous communities.
+Because, in short, empirical knowledge is life.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;In the last third of the history of the Universe, a form of organization of matter capable of self-replication appeared on Earth.
+The growth of these lineages followed multiplicative and noisy processes: a sequence of survival and reproductive probabilities.
+In it, the impacts of losses are often stronger than those of gains, if there is even one zero in the sequence, we are extinct.
+Because variance reduction is really important, cooperation has a fundamental evolutionary advantage.
+This caused life to acquire an extraordinary complexity throughout its history.&lt;/p&gt;
+
+&lt;p&gt;The skills that allow us to create complex cultures developed due to the prior emergence of cooperative breeding, which produced an environment that favored the selection of offspring with special capacities for mutual understanding.
+The ability to transmit knowledge from generation to generation produced radical consequences for our species.
+Before the cultural transition, we were in serious danger of extinction, as evidenced by the low diversity of the human genome.
+After the cultural transition, our species was able to occupy all the ecological niches of the earth, as no other terrestrial vertebrate had ever done before.&lt;/p&gt;
+
+&lt;p&gt;Science is a human institution that aims to formulate universally valid propositions, both interculturally and intersubjectively.
+Formal sciences validate them by means of theorems, results derived from the internal rules of a closed axiomatic system.
+Empirical sciences, in contrast, must validate them  within open systems, which always involve a degree of uncertainty.
+Probability theory is by far the most widely used approach to represent uncertainty, and it is already remarkable that it has been derived from a large number of different axiomatic systems.&lt;/p&gt;
+
+&lt;p&gt;Probability theory only has two rules.
+The sum rule imposes a cooperative pact among the hypotheses of the same model: predictions are made with the contribution of all of them.
+The product rule is the multiplicative process by which hypotheses (and models) are selected, the same process by which evolution selects among different strategies, the reason why cooperation has an evolutionary advantage.
+Together, they update beliefs by maximizing uncertainty given empirical (data) and formal (causal models) information, which guarantees the validity of empirical knowledge.
+Why?&lt;/p&gt;
+
+&lt;p&gt;The &amp;ldquo;principle of indifference&amp;rdquo; is the cornerstone of the empirical sciences, an epistemological criterion of intercultural validity, present in all the peoples of the planet.
+We will all agree that, in the absence of prior information, the only correct way to distribute belief among a (finit) set of hypotheses is in equal parts (details at &lt;a href=&#34;glandfried.github.io/post/honestbeliefs/&#34; target=&#34;_blank&#34;&gt;Honest Beliefs&lt;/a&gt;).
+Then, the only universally valid propositions for empirical science are those that maximize diversity (i.e. uncertainty).&lt;/p&gt;
+
+&lt;p&gt;The advantage of cooperation is not principled, it is pragmatic.
+Due to the multiplicative nature of the selection processes, both evolutionary and probabilistic, the breakdown of the cooperative pact negatively affects those who promote it without the need to introduce punishments.
+The overfitting problem associated with frequentist techniques is a direct consequence of selecting a single hypothesis.
+The problem of ecological crisis associated with colonial-modern society is a direct consequence of imposing a single type of society.&lt;/p&gt;
+
+&lt;p&gt;The solution to the ecological crisis (and overfitting) consists in recovering the coexistence between the various forms of life (or hypotheses).
+Evolution is Bayesian inference for the real world, and for it to work properly, diversity is required.
+Ultimately, empirical knowledge is life.&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Projects</title>
-      <link>https://glandfried.github.io/project/</link>
+      <title>Honest Beliefs</title>
+      <link>https://glandfried.github.io/post/honestbeliefs/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/post/honestbeliefs/</guid>
+      <description>
+
+&lt;p&gt;Science is a human institution that aspires to reach the truth, formulating universally valid propositions.
+Formal sciences validate their propositions by means of theorems, derived from applying the internal rules of a closed axiomatic system.
+Empirical sciences must validate their propositions within open systems, which always impose a degree of uncertainty.
+&lt;strong&gt;Which is therefore the source of validity for empirical knowledge?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;My people say that &amp;ldquo;the only truth is reality&amp;rdquo;, and if someone wants to explain you economics and you don&amp;rsquo;t understand then they are lying to you.
+What we call empirical science is neither truth nor reality, it is merely a discourse about reality that claims the status of truth.
+The best we can do is to work honestly to reach &lt;strong&gt;intersubjective agreements that can be accepted by all members of our and any other community&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Suppose we have 3 boxes and we know that behind one of them there is a gift.
+One possible &lt;strong&gt;belief distribution&lt;/strong&gt; is:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./figures/montyHall_1.png&#34; alt=&#34;montyHall_1&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;which represents a relative preference for the middle box.
+But if we really don&amp;rsquo;t have any information regarding where the gift is, there is no reason to have a preference for any of the options, which will undoubtedly make us agree with the following belief distribution.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./figures/montyHall_2.png&#34; alt=&#34;montyHall_2&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;This type of belief distributions, which allow intersubjective agreement, we will call it &lt;em&gt;honest belief&lt;/em&gt;&lt;/strong&gt;.
+Honest beliefs are the ones that maximize uncertainty, remaining consistent with the available information.
+In this case, having no prior information, we just divide the belief equally.
+This is an old principle known as &amp;ldquo;indifference&amp;rdquo;.
+But how do we update beliefs honestly when we receive new information?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./figures/montyHall_3.png&#34; alt=&#34;montyHall_3&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here we receive the data that the gift is not in the middle box, which allows us to assign belief 0 to it.
+However, to update the belief of the rest of the boxes we need to interpret what the hint is telling us.
+Suppose the clue depends on where the gift is, it can only tell us where the gift is not.
+We can represent this relationship with the following causal model.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./figures/modelo_causal_0.png&#34; alt=&#34;modelo_causal_0&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Following the principle of indifference on which we relied earlier, we now divide our belief equally among the forks of the causal model paths.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./figures/modelo_causal_0_caminos.png&#34; alt=&#34;modelo_causal_0_caminos&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;First we divide the belief among the possible gifts, $r$, and then we divide the belief again among the possible hints, $s$.
+Our joint honest belief (prior to see the data) is,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./figures/modelo_causal_0_conjunta.png&#34; alt=&#34;modelo_causal_0_conjunta&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It is honest because it maximizes uncertainty given the information available so far: the causal model.
+And it is joint because it is the belief about a simultaneous occurrence of both variables, $\text{Belief}(r,s)$.&lt;/p&gt;
+
+&lt;h2 id=&#34;probability-theory&#34;&gt;Probability theory&lt;/h2&gt;
+
+&lt;p&gt;The rules of probability have been derived from a large number of axiomatic systems, conceptually distinct and independent of each other, which is a strong point in their favor.
+But perhaps more importantly, they &lt;strong&gt;ensure maximization of uncertainty given empirical and formal information (data and causal models)&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Probability theory has only two rules: the sum rule and the product rule.
+The first one computes the belief of a single variable by integrating in equal parts the joint belief distribution.
+For example, the honest belief about the gifts is again &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;,&lt;/p&gt;
+
+&lt;p&gt;$$\text{Belief}(r_i) = \sum_j \text{Belief}(r_i, s_j) = &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;$$&lt;/p&gt;
+
+&lt;p&gt;And the same applies to the hint variable.&lt;/p&gt;
+
+&lt;p&gt;$$\text{Belief}(s_j) = \sum_i \text{Belief}(r_i, s_j) = &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;$$&lt;/p&gt;
+
+&lt;p&gt;The second rule is the one that allow us to fulfill the objective we had set ourselves: update the belief about the gift after having seen the hint.
+It consists of preserving the joint belief that is consistent with the data, $\text{Belief}(r_i, s_2)$.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./figures/modelo_causal_0_condicional.png&#34; alt=&#34;modelo_causal_0_condicional&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Since the surviving belief is now our new total belief, we normalize it (in equal parts) so that overall it adds up to 1.&lt;/p&gt;
+
+&lt;p&gt;$$\text{Belief}(r_i| s_2) = \frac{\text{Belief}(r_i, s_2)}{\text{Belief}(s_2)} = &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;$$&lt;/p&gt;
+
+&lt;p&gt;After seeing the hint, our new honest belief given the causal model is,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./figures/modelo_causal_0_posterior.png&#34; alt=&#34;modelo_causal_0_posterior&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The conclusion we reached coincides with our intuition.
+But this result depends on the chosen causal model.&lt;/p&gt;
+
+&lt;h2 id=&#34;monty-hall&#34;&gt;Monty Hall&lt;/h2&gt;
+
+&lt;p&gt;Suppose the hint, not only cannot match the position of the gift, but also has a forbidden option.
+This relationship can be represented by the following causal model.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./figures/montyHall_model.png&#34; alt=&#34;montyHall_model&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This model is better known as the Monty Hall game.
+To simplify the problem, we assume that box 1 is the one that remains closed, $c=1$.
+Suppose that in this context we receive the following hint.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./figures/montyHall_7.png&#34; alt=&#34;montyHall_7&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;How should we honestly update our beliefs?
+As we did before, we maximize uncertainty by splitting beliefs along the forks of the causal model paths.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./figures/modelo_causal_1_caminos.png&#34; alt=&#34;modelo_causal_1_caminos&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When the gift is behind box 1, $r_1$, we can receive the hint in both box 2, $s_2$, and box 3, $s_3$.
+If the gift is in box 2, $r_2$, the hint can only point to box 3, $s_3$.
+In this way we define the following joint honest belief (and its marginals).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./figures/modelo_causal_1_conjunta.png&#34; alt=&#34;modelo_causal_1_conjunta&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To update our belief we again preserve only the belief that is compatible with the data.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./figures/modelo_causal_1_condicional.png&#34; alt=&#34;modelo_causal_1_condicional&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And then normalized so that together it adds up to 1 is&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./figures/montyHall_8.png&#34; alt=&#34;montyHall_8&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This answer is different from the one we obtained with the first causal model.
+However, &lt;strong&gt;Both share the property of being the belief distribution that maximizes uncertainty given the formal and empirical evidence (causal model and data), making them propositions on which we can agree both interculturally and intersubjectively.&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;We have argued that science is an intercultural project of intersubjective agreements.
+However, the native communities of my region remind me that the agreement must be with the whole Mother Nature, or there is simply no agreement, there is exploitation.
+So the truth is that (almost) everything is a lie in this world, because since the emergence of what we call &amp;ldquo;modern science&amp;rdquo; a process of irreversible loss of biodiversity has begun.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TrueSkill Through Time. The Julia, Python and R packages</title>
+      <link>https://glandfried.github.io/publication/landfried2020-ttt/</link>
+      <pubDate>Fri, 28 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/publication/landfried2020-ttt/</guid>
+      <description>
+
+&lt;p&gt;Packages:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Julia Package: &lt;a href=&#34;https://github.com/glandfried/TrueSkillThroughTime.jl&#34; target=&#34;_blank&#34;&gt;https://github.com/glandfried/TrueSkillThroughTime.jl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Python Package: &lt;a href=&#34;https://github.com/glandfried/TrueSkillThroughTime.py&#34; target=&#34;_blank&#34;&gt;https://github.com/glandfried/TrueSkillThroughTime.py&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;R package: &lt;a href=&#34;https://github.com/glandfried/TrueSkillThroughTime.R&#34; target=&#34;_blank&#34;&gt;https://github.com/glandfried/TrueSkillThroughTime.R&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Full scientific documentation:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;English. &lt;a href=&#34;https://github.com/glandfried/TrueSkillThroughTime/releases/download/doc/landfried-learning.pdf&#34; target=&#34;_blank&#34;&gt;Last version&lt;/a&gt; 2021-07-26&lt;/li&gt;
+&lt;li&gt;Español. &lt;a href=&#34;https://github.com/glandfried/TrueSkillThroughTime/releases/download/doc/landfried-aprendizaje.pdf&#34; target=&#34;_blank&#34;&gt;Última versión&lt;/a&gt; 2021-07-26&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;trueskillthroughtime-jl&#34;&gt;TrueSkillThroughTime.jl&lt;/h2&gt;
+
+&lt;p&gt;None of the commonly used skill estimators, such as TrueSkill, Glicko and Item-Response Theory, correctly models the temporal aspect, which prevents having both good initial estimates and comparability between estimates separated in time and space.&lt;/p&gt;
+
+&lt;p&gt;TrueSkill Through Time corrects those biases by modeling the entire history of activities using a single Bayesian network.
+The use of an efficient algorithm, that requires only a few linear iterations over the data, allows scaling to millions of observations in few seconds.&lt;/p&gt;
+
+&lt;h3 id=&#34;parameters&#34;&gt;Parameters&lt;/h3&gt;
+
+&lt;p&gt;In the following code we define the variables that we will use later, assigning the default values of the packages.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mu = 0.0; sigma = 6.0; beta = 1.0; gamma = 0.03; p_draw = 0.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;players&#34;&gt;Players&lt;/h3&gt;
+
+&lt;p&gt;With these default values we create four identical players.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;a1 = Player(Gaussian(mu, sigma), beta, gamma); a2 = Player(); a3 = Player(); a4 = Player()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;Gaussian&lt;/code&gt; class is used to model the standard operations of Gaussian distributions including multiplication, summation, division, and substraction.&lt;/p&gt;
+
+&lt;h3 id=&#34;games&#34;&gt;Games&lt;/h3&gt;
+
+&lt;p&gt;In the next step we create a game with two teams of two players.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;team_a = [ a1, a2 ]
+team_b = [ a3, a4 ]
+teams = [team_a, team_b]
+g = Game(teams)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where the result of the game is implicitly defined by the order of the teams in the list: the teams appearing first in the list (lower index) beat those appearing later (higher index).&lt;/p&gt;
+
+&lt;p&gt;During the initialization, the class &lt;code&gt;Game&lt;/code&gt; computes the prior prediction of the observed result and the approximate likelihood of each player.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;lhs = g.likelihoods[1][1]
+ev = g.evidence
+ev = round(ev, digits=3)
+print(ev)
+&amp;gt; 0.5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In this case, the evidence is 0.5 indicating that both teams had the same probability of winning given the prior estimates.&lt;/p&gt;
+
+&lt;p&gt;Posteriors can be found by manually multiplying the likelihoods and priors, or we can call the method &lt;code&gt;posteriors()&lt;/code&gt; of class &lt;code&gt;Game&lt;/code&gt; to compute them.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pos = posteriors(g)
+print(pos[1][1])
+&amp;gt; Gaussian(mu=2.361, sigma=5.516)
+print(lhs[1][1] * a1.prior)
+&amp;gt; Gaussian(mu=2.361, sigma=5.516)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Due to the winning result, the estimate of the first player of the first now has a larger mean and a smaller uncertainty.&lt;/p&gt;
+
+&lt;p&gt;We now analyze a more complex.
+The players are organized in three teams of different size: two teams with only one player, and the other with two players.
+The result has a single winning team and a tie between the other two losing teams.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ta = [a1]
+tb = [a2, a3]
+tc = [a4]
+teams = [ta, tb, tc]
+result = [1., 0., 0.]
+g = Game(teams, result, p_draw=0.25)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;the team with the highest score is the winner and the teams with the same score are tied.
+The evidence and the posteriors can be queried in the same way as before.&lt;/p&gt;
+
+&lt;h3 id=&#34;sequence-of-events&#34;&gt;Sequence of Events&lt;/h3&gt;
+
+&lt;p&gt;The class &lt;code&gt;History&lt;/code&gt; is used to compute the posteriors and evidence of a sequence of events.
+In the first example, we instantiate the class with three players &lt;code&gt;&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;&lt;/code&gt; and three games in which all agents win one game and lose the other.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;c1 = [[&amp;quot;a&amp;quot;],[&amp;quot;b&amp;quot;]]
+c2 = [[&amp;quot;b&amp;quot;],[&amp;quot;c&amp;quot;]]
+c3 = [[&amp;quot;c&amp;quot;],[&amp;quot;a&amp;quot;]]
+composition = [c1, c2, c3]
+h = History(composition, gamma=0.0)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where the variables &lt;code&gt;c1&lt;/code&gt;, &lt;code&gt;c2&lt;/code&gt;, and &lt;code&gt;c3&lt;/code&gt; model the composition of each game using the names of the agents (i.e. their identifiers), the variable &lt;code&gt;composition&lt;/code&gt; is a list containing the three events,  and the zero value of the parameter &lt;code&gt;gamma&lt;/code&gt; specifies that skills does not change over time.&lt;/p&gt;
+
+&lt;p&gt;After initialization, the class &lt;code&gt;History&lt;/code&gt; immediately instantiates a new player for each name and activates the computation of the TrueSkill estimates, using the posteriors of each event as a prior for the next one.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;lc = learning_curves(h)
+print(lc[&amp;quot;a&amp;quot;])
+&amp;gt; [(1, Gaussian(mu=3.339, sigma=4.985)), (3, Gaussian(mu=-2.688, sigma=3.779))]
+print(lc[&amp;quot;b&amp;quot;])
+&amp;gt; [(1, Gaussian(mu=-3.339, sigma=4.985)), (2, Gaussian(mu=0.059, sigma=4.218))]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The learning curves of players &lt;code&gt;&amp;quot;a&amp;quot;&lt;/code&gt; and &lt;code&gt;&amp;quot;b&amp;quot;&lt;/code&gt; contain one tuple per game played (not including the initial prior): each tuple has the time of the estimate as the first component, and the estimate itself as the second one.&lt;/p&gt;
+
+&lt;p&gt;Although in this example no player is stronger than the others, the TrueSkill estimates present strong variations between players.
+TrueSkill Through Time solves this problem by allowing the information to propagate throughout the system by calling the method &lt;code&gt;convergence()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;convergence(h)
+lc = learning_curves(h)
+print(lc[&amp;quot;a&amp;quot;])
+&amp;gt; [(1, Gaussian(mu=0.0, sigma=2.395)), (3, Gaussian(mu=-0.0, sigma=2.395))]
+print(lc[&amp;quot;b&amp;quot;])
+&amp;gt; [(1, Gaussian(mu=-0.0, sigma=2.395)), (3, Gaussian(mu=0.0, sigma=2.395))]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;TrueSkill Through Time not only returns correct estimates (same for all players), they also have less uncertainty.&lt;/p&gt;
+
+&lt;h3 id=&#34;skill-evolution&#34;&gt;Skill evolution&lt;/h3&gt;
+
+&lt;p&gt;This example will exhibit that TrueSkill Through Time can correctly follows the skill evolution of a new player taht joins a large community of already known players.
+In the following code, we generate the target player&amp;rsquo;s learning curve and 1000 random opponents.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;using Random; Random.seed!(999); N = 1000
+function skill(experience, middle, maximum, slope)
+    return maximum/(1+exp(slope*(-experience+middle))) 
+end
+target = skill.(1:N, 500, 2, 0.0075)
+opponents = Random.randn.(1000)*0.5 .+ target
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The list &lt;code&gt;target&lt;/code&gt; has the agent&amp;rsquo;s skills at each moment: the values start at zero and grow smoothly until the target player&amp;rsquo;s skill reaches two.
+The list &lt;code&gt;opponents&lt;/code&gt; includes the randomly generated opponents&amp;rsquo; skills following a Gaussian distribution centered on each of the target&amp;rsquo;s skills and a standard deviation of 0.5.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;composition = [[[&amp;quot;a&amp;quot;], [string(i)]] for i in 1:N]
+results = [r? [1.,0.]:[0.,1.] for r in (Random.randn(N).+target.&amp;gt;Random.randn(N).+opponents)]
+times = [i for i in 1:N]
+priors = Dict{String,Player}()
+for i in 1:N  priors[string(i)] = Player(Gaussian(opponents[i], 0.2))  end
+
+h = History(composition, results, times, priors, gamma=0.015)
+convergence(h)
+mu = [tp[2].mu for tp in learning_curves(h)[&amp;quot;a&amp;quot;]] 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In this code we define four variables to instantiate the class &lt;code&gt;History&lt;/code&gt;: the &lt;code&gt;composition&lt;/code&gt; contains 1000 games between the target player and different opponents; the &lt;code&gt;results&lt;/code&gt; are obtained randomly, sampling the performance of the players; the &lt;code&gt;time&lt;/code&gt; is a list of integer ranging from 0 to 999 representing the time of each game; and &lt;code&gt;priors&lt;/code&gt; is a dictionary used to customize player attributes (we assign low uncertainty to the opponents&amp;rsquo; priors pretending that we know their skills beforehand).
+The Figure shows the evolution of the true (solid line) and estimated (dotted line) learning curves of the target player.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;static/logistic0.png&#34; alt=&#34;synthetic&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The estimated learning curves remain close to the actual skill during the whole evolution.&lt;/p&gt;
+
+&lt;h3 id=&#34;atp-history&#34;&gt;ATP History&lt;/h3&gt;
+
+&lt;p&gt;In this last example, we analyze the complete history of the Association of Tennis Professionals (ATP) registered matches.&lt;/p&gt;
+
+&lt;p&gt;The database has 447000 games starting at year 1915 until 2020 with more than 19000 participating players and is publicly available.
+The file includes both single and double matches: if the column &lt;code&gt;double&lt;/code&gt; has the letter &lt;code&gt;t&lt;/code&gt;, the game is a double match.
+The file also contains players&amp;rsquo; identifiers and names: for example column &lt;code&gt;w2_id&lt;/code&gt; is the identifier of the second player of the winning team and &lt;code&gt;l1_name&lt;/code&gt; is the name of the first player of the losing team.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;using CSV; using Dates
+data = CSV.read(&amp;quot;atp.csv&amp;quot;)
+
+dates = Dates.value.(data[:,&amp;quot;time_start&amp;quot;] .- Date(&amp;quot;1900-1-1&amp;quot;)) 
+matches = [ r.double == &amp;quot;t&amp;quot; ? [[r.w1_id,r.w2_id],[r.l1_id,r.l2_id]] : [[r.w1_id],[r.l1_id]] for r in eachrow(data) ]   
+
+h = History(composition = matches, times = dates, sigma = 1.6, gamma = 0.036)
+convergence(h, epsilon = 0.01, iterations = 10)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In this code we open the file &lt;code&gt;atp.csv&lt;/code&gt;, create the variables &lt;code&gt;dates&lt;/code&gt; and &lt;code&gt;matches&lt;/code&gt;, and instantiate the class &lt;code&gt;History&lt;/code&gt;.
+The following figure presents the learning curves of some famous players in ATP history.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;static/atp.png&#34; alt=&#34;atp&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Those who know the history of tennis will be able to recognize the periods of crisis, stability and success of the players.&lt;/p&gt;
+
+&lt;p&gt;There is a relative coincidence between skill and who is at any given moment at the top of the ATP rankings, it is possible to observe the effects of injuries, and even the effect of emotional slumps such as those that Aggasi and Djockovic had.&lt;/p&gt;
+
+&lt;p&gt;It is interesting to see that the skill of tennis players did not increase so much over the years: on the contrary the players of the 1980s were more skilled than those of the 1990s, and reached a skill similar to what Federer, Nadal and Djokovic had in 2020.&lt;/p&gt;
+
+&lt;p&gt;There are also some differences between players&amp;rsquo; skills and the ATP ranking, especially with respect to the historical ranking (based on the total number of weeks at the top of the ranking): the 10th-ranked player, Hewitt, actually has relatively low skill; and the fourth most skilled player, Murray, is ranked 14th, just one place above Nastase.&lt;/p&gt;
+
+&lt;p&gt;TrueSkill Through Time, unlike ATP ranking and estimators based on the filtering approach (such as TrueSkill, Glicko and IRT) allows comparing the relative ability of players over time.&lt;/p&gt;
+
+&lt;h3 id=&#34;multi-dimensional-skills&#34;&gt;Multi-dimensional skills&lt;/h3&gt;
+
+&lt;p&gt;In the ATP example we summarize the players&amp;rsquo; skills in a single dimension.
+We know, however, that the ability of tennis players can vary significantly depending on the type of ground.&lt;/p&gt;
+
+&lt;p&gt;TrueSkill Through Time allows estimating this type of multi-dimensional skills.
+One option is to keep one skill variable per player, that we include in all games, and one skill variable per ground, that we add as their teammate depending on the type of game.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;players = Set(vcat((composition...)...))
+priors = Dict([(p, Player(Gaussian(0., 1.6), 1.0, 0.036) ) for p in players])
+
+composition_ground = [ r.double == &amp;quot;t&amp;quot; ? [[r.w1_id, r.w1_id*r.ground, r.w2_id, r.w2_id*r.ground],[r.l1_id, r.l1_id*r.ground, r.l2_id, r.l2_id*r.ground]] : [[r.w1_id, r.w1_id*r.ground],[r.l1_id, r.l1_id*r.ground]] for r in eachrow(data) ]   
+
+h_ground = History(composition = composition_ground, times = dates, sigma = 1.0, gamma = 0.01, beta = 0.0, priors = priors)
+convergence(h_ground, epsilon = 0.01, iterations=10)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In this example we keep the same prior as before for the players, this time defined in the variable &lt;code&gt;priors&lt;/code&gt;.
+In this way, the values chosen to initialize the class &lt;code&gt;History&lt;/code&gt; will only be used for the ground skill factors.
+For those factors we chose a null &lt;code&gt;beta&lt;/code&gt; so as not to add more noise to the players&amp;rsquo; performance, keeping the scale of the estimates stable.&lt;/p&gt;
+
+&lt;p&gt;In the following figures we show the skill difference that Nadal and Djokovic have in each of the three types of ground.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;static/atp_ground0.png&#34; alt=&#34;n&#34; /&gt;
+&lt;img src=&#34;static/atp_ground2.png&#34; alt=&#34;d&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We can see that Nadal has a big skill difference between grounds, unlike Djokovic who has very similar skills on all three types of ground.
+The Nadal&amp;rsquo;s skill difference between clay and grass gorunds is greater than one ponit, which means at least 76% difference in probability of winning compared to itself.&lt;/p&gt;
+
+&lt;p&gt;To assess whether the complexity added by modeling multidimensionality is appropriate in general terms, we can compare the joint priori prediction of the models, calling the method \texttt{log_evidence()} of the class \texttt{History}.&lt;/p&gt;
+
+&lt;h2 id=&#34;estructure&#34;&gt;Estructure&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;src/TrueSkill.jl&lt;/strong&gt;: Main file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;test/runrests.jl&lt;/strong&gt;: Unit test&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Inside &lt;strong&gt;test/&lt;/strong&gt; and &lt;strong&gt;example/&lt;/strong&gt; you will find a makefile. In each folder you can execute the entire procedure by typing &lt;code&gt;make&lt;/code&gt; in the terminal.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Homo ergodicus</title>
+      <link>https://glandfried.github.io/post/homoergodicus/</link>
+      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/post/homoergodicus/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;It was considered an established truth that cooperation required some kind of altruistic behavior to evolve&lt;/strong&gt;.
+Indeed, one of the most important theorists of the evolution of cooperation, Martin Nowak, analyzed in one of the most prestigious scientific journals, Nature, a set of relevant rules for the evolution of cooperation.
+All the rules summarized a benefit-to-cost ratio of an &lt;em&gt;altruistic&lt;/em&gt; act with respect to some critical value.
+At the end of the paper, he claimed that the most remarkable aspect of evolution is its ability to generate cooperation in a competitive world.
+We will see that his surprise can only arise if &lt;strong&gt;we are implicitly assuming that evolutionary systems are &lt;em&gt;ergodic&lt;/em&gt;.&lt;/strong&gt;
+If you don&amp;rsquo;t know what ergodic mean, read on.&lt;/p&gt;
+
+&lt;p&gt;Evolutionary processes are essentially temporary processes.
+In evolutionary theory everyone is taught the fact that lineage growth is a multiplicative and noisy process: a sequence of survival and reproductive probabilities.
+In the field, we make use of mathematics to analyze what happens to a genetic or cultural lineage over time.
+For this purpose &lt;strong&gt;we represent the real environment through a stochastic function&lt;/strong&gt;.
+For example, consider the following toy environment.
+Nature tosses a coin.
+For heads your community grows 50% of its current size.
+For tails your community lose 40% of its members.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def environment(size):
+    if np.random.random() &amp;lt;= 0.5:
+        res = 1.5*size
+    else:
+        res = 0.6*size
+    return res
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The question, now, is how to analyze the stochastic function in order to &lt;strong&gt;find the expected outcome&lt;/strong&gt;, i.e. what will happen to agents typically.
+The development of probability theory was motivated by this purpose.&lt;/p&gt;
+
+&lt;p&gt;The original treatment (Pascal-Fermat-Huygens) states that the expected outcome can be found by multiplying each possible change in size by its probability of occurrence, and add everything.
+Let $\Delta(s)$ be the change in size at state $s$ and $p(s)$ the probability of state $s$, then the expected outcome will be:&lt;/p&gt;
+
+&lt;p&gt;$$\text{expected outcome} = \sum_s p(s)\Delta(s)$$&lt;/p&gt;
+
+&lt;p&gt;If we analyze the toy environment, we will find that the expected outcome will have a positive change, $0.05\Delta = 0.5 \times 0.5\Delta + 0.5 \times (-0.4)\Delta$.
+However, even if we consider members as a continuous variable, what really happens over time is very different from what is expected.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./static/simple_gamble.png&#34; alt=&#34;simple_gamble&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The expectation over states does not reflect what really happens with the individual agents over time.&lt;/strong&gt;
+&lt;strong&gt;This is because we are facing a multiplicative process (Yaarin 2010).&lt;/strong&gt;
+In the multiplicative process the real physical impacts of losses are often stronger than those of gains.
+If there is even one zero in the sequence of generations, we are extinct.
+Comparing what happens over time to what happens in expectation is a well-known problem in statistical mechanics, called &amp;ldquo;the ergodicity problem&amp;rdquo;.
+A system is ergodic if its time average equals its expectation value.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;One consequence is that variance in fitness realy matters&lt;/strong&gt;.
+&lt;strong&gt;An effective way to reduce variance is to cooperate, by sharing members between communities.&lt;/strong&gt;
+The anthropologist Claude Lévi-Strauss developed a general argument for the universality of the incest taboo in human societies.
+His argument begins with the claim that the incest taboo is in effect a prohibition against endogamy, and the effect is to encourage exogamy. Through exogamy, otherwise unrelated households or lineages will form relationships through marriage, thus strengthening social solidarity.&lt;/p&gt;
+
+&lt;p&gt;To experiment the effect of this kind of rules, we define a toy incest taboo rule, in which a percentage of the community must migrate to other unrelated housholds.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def incest_rule(communities_size,exogamy=0.05):
+    res = []
+    migration_per_community = exogamy*sum(communities_size)/len(communities_size)
+    for c in range(len(communities_size)):
+        res.append( communities_size[c]*(1-exogamy) + migration_per_community )
+    return res 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If the previous communities, in the same environment, applied a 5% of exogamy we would observe the following behavior.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./static/simple_gamble_incesto.png&#34; alt=&#34;incesto&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Multiplicative process offers a concrete physical advantage in favor of cooperative behavior.
+&lt;strong&gt;The &amp;ldquo;ergodic&amp;rdquo; point of view had major implications for all evolutionary science.&lt;/strong&gt;
+&lt;strong&gt;Perhaps the most significant change lies in the nature of the model human that arises from our conceptual reframing (Peters 2019).&lt;/strong&gt;
+Observed behaviour deviates starkly from the predictions made by the Homo economicus model.
+Paired with a firm belief in its models, this has led to a narrative of human irrationality in large parts of economics.
+If humans evolved in non-ergodic environments they should be able to intuitively evaluate and adapt to the temporal consequences of the different scenarios, as the Copenhagen experiment seems to have shown (Meder 2019).
+The new &amp;ldquo;Homo ergodicus&amp;rdquo; model is a better fit to human behavior, who tends to care about others, understands that cooperation leads to better results, and is patient and kind.&lt;/p&gt;
+
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Nowak, M. 2006. Five rules for the evolution of cooperation. Nature.&lt;/li&gt;
+&lt;li&gt;Peters, O. 2019. The ergodicity problem in economics. Nature.&lt;/li&gt;
+&lt;li&gt;Yaarin, G. 2010. Cooperation evolution in random multiplicative environments. The European Physical Journal B.&lt;/li&gt;
+&lt;li&gt;Meder, D. et al. 2019. Ergodicity-breaking reveals time optimal economic behavior in humans (v2). ArXiv.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cultural evolution</title>
+      <link>https://glandfried.github.io/project/culturalevolution/</link>
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/project/</guid>
+      <guid>https://glandfried.github.io/project/culturalevolution/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Recent &amp; Upcoming Talks</title>
-      <link>https://glandfried.github.io/talk/</link>
+      <title>Técnicas para calcular distribuciones de creencias</title>
+      <link>https://glandfried.github.io/talk/2019_12_tacc/</link>
       <pubDate>Thu, 05 Dec 2019 12:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/talk/</guid>
+      <guid>https://glandfried.github.io/talk/2019_12_tacc/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Courses</title>
-      <link>https://glandfried.github.io/courses/</link>
+      <title>Faculty of science computer programming workshop (with Python)</title>
+      <link>https://glandfried.github.io/courses/exactasprograma/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/courses/</guid>
+      <guid>https://glandfried.github.io/courses/exactasprograma/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Social learning in cultural evolution contexts</title>
+      <link>https://glandfried.github.io/talk/2019_05_10_ic/</link>
+      <pubDate>Fri, 10 May 2019 12:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/talk/2019_05_10_ic/</guid>
+      <description>
+
+&lt;h2 id=&#34;workshop&#34;&gt;Workshop&lt;/h2&gt;
+
+&lt;p&gt;In the workshop, tools for complex systems applied to social systems were presented. It was organized under a theoretical-practical modality and seminars of invited professors. The objective was to create a space for the encounter between the social sciences and the rest of the scientific disciplines. It was a great opportunity to exchange ideas on how to apply the tools used for complex systems to problems coming from the social area.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Evidence in favor of a scientific theory</title>
+      <link>https://glandfried.github.io/talk/2019_05_03_liaa/</link>
+      <pubDate>Fri, 03 May 2019 12:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/talk/2019_05_03_liaa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algorithms and data structure 1 (with C&#43;&#43;)</title>
+      <link>https://glandfried.github.io/courses/algo1/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/courses/algo1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Faithfulness-boost effect</title>
+      <link>https://glandfried.github.io/publication/landfried2019-faithfulness/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/publication/landfried2019-faithfulness/</guid>
+      <description>&lt;p&gt;Supplementary material: &lt;a href=&#34;https://doi.org/10.1371/journal.pone.0211014.s002&#34; target=&#34;_blank&#34;&gt;TrueSkill: Technical Report&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TrueSkill, Technical Report</title>
+      <link>https://glandfried.github.io/publication/landfried2019-trueskill/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/publication/landfried2019-trueskill/</guid>
+      <description>&lt;p&gt;The first skill estimator was developed by Arpad Elo, adopted by the World Chess Federations around 1970. TrueSkill is just the bayesian multiplayer version of Elo model, published by Microsoft in 2007. In this technical report I derive, step by step, the analytical solution of the model.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Slides</title>
-      <link>https://glandfried.github.io/slides/</link>
+      <link>https://glandfried.github.io/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://glandfried.github.io/slides/</guid>
+      <guid>https://glandfried.github.io/slides/example/</guid>
+      <description>
+
+&lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34;&gt;Academic&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Code block:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
+if porridge == &amp;quot;blueberry&amp;quot;:
+    print(&amp;quot;Eating...&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+
+&lt;p&gt;Block math:&lt;/p&gt;
+
+&lt;p&gt;$$
+f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+   One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+   &lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+   Three
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
+- Only the speaker can read these notes
+- Press `S` key to view
+{{% /speaker_note %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/aside&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/img/boards.jpg&#34;
+  &gt;
+
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/img/boards.jpg&amp;quot; &amp;gt;}}
+{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
+{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+  color: navy;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Computational Social Science (with R)</title>
+      <link>https://glandfried.github.io/courses/csc/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/courses/csc/</guid>
+      <description>
+
+&lt;h3 id=&#34;link-to-course&#34;&gt;Link to course&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;All the material for the course (&lt;a href=&#34;http://www.antropocaos.com.ar/academica/seminarios/ciencias-sociales-computacionales-2018/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;bibliography&#34;&gt;Bibliography&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;An Introduction to Statistical Learning with Applications in R (&lt;a href=&#34;http://www-bcf.usc.edu/~gareth/ISL/&#34; target=&#34;_blank&#34;&gt;Oficial web page&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Computer Science introduction for empricial sciences (with Python)</title>
+      <link>https://glandfried.github.io/courses/intro/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/courses/intro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian Inference</title>
+      <link>https://glandfried.github.io/project/bayesianinference/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/project/bayesianinference/</guid>
+      <description>
+
+&lt;p&gt;Beyond any debate, what is certain is that Bayesian Inference allows us to &lt;strong&gt;optimally update our &lt;em&gt;beliefs&lt;/em&gt; given a &lt;em&gt;model&lt;/em&gt; and a &lt;em&gt;data set&lt;/em&gt;&lt;/strong&gt;. What more could you ask for?&lt;/p&gt;
+
+&lt;h1 id=&#34;projects&#34;&gt;Projects&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Bayesian Skill Estimator (&lt;a href=&#34;publication/landfried2019-trueskill/&#34; target=&#34;_blank&#34;&gt;Technical report&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;A general implementation of the TrueSkill rating system for Python (&lt;a href=&#34;https://github.com/glandfried/trueskill.py&#34; target=&#34;_blank&#34;&gt;Software&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bayesian inference course (&lt;a href=&#34;https://github.com/glandfried/bayesian-inference&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;bayes_network.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We work with variations of this Bayesian skill estimator&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Algebra (with Haskell)</title>
+      <link>https://glandfried.github.io/courses/algebra/</link>
+      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/courses/algebra/</guid>
+      <description>
+
+&lt;h4 id=&#34;hands-on&#34;&gt;Hands-on&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Problemas de combinatoria y recursión en la predicción de alianza&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Artificial societies and ethnography (with Netlogo)</title>
+      <link>https://glandfried.github.io/courses/artificialsocieties/</link>
+      <pubDate>Mon, 01 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/courses/artificialsocieties/</guid>
       <description></description>
     </item>
     

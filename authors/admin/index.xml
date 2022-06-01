@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Landfried</title>
@@ -46,8 +46,8 @@ To support the use of reliable learning estimators, we provide the first impleme
       
       <guid>https://glandfried.github.io/publication/landfried2020-ttt/</guid>
       <description>Packages:
-Julia Package: https://github.com/glandfried/TrueSkillThroughTime.jl Python Package: https://github.com/glandfried/TrueSkillThroughTime.py R package: https://github.com/glandfried/TrueSkillThroughTime.R  Full scientific documentation:
-English. Last version 2021-07-26 Español. Última versión 2021-07-26  TrueSkillThroughTime.jl None of the commonly used skill estimators, such as TrueSkill, Glicko and Item-Response Theory, correctly models the temporal aspect, which prevents having both good initial estimates and comparability between estimates separated in time and space.
+ Julia Package: https://github.com/glandfried/TrueSkillThroughTime.jl Python Package: https://github.com/glandfried/TrueSkillThroughTime.py R package: https://github.com/glandfried/TrueSkillThroughTime.R  Full scientific documentation:
+ English. Last version 2021-07-26 Español. Última versión 2021-07-26  TrueSkillThroughTime.jl None of the commonly used skill estimators, such as TrueSkill, Glicko and Item-Response Theory, correctly models the temporal aspect, which prevents having both good initial estimates and comparability between estimates separated in time and space.
 TrueSkill Through Time corrects those biases by modeling the entire history of activities using a single Bayesian network.</description>
     </item>
     
@@ -85,6 +85,16 @@ TrueSkill Through Time corrects those biases by modeling the entire history of a
       
       <guid>https://glandfried.github.io/publication/landfried2019-trueskill/</guid>
       <description>The first skill estimator was developed by Arpad Elo, adopted by the World Chess Federations around 1970. TrueSkill is just the bayesian multiplayer version of Elo model, published by Microsoft in 2007. In this technical report I derive, step by step, the analytical solution of the model.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://glandfried.github.io/authors/admin/</link>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/authors/admin/</guid>
+      <description>Empirical knowledge emerges as life does I am a social anthropologist finishing a PhD in computer science working on Bayesian inference, social learning and cultural evolution. The best thing I discovered through this interdisciplinary approach was the existence of a method that guarantees intersubjective agreements in contexts of uncertainty, its isomorphism with evolutionary theory, and the real advantage that cooperation and coexistence have in both systems.
+After finishing my licenciate degree (BSc + MSc) in anthropology, I decided to acquire a solid background in mathematics and computer science with the aim of using them as tools for the social sciences.</description>
     </item>
     
   </channel>

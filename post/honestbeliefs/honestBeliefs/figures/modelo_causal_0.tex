@@ -1,0 +1,27 @@
+\documentclass[10pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+
+\input{../auxiliar/tex/tikzlibrarybayesnet.code.tex}
+\input{../auxiliar/tex/encabezado.tex}
+\makeatletter
+\newcommand{\vast}{\bBigg@{2.5}}
+\newcommand{\Vast}{\bBigg@{14.5}}
+\makeatother
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\begin{document}
+\tikz{            
+    \node[latent,] (r) {\includegraphics[width=0.06\textwidth]{../auxiliar/images/regalo.png}} ;
+    \node[const,left=of r] (nr) {\Large $r$} ;    
+    
+    
+    \node[latent, below=of r] (d) {\includegraphics[width=0.05\textwidth]{../auxiliar/images/dedo.png}} ;
+    \node[const, left=of d] (nd) {\Large $s$} ;
+
+    \edge {r} {d};
+    \node[invisible, xshift=2cm] (s-dist) {};
+            
+}
+\end{document}

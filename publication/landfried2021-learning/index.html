@@ -92,7 +92,7 @@ To support the use of reliable learning estimators, we provide the first impleme
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.1c0f29ea38918554f71bc71c8b0b938a.css">
+  <link rel="stylesheet" href="/css/academic.min.9e398b7a64ee2c82769da9724cdbf0cc.css">
 
   
 
@@ -695,42 +695,62 @@ if (!doNotTrack) {
 
     <div class="space-below"></div>
 
-    <div class="article-style"><p>Most estimators implemented for the video game industry cannot obtain reliable initial estimates nor guarantee comparability between distant estimates.
+    <div class="article-style">
+
+<p>Most estimators implemented for the video game industry cannot obtain reliable initial estimates nor guarantee comparability between distant estimates.
 TrueSkill Through Time solves all these problems by modeling the entire history of activities using a single Bayesian network.
 This algorithm requires a few iterations to converge, allowing millions of observations to be analyzed using any low-end computer.</p>
+
 <p>To support the use of reliable learning estimators, we provide the first implementations of TrueSkill Through Time for  <code>Julia</code>, <code>Python</code> and <code>R</code>.
 A complete scientific documentation allows scientists to make sense of all epistemological and technical aspects of the estimation process.</p>
+
 <h3 id="scientific-article">Scientific article</h3>
+
 <p>You can find the full scientific documentation of TrueSkill Through Time packages at:</p>
-<ol start="0">
-<li>English. <a href="https://github.com/glandfried/TrueSkillThroughTime/releases/download/doc/landfried-learning.pdf">Last version</a> 2021-07-26</li>
-<li>Español. <a href="https://github.com/glandfried/TrueSkillThroughTime/releases/download/doc/landfried-aprendizaje.pdf">Última versión</a> 2021-07-26</li>
+
+<ol>
+<li>English. <a href="https://github.com/glandfried/TrueSkillThroughTime/releases/download/doc/landfried-learning.pdf" target="_blank">Last version</a> 2021-07-26</li>
+<li>Español. <a href="https://github.com/glandfried/TrueSkillThroughTime/releases/download/doc/landfried-aprendizaje.pdf" target="_blank">Última versión</a> 2021-07-26</li>
 </ol>
+
 <h3 id="packages">Packages</h3>
-<ol start="0">
-<li>Julia Package: <a href="https://github.com/glandfried/TrueSkillThroughTime.jl">https://github.com/glandfried/TrueSkillThroughTime.jl</a></li>
-<li>Python Package: <a href="https://github.com/glandfried/TrueSkillThroughTime.py">https://github.com/glandfried/TrueSkillThroughTime.py</a></li>
-<li>R package: <a href="https://github.com/glandfried/TrueSkillThroughTime.R">https://github.com/glandfried/TrueSkillThroughTime.R</a></li>
+
+<ol>
+<li>Julia Package: <a href="https://github.com/glandfried/TrueSkillThroughTime.jl" target="_blank">https://github.com/glandfried/TrueSkillThroughTime.jl</a></li>
+<li>Python Package: <a href="https://github.com/glandfried/TrueSkillThroughTime.py" target="_blank">https://github.com/glandfried/TrueSkillThroughTime.py</a></li>
+<li>R package: <a href="https://github.com/glandfried/TrueSkillThroughTime.R" target="_blank">https://github.com/glandfried/TrueSkillThroughTime.R</a></li>
 </ol>
+
 <h3 id="computational-details">Computational details</h3>
+
 <p>Our Python package solves individual events ten times faster than the original trueskill 0.4.5 (Lee 2012) package.
 In turn, our Julia package converge a history of events ten times faster than our Python package.
 In contrast, our R package is slower than the other packages, including the original trueskill 0.4.5
 package.</p>
+
 <h3 id="the-history-of-the-atp">The History of the ATP</h3>
+
 <p>The following figure presents <strong>the learning curves of some famous players in ATP history</strong>.
 A one-point difference between skills is equivalent to 76% probability of winning.
 The top bar indicates which player was at the top of the ATP’s ranking.</p>
-<p><img src="static/atp.png" alt="atp"></p>
+
+<p><img src="static/atp.png" alt="atp" /></p>
+
 <p>It is possible recognize the periods of crisis, stability and success of the players, even the effect of emotional slumps such as those that Aggasi and Djockovic had.
 The skill of tennis players did not increase so much over the years: on the contrary the players of the 1980s were more skilled than those of the 1990s, and reached a skill similar to what Federer, Nadal and Djokovic had in 2020.</p>
+
 <p>There is a relative coincidence between skill and who is at any given moment at the top of the ATP rankings.
 However, TrueSkill Through Time allows comparing the relative ability of players over time: the 10th player in the historical ATP&rsquo;s ranking, Hewitt, is a product of the window of opportunity that was opened in the year 2000; and the 4th most skilled player, Murray, is ranked 14th just above Nastase.</p>
+
 <p>The <strong>models commonly used in industry and academia</strong> (TrueSkill, Glicko, Item-Response Theory) are based on an ad-hoc solution that prevents them both from having good initial estimates and from guaranteeing comparability between estimates separated in time.</p>
-<p><img src="static/atp_trueskill.png" alt="atp"></p>
+
+<p><img src="static/atp_trueskill.png" alt="atp" /></p>
+
 <p>The advantage of TrueSkill Through Time lies in its temporal causal model, that links all historical activities in the same Bayesian network, which guarantees both good initial estimates and the temporal and spatial comparability of the estimates.</p>
+
 <h3 id="acknowledgments">Acknowledgments</h3>
-<p>Special thanks to Heungsub Lee for having published the <a href="https://github.com/sublee/trueskill">basic TrueSkill model in Python</a>.</p>
+
+<p>Special thanks to Heungsub Lee for having published the <a href="https://github.com/sublee/trueskill" target="_blank">basic TrueSkill model in Python</a>.</p>
 </div>
 
     
@@ -962,7 +982,7 @@ However, TrueSkill Through Time allows comparing the relative ability of players
     
     
     
-    <script src="/js/academic.min.a8ff40d18bce6e6b0934f2e922b05b21.js"></script>
+    <script src="/js/academic.min.c6fd6ac3a8e8115c6ec4cd7b873b4f1e.js"></script>
 
   </body>
 </html>
