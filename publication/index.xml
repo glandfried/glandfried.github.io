@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Landfried</title>
@@ -6,11 +6,7 @@
     <description>Recent content in Publications on Landfried</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://glandfried.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://glandfried.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Multiplicative processes as the general driver for the emergence of cooperation and specialization</title>
       <link>https://glandfried.github.io/publication/landfried-transitions/</link>
@@ -37,8 +33,8 @@ To support the use of reliable learning estimators, we provide the first impleme
       
       <guid>https://glandfried.github.io/publication/landfried2020-ttt/</guid>
       <description>Packages:
- Julia Package: https://github.com/glandfried/TrueSkillThroughTime.jl Python Package: https://github.com/glandfried/TrueSkillThroughTime.py R package: https://github.com/glandfried/TrueSkillThroughTime.R  Full scientific documentation:
- English. Last version 2021-07-26 Español. Última versión 2021-07-26  TrueSkillThroughTime.jl None of the commonly used skill estimators, such as TrueSkill, Glicko and Item-Response Theory, correctly models the temporal aspect, which prevents having both good initial estimates and comparability between estimates separated in time and space.
+Julia Package: https://github.com/glandfried/TrueSkillThroughTime.jl Python Package: https://github.com/glandfried/TrueSkillThroughTime.py R package: https://github.com/glandfried/TrueSkillThroughTime.R  Full scientific documentation:
+English. Last version 2021-07-26 Español. Última versión 2021-07-26  TrueSkillThroughTime.jl None of the commonly used skill estimators, such as TrueSkill, Glicko and Item-Response Theory, correctly models the temporal aspect, which prevents having both good initial estimates and comparability between estimates separated in time and space.
 TrueSkill Through Time corrects those biases by modeling the entire history of activities using a single Bayesian network.</description>
     </item>
     

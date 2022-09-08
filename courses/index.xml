@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Courses on Landfried</title>
@@ -6,18 +6,14 @@
     <description>Recent content in Courses on Landfried</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://glandfried.github.io/courses/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://glandfried.github.io/courses/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Bayesian Inference Seminar (with any language)</title>
+      <title>Bayesian Inference Seminar (with Julia, Python, R)</title>
       <link>https://glandfried.github.io/courses/seminariobayes/</link>
       <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/courses/seminariobayes/</guid>
-      <description></description>
+      <description>Intersubjective agreements in contexts of uncertainty  Unlike the formal sciences, which validate their propositions within closed axiomatic systems, the empirical sciences (from physics to the social sciences) must validate their propositions in open systems that by definition always contain some degree of uncertainty.Is it possible to reach &amp;ldquo;truths&amp;rdquo; if it is unavoidable to say &amp;ldquo;I don&amp;rsquo;t know&amp;rdquo;. Yes. The strict application of the rules of probability (Bayesian approach) guarantees intersubjective agreements in contexts of uncertainty, the foundation of empirical truths.</description>
     </item>
     
     <item>
@@ -44,7 +40,7 @@
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/courses/csc/</guid>
-      <description> Link to course  All the material for the course (here)  Bibliography  An Introduction to Statistical Learning with Applications in R (Oficial web page)  </description>
+      <description>Link to course  All the material for the course (here)  Bibliography  An Introduction to Statistical Learning with Applications in R (Oficial web page)  </description>
     </item>
     
     <item>
@@ -62,7 +58,7 @@
       <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/courses/algebra/</guid>
-      <description> Hands-on  Problemas de combinatoria y recursión en la predicción de alianza  </description>
+      <description>Hands-on  Problemas de combinatoria y recursión en la predicción de alianza  </description>
     </item>
     
     <item>

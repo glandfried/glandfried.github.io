@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Landfried</title>
@@ -6,10 +6,15 @@
     <description>Recent content in Posts on Landfried</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Feb 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://glandfried.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 10 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://glandfried.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plurinational Bayesian Congress</title>
+      <link>https://glandfried.github.io/post/cbp/</link>
+      <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/post/cbp/</guid>
+      <description>Intersubjective agreements in contexts of uncertainty</description>
+    </item>
     
     <item>
       <title>Empirical knowledge is life</title>

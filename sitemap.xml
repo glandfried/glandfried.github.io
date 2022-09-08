@@ -1,220 +1,124 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://glandfried.github.io/talk/2022_05_liaa/</loc>
-    <lastmod>2022-06-05T12:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://glandfried.github.io/</loc>
-    <lastmod>2022-06-05T12:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://glandfried.github.io/talk/</loc>
-    <lastmod>2022-06-05T12:00:00+00:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://glandfried.github.io/authors/admin/</loc>
-    <lastmod>2022-03-04T12:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-08-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://glandfried.github.io/authors/</loc>
-    <lastmod>2022-03-04T12:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2022-08-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://glandfried.github.io/</loc>
+    <lastmod>2022-08-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://glandfried.github.io/post/cbp/</loc>
+    <lastmod>2022-08-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://glandfried.github.io/post/</loc>
+    <lastmod>2022-08-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://glandfried.github.io/talk/2022_03_icc/</loc>
     <lastmod>2022-03-04T12:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://glandfried.github.io/talk/</loc>
+    <lastmod>2022-03-04T12:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://glandfried.github.io/publication_types/3/</loc>
     <lastmod>2022-01-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/publication/landfried-transitions/</loc>
     <lastmod>2022-01-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/publication_types/</loc>
     <lastmod>2022-01-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/publication/</loc>
     <lastmod>2022-01-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/courses/seminariobayes/</loc>
     <lastmod>2022-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/courses/</loc>
     <lastmod>2022-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/authors/mocskos/</loc>
     <lastmod>2021-02-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/publication/landfried2021-learning/</loc>
     <lastmod>2021-02-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/post/empiricalknowledge/</loc>
     <lastmod>2021-02-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/post/honestbeliefs/</loc>
     <lastmod>2021-02-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://glandfried.github.io/post/</loc>
-    <lastmod>2021-02-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/publication/landfried2020-ttt/</loc>
     <lastmod>2020-02-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/post/homoergodicus/</loc>
     <lastmod>2020-02-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/project/culturalevolution/</loc>
     <lastmod>2020-01-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/project/</loc>
     <lastmod>2020-01-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://glandfried.github.io/talk/2019_12_tacc/</loc>
-    <lastmod>2019-12-05T12:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/talk/2019_06_eslr/</loc>
     <lastmod>2019-06-01T12:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/courses/exactasprograma/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/authors/slezak/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/publication_types/2/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/courses/algo1/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/publication/landfried2019-faithfulness/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/tags/source-themes/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/tags/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/publication_types/4/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/publication/landfried2019-trueskill/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/courses/csc/</loc>
     <lastmod>2018-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/courses/intro/</loc>
     <lastmod>2018-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/talk/2018_06_mlss/</loc>
     <lastmod>2018-06-01T12:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/project/bayesianinference/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/courses/algebra/</loc>
     <lastmod>2017-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/courses/artificialsocieties/</loc>
     <lastmod>2010-07-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://glandfried.github.io/categories/</loc>
-    <priority>0</priority>
   </url>
-  
 </urlset>

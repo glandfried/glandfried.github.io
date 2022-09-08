@@ -1,0 +1,19 @@
+*
+!*/
+*download/
+
+## tex
+!*.tex
+*-concordance.tex
+!*.bib
+!*.bst
+
+## Code
+!*.sh
+!*.py
+!*.R
+!*.cpp
+
+!*.md
+!*.txt
+!.keep

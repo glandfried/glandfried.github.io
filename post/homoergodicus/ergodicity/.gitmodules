@@ -1,0 +1,6 @@
+[submodule "biblio"]
+	path = biblio
+	url = git@github.com:glandfried/biblio.git
+[submodule "ergodicity"]
+	path = ergodicity
+	url = git@github.com:glandfried/non-ergodic.git

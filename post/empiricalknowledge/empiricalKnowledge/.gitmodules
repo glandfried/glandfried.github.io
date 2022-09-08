@@ -1,0 +1,6 @@
+[submodule "auxiliar/tex"]
+	path = auxiliar/tex
+	url = git@github.com:glandfried/tex.git
+[submodule "auxiliar/images"]
+	path = auxiliar/images
+	url = git@github.com:glandfried/images.git

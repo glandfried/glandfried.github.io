@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Landfried</title>
@@ -6,19 +6,14 @@
     <description>Recent content in Authors on Landfried</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Mar 2022 12:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://glandfried.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 10 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://glandfried.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://glandfried.github.io/authors/admin/</link>
-      <pubDate>Fri, 04 Mar 2022 12:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/authors/admin/</guid>
-      <description>Empirical knowledge emerges as life does I am a social anthropologist finishing a PhD in computer science working on Bayesian inference, social learning and cultural evolution. The best thing I discovered through this interdisciplinary approach was the existence of a method that guarantees intersubjective agreements in contexts of uncertainty, its isomorphism with evolutionary theory, and the real advantage that cooperation and coexistence have in both systems.
-After finishing my licentiate degree (BSc + MSc) in anthropology, I decided to acquire a solid background in mathematics and computer science with the aim of using them as tools for the social sciences.</description>
+      <description>Social anthropologist with a PhD in computer science, I am Bayesian Inference Engineer working on data science, machine learning and causal inference. In contrast to ad-hoc approaches, the strict application of probability theory (Bayesian approach) guarantees inter-subjective agreements in contexts of uncertainty, the foundation of empirical truths. One of its most interesting advantages is that its solution is unique and intuitive, allowing attention to be focused on the real problem through the specification of causal models via graphical tools understandable by anyone.</description>
     </item>
     
     <item>
