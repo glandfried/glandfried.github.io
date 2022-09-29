@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>The state-of-the-art skill model</title>
+      <link>https://glandfried.github.io/post/skill/</link>
+      <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/post/skill/</guid>
+      <description>Reliable initial skill estimates and historical comparability with Julia, Python and R</description>
+    </item>
+    
+    <item>
       <title>Empirical knowledge is life</title>
       <link>https://glandfried.github.io/post/empiricalknowledge/</link>
       <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>

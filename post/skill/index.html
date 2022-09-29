@@ -27,11 +27,10 @@
   
     
   
-  <meta name="description" content="Most estimators implemented for the video game industry cannot obtain reliable initial estimates nor guarantee comparability between distant estimates. TrueSkill Through Time solves all these problems by modeling the entire history of activities using a single Bayesian network. This algorithm requires a few iterations to converge, allowing millions of observations to be analyzed using any low-end computer.
-To support the use of reliable learning estimators, we provide the first implementations of TrueSkill Through Time for Julia, Python and R.">
+  <meta name="description" content="Reliable initial skill estimates and historical comparability with Julia, Python and R">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://glandfried.github.io/publication/landfried2021-learning/">
+  <link rel="alternate" hreflang="en-us" href="https://glandfried.github.io/post/skill/">
 
   
 
@@ -120,7 +119,7 @@ To support the use of reliable learning estimators, we provide the first impleme
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://glandfried.github.io/publication/landfried2021-learning/">
+  <link rel="canonical" href="https://glandfried.github.io/post/skill/">
 
   
   
@@ -132,22 +131,21 @@ To support the use of reliable learning estimators, we provide the first impleme
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Landfried">
-  <meta property="og:url" content="https://glandfried.github.io/publication/landfried2021-learning/">
-  <meta property="og:title" content="TrueSkill Through Time. The full scientific documentation | Landfried">
-  <meta property="og:description" content="Most estimators implemented for the video game industry cannot obtain reliable initial estimates nor guarantee comparability between distant estimates. TrueSkill Through Time solves all these problems by modeling the entire history of activities using a single Bayesian network. This algorithm requires a few iterations to converge, allowing millions of observations to be analyzed using any low-end computer.
-To support the use of reliable learning estimators, we provide the first implementations of TrueSkill Through Time for Julia, Python and R."><meta property="og:image" content="https://glandfried.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://glandfried.github.io/post/skill/">
+  <meta property="og:title" content="The state-of-the-art skill model | Landfried">
+  <meta property="og:description" content="Reliable initial skill estimates and historical comparability with Julia, Python and R"><meta property="og:image" content="https://glandfried.github.io/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2021-02-28T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2021-10-10T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2021-02-28T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2021-10-10T00:00:00&#43;00:00">
   
 
   
 
-  <title>TrueSkill Through Time. The full scientific documentation | Landfried</title>
+  
+
+  <title>The state-of-the-art skill model | Landfried</title>
 
 
   
@@ -438,7 +436,8 @@ if (!doNotTrack) {
   </div>
 </nav>
 
-<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
   
 
@@ -459,7 +458,7 @@ if (!doNotTrack) {
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">TrueSkill Through Time. The full scientific documentation</h1>
+  <h1 itemprop="name">The state-of-the-art skill model</h1>
 
   
 
@@ -468,8 +467,8 @@ if (!doNotTrack) {
 
 
 
-<meta content="2021-02-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2021-02-28 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+<meta content="2021-10-10 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2021-10-10 00:00:00 &#43;0000 UTC" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -482,7 +481,7 @@ if (!doNotTrack) {
 
 
 
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Gustavo Landfried</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/mocskos/">Esteban Mocskos</a></span>
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Gustavo Landfried</a></span>
 
   </div>
   
@@ -494,12 +493,17 @@ if (!doNotTrack) {
     
       
     
-    <time>2021-02-28</time>
+    <time>2021-10-10</time>
   </span>
   
 
   
 
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
   
 
   
@@ -566,8 +570,6 @@ if (!doNotTrack) {
 
 
 
-  
-
 
 
 <div class="btn-links mb-3">
@@ -582,21 +584,10 @@ if (!doNotTrack) {
 
 
   
-    
-  
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/glandfried/TrueSkillThroughTime/releases/download/doc/landfried-learning.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
 
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
-        data-filename="/publication/landfried2021-learning/cite.bib">
-  Cite
-</button>
 
 
 
@@ -622,9 +613,57 @@ if (!doNotTrack) {
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/glandfried/TrueSkillThroughTime/" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/glandfried/TrueSkillThroughTime" target="_blank" rel="noopener">
     
-    Github
+    Proyect
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/glandfried/TrueSkillThroughTime.jl" target="_blank" rel="noopener">
+    
+    Julia
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/glandfried/TrueSkillThroughTime.py" target="_blank" rel="noopener">
+    
+    Python
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/glandfried/TrueSkillThroughTime.jl" target="_blank" rel="noopener">
+    
+    R
   </a>
 
 
@@ -638,75 +677,38 @@ if (!doNotTrack) {
 
   <div class="article-container">
 
-    
+    <div class="article-style" itemprop="articleBody">
+      <p>August 4 and 5, 2023 - Santiago del Estero, Argentina</p>
+<h2 id="reliable-initial-skill-estimates-and-historical-comparability-with-julia-python-and-r">Reliable initial skill estimates and historical comparability with Julia, Python and R</h2>
+<hr>
+<p>The <strong>models commonly used in industry and academia</strong> (Elo, TrueSkill, Glicko, Item-Response Theory) are based on an ad-hoc solution that prevents them both from having good initial estimates and from guaranteeing comparability between estimates separated in time.</p>
+<p>The following figure presents <strong>the learning curves of some famous players in ATP history</strong>.
+A one-point difference between skills is equivalent to 76% probability of winning.
+The top bar indicates which player was at the top of the ATP’s ranking.</p>
+<p><img src="static/atp_trueskill.png" alt="atp"></p>
+<p>The advantage of TrueSkill Through Time lies in its temporal causal model, that links all historical activities in the same Bayesian network, which guarantees both good initial estimates and the temporal and spatial comparability of the estimates.</p>
+<p><img src="static/atp.png" alt="atp"></p>
+<p>Here it is possible recognize the periods of crisis, stability and success of the players, even the effect of emotional slumps such as those that Aggasi and Djockovic had.
+TrueSkill Through Time allows comparing the relative ability of players over time.
+We discover that the 10th player in the historical ATP&rsquo;s ranking, Hewitt, is a product of the window of opportunity that was opened in the year 2000; and the 4th most skilled player in the history of ATP, Murray, is ranked 14th just above Nastase.</p>
+<h3 id="multi-dimensional-skills">Multi-dimensional skills</h3>
+<p>In the above example we summarize the players' skills in a single dimension.
+We know, however, that the ability of tennis players can vary significantly depending on the type of ground.
+TrueSkill Through Time allows estimating this type of multi-dimensional skills.
+In the following figures we show the skill difference that Nadal and Djokovic have in each of the three types of ground.</p>
+<p><img src="static/atp_ground0.png" alt="n">
+<img src="static/atp_ground2.png" alt="d"></p>
+<p>We can see that Nadal has a big skill difference between grounds, unlike Djokovic who has very similar skills on all three types of ground.
+The Nadal&rsquo;s skill difference between clay and grass gorunds is greater than one ponit, which means at least 76% difference in probability of winning compared to itself.</p>
 
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Type</div>
-          <div class="col-12 col-md-9">
-            
-            
-            <a href="/publication/#3">
-              Preprint
-            </a>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
     </div>
-    <div class="d-md-none space-below"></div>
-    
-
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">(In review at JSS) <em>Preprint Github</em></div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-    
-
-    <div class="space-below"></div>
-
-    <div class="article-style"><p>Most estimators implemented for the video game industry cannot obtain reliable initial estimates nor guarantee comparability between distant estimates.
-TrueSkill Through Time solves all these problems by modeling the entire history of activities using a single Bayesian network.
-This algorithm requires a few iterations to converge, allowing millions of observations to be analyzed using any low-end computer.</p>
-<p>To support the use of reliable learning estimators, we provide the first implementations of TrueSkill Through Time for  <code>Julia</code>, <code>Python</code> and <code>R</code>.
-A complete scientific documentation allows scientists to make sense of all epistemological and technical aspects of the estimation process.</p>
-<h3 id="scientific-article">Scientific article</h3>
-<p>You can find the full scientific documentation of TrueSkill Through Time packages at:</p>
-<ol start="0">
-<li>English. <a href="https://github.com/glandfried/TrueSkillThroughTime/releases/download/doc/landfried-learning.pdf">Last version</a> 2021-07-26</li>
-<li>Español. <a href="https://github.com/glandfried/TrueSkillThroughTime/releases/download/doc/landfried-aprendizaje.pdf">Última versión</a> 2021-07-26</li>
-</ol>
-<h3 id="packages">Packages</h3>
-<ol start="0">
-<li>Julia Package: <a href="https://github.com/glandfried/TrueSkillThroughTime.jl">https://github.com/glandfried/TrueSkillThroughTime.jl</a></li>
-<li>Python Package: <a href="https://github.com/glandfried/TrueSkillThroughTime.py">https://github.com/glandfried/TrueSkillThroughTime.py</a></li>
-<li>R package: <a href="https://github.com/glandfried/TrueSkillThroughTime.R">https://github.com/glandfried/TrueSkillThroughTime.R</a></li>
-</ol>
-<h3 id="computational-details">Computational details</h3>
-<p>Our Python package solves individual events ten times faster than the original trueskill 0.4.5 (Lee 2012) package.
-In turn, our Julia package converge a history of events ten times faster than our Python package.
-In contrast, our R package is slower than the other packages, including the original trueskill 0.4.5
-package.</p>
-<h3 id="acknowledgments">Acknowledgments</h3>
-<p>Special thanks to Heungsub Lee for having published the <a href="https://github.com/sublee/trueskill">basic TrueSkill model in Python</a>.</p>
-</div>
 
     
 
 
+
     
+      
 
 
 
@@ -825,11 +827,17 @@ package.</p>
 
 
 
+      
+      
+    
+
+    
+
+    
+
 
   </div>
-</div>
-
-
+</article>
 
 <div class="container">
   <footer class="site-footer">
