@@ -6,10 +6,19 @@
     <description>Recent content on Landfried</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Jan 2023 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://glandfried.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Publications</title>
+      <link>https://glandfried.github.io/publication/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://glandfried.github.io/publication/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Posts</title>
@@ -26,15 +35,6 @@
       <pubDate>Fri, 04 Mar 2022 12:00:00 +0000</pubDate>
       
       <guid>https://glandfried.github.io/talk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://glandfried.github.io/publication/</link>
-      <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://glandfried.github.io/publication/</guid>
       <description></description>
     </item>
     
